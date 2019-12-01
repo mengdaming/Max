@@ -1,5 +1,5 @@
 ARCHS = $(ARCHS_STANDARD_64_BIT)
-//SDKROOT = macosx10.5
+SDKROOT = macosx10.14 // Mojave
 
 GCC_VERSION = com.apple.compilers.llvm.clang.1_0
 //GCC_VERSION = com.apple.compilers.llvmgcc42
