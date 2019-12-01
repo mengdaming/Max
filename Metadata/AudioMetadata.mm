@@ -704,7 +704,7 @@
 + (AudioMetadata *) metadataFromMP4File:(NSString *)filename
 {
 	AudioMetadata		*result			= [[AudioMetadata alloc] init];
-	MP4FileHandle		mp4FileHandle	= MP4Read([filename fileSystemRepresentation], 0);
+	MP4FileHandle		mp4FileHandle	= MP4Read([filename fileSystemRepresentation]);
 	
 	if(MP4_INVALID_FILE_HANDLE != mp4FileHandle) {
 		// Read the tags
