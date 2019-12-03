@@ -26,6 +26,8 @@
 #include <mac/IO.h>
 #include <mac/CharacterHelper.h>
 
+using namespace APE;
+
 #define SELF_DECOMPRESSOR	(reinterpret_cast<IAPEDecompress *>(_decompressor))
 
 @implementation MonkeysAudioDecoder
@@ -36,7 +38,7 @@
 		int result;
 		
 		// Setup converter
-		str_utf16 *chars = GetUTF16FromANSI([[self filename] fileSystemRepresentation]);
+        str_utf16 *chars = APE::CAPECharacterHelper::GetUTF16FromANSI([[self filename] fileSystemRepresentation]);
 		NSAssert(NULL != chars, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
 		
 		_decompressor = (void *)CreateIAPEDecompress(chars, &result);
@@ -88,8 +90,8 @@
 {
 	CircularBuffer		*buffer				= [self pcmBuffer];
 	int					result;
-	int					blockSize;
-	int					samplesRead;
+	APE::intn					blockSize;
+	APE::intn					samplesRead;
 	void				*rawBuffer;
 
 	

@@ -47,6 +47,8 @@
 
 #include <wavpack/wavpack.h>
 
+using namespace APE;
+
 @interface AudioMetadata (FileMetadata)
 + (AudioMetadata *)		metadataFromFLACFile:(NSString *)filename;
 + (AudioMetadata *)		metadataFromMP3File:(NSString *)filename;
@@ -557,17 +559,17 @@
 		
 		// Album title
 		s = f.tag()->album();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumTitle:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Artist
 		s = f.tag()->artist();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumArtist:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Genre
 		s = f.tag()->genre();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumGenre:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Year
@@ -576,12 +578,12 @@
 		
 		// Comment
 		s = f.tag()->comment();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumComment:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Track title
 		s = f.tag()->title();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setTrackTitle:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Track number
@@ -1249,7 +1251,7 @@
 	CAPETagField					*tag					= NULL;		
 	
 	@try {
-		chars = GetUTF16FromANSI([filename fileSystemRepresentation]);
+        chars = CAPECharacterHelper::GetUTF16FromANSI([filename fileSystemRepresentation]);
 		NSAssert(NULL != chars, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
 
 		f = new CAPETag(chars);
@@ -1567,17 +1569,17 @@
 		
 		// Album title
 		s = f.tag()->album();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumTitle:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Artist
 		s = f.tag()->artist();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumArtist:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Genre
 		s = f.tag()->genre();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumGenre:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Year
@@ -1586,12 +1588,12 @@
 		
 		// Comment
 		s = f.tag()->comment();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumComment:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Track title
 		s = f.tag()->title();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setTrackTitle:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Track number
@@ -1632,17 +1634,17 @@
 		
 		// Album title
 		s = f.tag()->album();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumTitle:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Artist
 		s = f.tag()->artist();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumArtist:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Genre
 		s = f.tag()->genre();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumGenre:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Year
@@ -1651,12 +1653,12 @@
 		
 		// Comment
 		s = f.tag()->comment();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumComment:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Track title
 		s = f.tag()->title();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setTrackTitle:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Track number
@@ -1787,17 +1789,17 @@
 		
 		// Album title
 		s = f.tag()->album();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumTitle:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Artist
 		s = f.tag()->artist();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumArtist:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Genre
 		s = f.tag()->genre();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumGenre:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Year
@@ -1806,12 +1808,12 @@
 		
 		// Comment
 		s = f.tag()->comment();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setAlbumComment:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Track title
 		s = f.tag()->title();
-		if(false == s.isNull())
+		if(false == s.isEmpty())
 			[result setTrackTitle:[NSString stringWithUTF8String:s.toCString(true)]];
 		
 		// Track number
@@ -1823,12 +1825,12 @@
 			[result setLength:[NSNumber numberWithInt:f.audioProperties()->length()]];
 		
 		// Extract composer if present
-		TagLib::ID3v2::FrameList frameList = f.tag()->frameListMap()["TCOM"];
+        TagLib::ID3v2::FrameList frameList = f.ID3v2Tag()->frameListMap()["TCOM"];
 		if(NO == frameList.isEmpty())
 			[result setAlbumComposer:[NSString stringWithUTF8String:frameList.front()->toString().toCString(true)]];
 		
 		// Extract total tracks if present
-		frameList = f.tag()->frameListMap()["TRCK"];
+		frameList = f.ID3v2Tag()->frameListMap()["TRCK"];
 		if(NO == frameList.isEmpty()) {
 			// Split the tracks at '/'
 			trackString		= [NSString stringWithUTF8String:frameList.front()->toString().toCString(true)];
@@ -1846,14 +1848,14 @@
 		}
 		
 		// Extract track length if present
-		frameList = f.tag()->frameListMap()["TLEN"];
+		frameList = f.ID3v2Tag()->frameListMap()["TLEN"];
 		if(NO == frameList.isEmpty()) {
 			NSString *value = [NSString stringWithUTF8String:frameList.front()->toString().toCString(true)];
 			[result setLength:[NSNumber numberWithInt:([value intValue] / 1000)]];
 		}			
 		
 		// Extract disc number and total discs
-		frameList = f.tag()->frameListMap()["TPOS"];
+		frameList = f.ID3v2Tag()->frameListMap()["TPOS"];
 		if(NO == frameList.isEmpty()) {
 			// Split the tracks at '/'
 			discString		= [NSString stringWithUTF8String:frameList.front()->toString().toCString(true)];
@@ -1871,7 +1873,7 @@
 		}
 		
 		// Extract album art if present
-		frameList = f.tag()->frameListMap()["APIC"];
+		frameList = f.ID3v2Tag()->frameListMap()["APIC"];
 		if(NO == frameList.isEmpty() && NULL != (picture = dynamic_cast<TagLib::ID3v2::AttachedPictureFrame *>(frameList.front()))) {
 			TagLib::ByteVector bv = picture->picture();
 			[result setAlbumArt:[[[NSImage alloc] initWithData:[NSData dataWithBytes:bv.data() length:bv.size()]] autorelease]];
@@ -1879,14 +1881,14 @@
 		
 		// Extract compilation if present (iTunes TCMP tag)
 		if([[NSUserDefaults standardUserDefaults] boolForKey:@"useiTunesWorkarounds"]) {
-			frameList = f.tag()->frameListMap()["TCMP"];
+			frameList = f.ID3v2Tag()->frameListMap()["TCMP"];
 			// It seems that the presence of this frame indicates a compilation
 			if(NO == frameList.isEmpty())
 				[result setCompilation:[NSNumber numberWithBool:YES]];
 		}
 		
 		// Extract ISRC if present
-		frameList = f.tag()->frameListMap()["TSRC"];
+		frameList = f.ID3v2Tag()->frameListMap()["TSRC"];
 		if(NO == frameList.isEmpty()) {
 			NSString *value = [NSString stringWithUTF8String:frameList.front()->toString().toCString(true)];
 			[result setISRC:value];
@@ -1894,7 +1896,7 @@
 		
 		
 		// MusicBrainz artist and album identifiers
-		frameList = f.tag()->frameList("TXXX");
+		frameList = f.ID3v2Tag()->frameList("TXXX");
 		for(TagLib::ID3v2::FrameList::Iterator it = frameList.begin(); it != frameList.end(); ++it)
 		{
 			TagLib::ID3v2::UserTextIdentificationFrame *frame = (TagLib::ID3v2::UserTextIdentificationFrame *)(*it);
@@ -1912,7 +1914,7 @@
 		}
 		
 		// Unique file identifier (MusicBrainz track ID)
-		frameList = f.tag()->frameList("UFID");
+		frameList = f.ID3v2Tag()->frameList("UFID");
 		for(TagLib::ID3v2::FrameList::Iterator it = frameList.begin(); it != frameList.end(); ++it)
 		{
 			TagLib::ID3v2::UniqueFileIdentifierFrame *frame = (TagLib::ID3v2::UniqueFileIdentifierFrame *)(*it);
@@ -1960,7 +1962,7 @@
 	str_utf16		*result			= NULL;
 	
 	customTag	= [[NSUserDefaults standardUserDefaults] stringForKey:[NSString stringWithFormat:@"APETag_%@", tag]];
-	result		= GetUTF16FromUTF8((const unsigned char *)[(nil == customTag ? tag : customTag) UTF8String]);
+    result		= CAPECharacterHelper::GetUTF16FromUTF8((const unsigned char *)[(nil == customTag ? tag : customTag) UTF8String]);
 	NSAssert(NULL != result, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
 	
 	return result;

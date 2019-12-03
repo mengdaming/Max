@@ -67,7 +67,7 @@
 	
 
 	@try {
-		chars = GetUTF16FromANSI([[self outputFilename] fileSystemRepresentation]);
+        chars = CAPECharacterHelper::GetUTF16FromANSI([[self outputFilename] fileSystemRepresentation]);
 		NSAssert(NULL != chars, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
 
 		f = new CAPETag(chars);

@@ -26,6 +26,8 @@
 
 #import "Encoder.h"
 
+using namespace APE;
+
 enum {
 	MAC_COMPRESSION_LEVEL_FAST			= 1,
 	MAC_COMPRESSION_LEVEL_NORMAL		= 2,

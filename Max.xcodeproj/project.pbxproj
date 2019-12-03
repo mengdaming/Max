@@ -546,6 +546,13 @@
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = mpcdec.framework;
 		};
+		6D8BE7862394815D00D8021C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D336C2C2370F90F003602CE /* taglib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = taglib.framework;
+		};
 		6DABB3E4237870C900D93DF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6D0A51A323773C9D001B86CC /* mp4v2.xcodeproj */;
@@ -650,13 +657,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = vorbis.framework;
-		};
-		6DF8B32923787B7300210094 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6D336C2C2370F90F003602CE /* taglib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = taglib.framework;
 		};
 		6DF8B32B2379C6C600210094 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1475,7 +1475,7 @@
 			isa = PBXGroup;
 			children = (
 				6D336C322370F90F003602CE /* taglib.framework */,
-				6D336C342370F90F003602CE /* libtaglib.a */,
+				6D336C342370F90F003602CE /* libtag.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2021,6 +2021,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6D8BE7872394815D00D8021C /* PBXTargetDependency */,
 				6DFFAB8C238367080055C7DF /* PBXTargetDependency */,
 				6D2AC524238366310025F44F /* PBXTargetDependency */,
 				6D2DC1572381B78800C92CD9 /* PBXTargetDependency */,
@@ -2029,7 +2030,6 @@
 				6D422DE92379E16100327F4E /* PBXTargetDependency */,
 				6DF8B32E2379C82200210094 /* PBXTargetDependency */,
 				6DF8B32C2379C6C600210094 /* PBXTargetDependency */,
-				6DF8B32A23787B7300210094 /* PBXTargetDependency */,
 				6DABB3E5237870C900D93DF6 /* PBXTargetDependency */,
 				6D0A51EF2377433A001B86CC /* PBXTargetDependency */,
 				6DD5250D2377336C00DA0958 /* PBXTargetDependency */,
@@ -2426,10 +2426,10 @@
 			remoteRef = 6D336C312370F90F003602CE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6D336C342370F90F003602CE /* libtaglib.a */ = {
+		6D336C342370F90F003602CE /* libtag.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libtaglib.a;
+			path = libtag.a;
 			remoteRef = 6D336C332370F90F003602CE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -2744,6 +2744,11 @@
 			name = mpcdec.framework;
 			targetProxy = 6D422E1A2379E3BC00327F4E /* PBXContainerItemProxy */;
 		};
+		6D8BE7872394815D00D8021C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = taglib.framework;
+			targetProxy = 6D8BE7862394815D00D8021C /* PBXContainerItemProxy */;
+		};
 		6DABB3E5237870C900D93DF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = mp4v2.framework;
@@ -2773,11 +2778,6 @@
 			isa = PBXTargetDependency;
 			name = vorbis.framework;
 			targetProxy = 6DD5250C2377336C00DA0958 /* PBXContainerItemProxy */;
-		};
-		6DF8B32A23787B7300210094 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = taglib.framework;
-			targetProxy = 6DF8B32923787B7300210094 /* PBXContainerItemProxy */;
 		};
 		6DF8B32C2379C6C600210094 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

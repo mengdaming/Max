@@ -135,7 +135,7 @@
 		NSAssert(NULL != _compressor, NSLocalizedStringFromTable(@"Unable to create the Monkey's Audio compressor.", @"Exceptions", @""));
 						
 		// Setup compressor
-		chars = GetUTF16FromANSI([filename fileSystemRepresentation]);
+        chars = CAPECharacterHelper::GetUTF16FromANSI([filename fileSystemRepresentation]);
 		NSAssert(NULL != chars, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
 		
 		result = FillWaveFormatEx(&formatDesc, (int)[decoder pcmFormat].mSampleRate, [decoder pcmFormat].mBitsPerChannel, [decoder pcmFormat].mChannelsPerFrame);
