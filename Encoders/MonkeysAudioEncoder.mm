@@ -38,6 +38,8 @@
 
 #import "UtilityFunctions.h"
 
+using namespace APE;
+
 @interface MonkeysAudioEncoder (Private)
 - (void)	parseSettings;
 - (void)	compressChunk:(const AudioBufferList *)chunk frameCount:(UInt32)frameCount;

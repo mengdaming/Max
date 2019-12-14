@@ -47,8 +47,20 @@
 		32C8F0EE10632AB0004AB74F /* GaplessUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C8F0ED10632AB0004AB74F /* GaplessUtilities.m */; };
 		6D195D66237A260100CF6FF4 /* mpcdec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51C123773D1C001B86CC /* mpcdec.framework */; };
 		6D336C2B2370F8D4003602CE /* wavpack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C2A2370F8B6003602CE /* wavpack.framework */; };
-		6D336C352370F928003602CE /* taglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C322370F90F003602CE /* taglib.framework */; };
+		6D336C352370F928003602CE /* taglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C322370F90F003602CE /* taglib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D44E8822370F82B00E883B2 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D44E8812370F82B00E883B2 /* Images-2.xcassets */; };
+		6DB9AF9723A4E4BF00E4E698 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C162370F874003602CE /* FLAC.framework */; };
+		6DB9AF9823A4E51000E4E698 /* mp4v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51A923773C9D001B86CC /* mp4v2.framework */; };
+		6DB9AF9923A4E57200E4E698 /* mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A519423773BFD001B86CC /* mac.framework */; };
+		6DB9AF9A23A4E5A300E4E698 /* cuetools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A516D23773BAF001B86CC /* cuetools.framework */; };
+		6DB9AF9B23A4E5C600E4E698 /* cdparanoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524FC2377324400DA0958 /* cdparanoia.framework */; };
+		6DB9AF9C23A4E5D500E4E698 /* discid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A518723773BCD001B86CC /* discid.framework */; };
+		6DB9AF9D23A4E5EF00E4E698 /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A518D23773BE8001B86CC /* lame.framework */; };
+		6DB9AF9E23A4E61000E4E698 /* mad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A519E23773C3A001B86CC /* mad.framework */; };
+		6DB9AF9F23A4E63400E4E698 /* vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD525072377335400DA0958 /* vorbis.framework */; };
+		6DB9AFA023A4E65700E4E698 /* sndfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524D7237730BC00DA0958 /* sndfile.framework */; };
+		6DB9AFA123A4E69700E4E698 /* shorten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524F4237731D900DA0958 /* shorten.framework */; };
+		6DB9AFA223A4E6BE00E4E698 /* speex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51B823773CDD001B86CC /* speex.framework */; };
 		8C0406530B5C584000648158 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C04064E0B5C584000648158 /* InfoPlist.strings */; };
 		8C05F19C0CC2DAA1006E5746 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C05F1800CC2DAA1006E5746 /* Growl.framework */; };
 		8C0883620A092EA500CAC5D0 /* AlbumArtDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C0883580A092EA500CAC5D0 /* AlbumArtDefaults.plist */; };
@@ -546,7 +558,7 @@
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = mpcdec.framework;
 		};
-		6D8BE7862394815D00D8021C /* PBXContainerItemProxy */ = {
+		6D5963D5239C21A100BED05A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6D336C2C2370F90F003602CE /* taglib.xcodeproj */;
 			proxyType = 1;
@@ -1191,6 +1203,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB9AFA223A4E6BE00E4E698 /* speex.framework in Frameworks */,
+				6DB9AFA123A4E69700E4E698 /* shorten.framework in Frameworks */,
+				6DB9AFA023A4E65700E4E698 /* sndfile.framework in Frameworks */,
+				6DB9AF9F23A4E63400E4E698 /* vorbis.framework in Frameworks */,
+				6DB9AF9E23A4E61000E4E698 /* mad.framework in Frameworks */,
+				6DB9AF9D23A4E5EF00E4E698 /* lame.framework in Frameworks */,
+				6DB9AF9C23A4E5D500E4E698 /* discid.framework in Frameworks */,
+				6DB9AF9B23A4E5C600E4E698 /* cdparanoia.framework in Frameworks */,
+				6DB9AF9A23A4E5A300E4E698 /* cuetools.framework in Frameworks */,
+				6DB9AF9923A4E57200E4E698 /* mac.framework in Frameworks */,
+				6DB9AF9823A4E51000E4E698 /* mp4v2.framework in Frameworks */,
+				6DB9AF9723A4E4BF00E4E698 /* FLAC.framework in Frameworks */,
 				6D195D66237A260100CF6FF4 /* mpcdec.framework in Frameworks */,
 				6D336C352370F928003602CE /* taglib.framework in Frameworks */,
 				6D336C2B2370F8D4003602CE /* wavpack.framework in Frameworks */,
@@ -2021,7 +2045,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				6D8BE7872394815D00D8021C /* PBXTargetDependency */,
+				6D5963D6239C21A100BED05A /* PBXTargetDependency */,
 				6DFFAB8C238367080055C7DF /* PBXTargetDependency */,
 				6D2AC524238366310025F44F /* PBXTargetDependency */,
 				6D2DC1572381B78800C92CD9 /* PBXTargetDependency */,
@@ -2050,7 +2074,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = sbooth.org;
 			};
 			buildConfigurationList = 8C1919E208C50B7A00CB7453 /* Build configuration list for PBXProject "Max" */;
@@ -2744,10 +2768,10 @@
 			name = mpcdec.framework;
 			targetProxy = 6D422E1A2379E3BC00327F4E /* PBXContainerItemProxy */;
 		};
-		6D8BE7872394815D00D8021C /* PBXTargetDependency */ = {
+		6D5963D6239C21A100BED05A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = taglib.framework;
-			targetProxy = 6D8BE7862394815D00D8021C /* PBXContainerItemProxy */;
+			targetProxy = 6D5963D5239C21A100BED05A /* PBXContainerItemProxy */;
 		};
 		6DABB3E5237870C900D93DF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3312,7 +3336,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 326D22E512DE468000767B04 /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = Max/Max.entitlements;
@@ -3359,7 +3382,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 326D22E612DE468000767B04 /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = Max/Max.entitlements;
@@ -3402,7 +3424,6 @@
 		8C1919E308C50B7A00CB7453 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -3440,7 +3461,6 @@
 		8C1919E408C50B7A00CB7453 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
