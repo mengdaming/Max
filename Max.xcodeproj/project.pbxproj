@@ -45,24 +45,40 @@
 		32C614FE12E80CB800F714C9 /* TaggingPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614DE12E80CB800F714C9 /* TaggingPreferences.xib */; };
 		32C614FF12E80CB800F714C9 /* WavPackSettingsSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614E012E80CB800F714C9 /* WavPackSettingsSheet.xib */; };
 		32C8F0EE10632AB0004AB74F /* GaplessUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C8F0ED10632AB0004AB74F /* GaplessUtilities.m */; };
-		6D195D66237A260100CF6FF4 /* mpcdec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51C123773D1C001B86CC /* mpcdec.framework */; };
-		6D336C2B2370F8D4003602CE /* wavpack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C2A2370F8B6003602CE /* wavpack.framework */; };
-		6D336C352370F928003602CE /* taglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C322370F90F003602CE /* taglib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D44E8822370F82B00E883B2 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D44E8812370F82B00E883B2 /* Images-2.xcassets */; };
-		6DB9AF9723A4E4BF00E4E698 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C162370F874003602CE /* FLAC.framework */; };
-		6DB9AF9823A4E51000E4E698 /* mp4v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51A923773C9D001B86CC /* mp4v2.framework */; };
-		6DB9AF9923A4E57200E4E698 /* mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A519423773BFD001B86CC /* mac.framework */; };
 		6DB9AF9A23A4E5A300E4E698 /* cuetools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A516D23773BAF001B86CC /* cuetools.framework */; };
-		6DB9AF9B23A4E5C600E4E698 /* cdparanoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524FC2377324400DA0958 /* cdparanoia.framework */; };
-		6DB9AF9C23A4E5D500E4E698 /* discid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A518723773BCD001B86CC /* discid.framework */; };
-		6DB9AF9D23A4E5EF00E4E698 /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A518D23773BE8001B86CC /* lame.framework */; };
-		6DB9AF9E23A4E61000E4E698 /* mad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A519E23773C3A001B86CC /* mad.framework */; };
-		6DB9AF9F23A4E63400E4E698 /* vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD525072377335400DA0958 /* vorbis.framework */; };
-		6DB9AFA023A4E65700E4E698 /* sndfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524D7237730BC00DA0958 /* sndfile.framework */; };
-		6DB9AFA123A4E69700E4E698 /* shorten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524F4237731D900DA0958 /* shorten.framework */; };
-		6DB9AFA223A4E6BE00E4E698 /* speex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51B823773CDD001B86CC /* speex.framework */; };
+		6DB9AFA323A55A1E00E4E698 /* cdparanoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524FC2377324400DA0958 /* cdparanoia.framework */; };
+		6DB9AFA423A55A1E00E4E698 /* cdparanoia.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524FC2377324400DA0958 /* cdparanoia.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFA623A55A2600E4E698 /* discid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A518723773BCD001B86CC /* discid.framework */; };
+		6DB9AFA723A55A2600E4E698 /* discid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A518723773BCD001B86CC /* discid.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFA823A55A2D00E4E698 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C162370F874003602CE /* FLAC.framework */; };
+		6DB9AFA923A55A2D00E4E698 /* FLAC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C162370F874003602CE /* FLAC.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFAA23A55A3800E4E698 /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A518D23773BE8001B86CC /* lame.framework */; };
+		6DB9AFAB23A55A3800E4E698 /* lame.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A518D23773BE8001B86CC /* lame.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFAC23A55A3B00E4E698 /* mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A519423773BFD001B86CC /* mac.framework */; };
+		6DB9AFAD23A55A3B00E4E698 /* mac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A519423773BFD001B86CC /* mac.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFAE23A55A3D00E4E698 /* mad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A519E23773C3A001B86CC /* mad.framework */; };
+		6DB9AFAF23A55A3D00E4E698 /* mad.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A519E23773C3A001B86CC /* mad.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFB023A55A4000E4E698 /* mp4v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51A923773C9D001B86CC /* mp4v2.framework */; };
+		6DB9AFB123A55A4000E4E698 /* mp4v2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51A923773C9D001B86CC /* mp4v2.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFB223A55A4300E4E698 /* mpcdec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51C123773D1C001B86CC /* mpcdec.framework */; };
+		6DB9AFB323A55A4300E4E698 /* mpcdec.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51C123773D1C001B86CC /* mpcdec.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFB423A55A4A00E4E698 /* shorten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524F4237731D900DA0958 /* shorten.framework */; };
+		6DB9AFB523A55A4A00E4E698 /* shorten.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524F4237731D900DA0958 /* shorten.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFB623A55A4C00E4E698 /* sndfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524D7237730BC00DA0958 /* sndfile.framework */; };
+		6DB9AFB723A55A4D00E4E698 /* sndfile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524D7237730BC00DA0958 /* sndfile.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFB823A55A4E00E4E698 /* speex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51B823773CDD001B86CC /* speex.framework */; };
+		6DB9AFB923A55A4E00E4E698 /* speex.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51B823773CDD001B86CC /* speex.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFBA23A55A5100E4E698 /* taglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C322370F90F003602CE /* taglib.framework */; };
+		6DB9AFBB23A55A5100E4E698 /* taglib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C322370F90F003602CE /* taglib.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFBC23A55A5300E4E698 /* vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD525072377335400DA0958 /* vorbis.framework */; };
+		6DB9AFBD23A55A5400E4E698 /* vorbis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD525072377335400DA0958 /* vorbis.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFBE23A55A5500E4E698 /* wavpack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C2A2370F8B6003602CE /* wavpack.framework */; };
+		6DB9AFBF23A55A5500E4E698 /* wavpack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C2A2370F8B6003602CE /* wavpack.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DB9AFCF23A6A6DB00E4E698 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB9AFCE23A6A6DB00E4E698 /* Growl.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6DB9AFD023A6AC8200E4E698 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51D723773F51001B86CC /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DB9AFD123A6ACE100E4E698 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51D723773F51001B86CC /* Sparkle.framework */; };
 		8C0406530B5C584000648158 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C04064E0B5C584000648158 /* InfoPlist.strings */; };
-		8C05F19C0CC2DAA1006E5746 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C05F1800CC2DAA1006E5746 /* Growl.framework */; };
 		8C0883620A092EA500CAC5D0 /* AlbumArtDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C0883580A092EA500CAC5D0 /* AlbumArtDefaults.plist */; };
 		8C0883630A092EA500CAC5D0 /* ApplicationControllerDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C0883590A092EA500CAC5D0 /* ApplicationControllerDefaults.plist */; };
 		8C0883680A092EA500CAC5D0 /* MediaControllerDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C08835E0A092EA500CAC5D0 /* MediaControllerDefaults.plist */; };
@@ -693,6 +709,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6DB9AFA523A55A1E00E4E698 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DB9AFD023A6AC8200E4E698 /* Sparkle.framework in Embed Frameworks */,
+				6DB9AFB323A55A4300E4E698 /* mpcdec.framework in Embed Frameworks */,
+				6DB9AFA923A55A2D00E4E698 /* FLAC.framework in Embed Frameworks */,
+				6DB9AFB123A55A4000E4E698 /* mp4v2.framework in Embed Frameworks */,
+				6DB9AFBB23A55A5100E4E698 /* taglib.framework in Embed Frameworks */,
+				6DB9AFAD23A55A3B00E4E698 /* mac.framework in Embed Frameworks */,
+				6DB9AFAB23A55A3800E4E698 /* lame.framework in Embed Frameworks */,
+				6DB9AFAF23A55A3D00E4E698 /* mad.framework in Embed Frameworks */,
+				6DB9AFBD23A55A5400E4E698 /* vorbis.framework in Embed Frameworks */,
+				6DB9AFB723A55A4D00E4E698 /* sndfile.framework in Embed Frameworks */,
+				6DB9AFB523A55A4A00E4E698 /* shorten.framework in Embed Frameworks */,
+				6DB9AFBF23A55A5500E4E698 /* wavpack.framework in Embed Frameworks */,
+				6DB9AFA723A55A2600E4E698 /* discid.framework in Embed Frameworks */,
+				6DB9AFB923A55A4E00E4E698 /* speex.framework in Embed Frameworks */,
+				6DB9AFA423A55A1E00E4E698 /* cdparanoia.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -884,12 +928,13 @@
 		6D44E85D2370F27500E883B2 /* Max.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Max.entitlements; path = Max/Max.entitlements; sourceTree = "<group>"; };
 		6D44E8602370F7DB00E883B2 /* flac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = flac.xcodeproj; path = ../AudioFrameworks/flac/flac.xcodeproj; sourceTree = "<group>"; };
 		6D44E8812370F82B00E883B2 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "Max/Images-2.xcassets"; sourceTree = "<group>"; };
+		6DB9AFC023A63B4C00E4E698 /* MaxRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MaxRelease.entitlements; path = Max/MaxRelease.entitlements; sourceTree = "<group>"; };
+		6DB9AFCE23A6A6DB00E4E698 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = "../Growl/Growl-2.0.1-SDK/Framework/Growl.framework"; sourceTree = "<group>"; };
 		6DD524C7237730BC00DA0958 /* sndfile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sndfile.xcodeproj; path = ../AudioFrameworks/sndfile/sndfile.xcodeproj; sourceTree = "<group>"; };
 		6DD524E02377311B00DA0958 /* ogg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ogg.xcodeproj; path = ../AudioFrameworks/ogg/ogg.xcodeproj; sourceTree = "<group>"; };
 		6DD524EF237731D900DA0958 /* shorten.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = shorten.xcodeproj; path = ../AudioFrameworks/shorten/shorten.xcodeproj; sourceTree = "<group>"; };
 		6DD524F72377324400DA0958 /* cdparanoia.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cdparanoia.xcodeproj; path = ../AudioFrameworks/cdparanoia/cdparanoia.xcodeproj; sourceTree = "<group>"; };
 		6DD524FF2377335400DA0958 /* vorbis.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vorbis.xcodeproj; path = ../AudioFrameworks/vorbis/vorbis.xcodeproj; sourceTree = "<group>"; };
-		8C05F1800CC2DAA1006E5746 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = Frameworks/Growl.framework; sourceTree = "<group>"; };
 		8C0883580A092EA500CAC5D0 /* AlbumArtDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = AlbumArtDefaults.plist; sourceTree = "<group>"; };
 		8C0883590A092EA500CAC5D0 /* ApplicationControllerDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = ApplicationControllerDefaults.plist; sourceTree = "<group>"; };
 		8C08835E0A092EA500CAC5D0 /* MediaControllerDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = MediaControllerDefaults.plist; sourceTree = "<group>"; };
@@ -1203,30 +1248,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB9AFA223A4E6BE00E4E698 /* speex.framework in Frameworks */,
-				6DB9AFA123A4E69700E4E698 /* shorten.framework in Frameworks */,
-				6DB9AFA023A4E65700E4E698 /* sndfile.framework in Frameworks */,
-				6DB9AF9F23A4E63400E4E698 /* vorbis.framework in Frameworks */,
-				6DB9AF9E23A4E61000E4E698 /* mad.framework in Frameworks */,
-				6DB9AF9D23A4E5EF00E4E698 /* lame.framework in Frameworks */,
-				6DB9AF9C23A4E5D500E4E698 /* discid.framework in Frameworks */,
-				6DB9AF9B23A4E5C600E4E698 /* cdparanoia.framework in Frameworks */,
+				6DB9AFD123A6ACE100E4E698 /* Sparkle.framework in Frameworks */,
+				6DB9AFB823A55A4E00E4E698 /* speex.framework in Frameworks */,
+				6DB9AFBC23A55A5300E4E698 /* vorbis.framework in Frameworks */,
+				6DB9AFBE23A55A5500E4E698 /* wavpack.framework in Frameworks */,
+				6DB9AFB423A55A4A00E4E698 /* shorten.framework in Frameworks */,
+				6DB9AFB223A55A4300E4E698 /* mpcdec.framework in Frameworks */,
+				6DB9AFB623A55A4C00E4E698 /* sndfile.framework in Frameworks */,
+				6DB9AFA823A55A2D00E4E698 /* FLAC.framework in Frameworks */,
+				6DB9AFAA23A55A3800E4E698 /* lame.framework in Frameworks */,
+				6DB9AFAE23A55A3D00E4E698 /* mad.framework in Frameworks */,
+				6DB9AFA323A55A1E00E4E698 /* cdparanoia.framework in Frameworks */,
 				6DB9AF9A23A4E5A300E4E698 /* cuetools.framework in Frameworks */,
-				6DB9AF9923A4E57200E4E698 /* mac.framework in Frameworks */,
-				6DB9AF9823A4E51000E4E698 /* mp4v2.framework in Frameworks */,
-				6DB9AF9723A4E4BF00E4E698 /* FLAC.framework in Frameworks */,
-				6D195D66237A260100CF6FF4 /* mpcdec.framework in Frameworks */,
-				6D336C352370F928003602CE /* taglib.framework in Frameworks */,
-				6D336C2B2370F8D4003602CE /* wavpack.framework in Frameworks */,
+				6DB9AFA623A55A2600E4E698 /* discid.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				8CEA8CF80942939800207809 /* DiskArbitration.framework in Frameworks */,
+				6DB9AFCF23A6A6DB00E4E698 /* Growl.framework in Frameworks */,
 				8C9AD5FA0943C33300B2183E /* IOKit.framework in Frameworks */,
+				6DB9AFBA23A55A5100E4E698 /* taglib.framework in Frameworks */,
 				8C401720094901A6003413BE /* CoreAudio.framework in Frameworks */,
+				6DB9AFAC23A55A3B00E4E698 /* mac.framework in Frameworks */,
 				8CEDBFFF094B8ECE0023DD01 /* AudioToolbox.framework in Frameworks */,
 				8CBF385509CFA0FE00E89546 /* Carbon.framework in Frameworks */,
+				6DB9AFB023A55A4000E4E698 /* mp4v2.framework in Frameworks */,
 				8CAB36390A04966E001234AC /* AppKit.framework in Frameworks */,
 				8C244AFB0AC6DFEF001334D0 /* Security.framework in Frameworks */,
-				8C05F19C0CC2DAA1006E5746 /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1262,6 +1308,7 @@
 		29B97314FDCFA39411CA2CEA /* cocoa test */ = {
 			isa = PBXGroup;
 			children = (
+				6DB9AFC023A63B4C00E4E698 /* MaxRelease.entitlements */,
 				6D44E85D2370F27500E883B2 /* Max.entitlements */,
 				326D22E312DE466D00767B04 /* Configs */,
 				8C53022A0A05D6D800890518 /* Drive */,
@@ -1507,6 +1554,7 @@
 		6D44E8832370F85000E883B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DB9AFCE23A6A6DB00E4E698 /* Growl.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1990,7 +2038,6 @@
 				6D336C2C2370F90F003602CE /* taglib.xcodeproj */,
 				6D336C192370F8B6003602CE /* wavpack.xcodeproj */,
 				6D44E8602370F7DB00E883B2 /* flac.xcodeproj */,
-				8C05F1800CC2DAA1006E5746 /* Growl.framework */,
 			);
 			name = "External Frameworks";
 			sourceTree = "<group>";
@@ -2041,6 +2088,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				6DB9AFA523A55A1E00E4E698 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3348,6 +3396,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=x86_64]" = (
 					"$(inherited)",
@@ -3384,7 +3433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = Max/Max.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Max/MaxRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -3393,6 +3442,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=x86_64]" = (
 					"$(inherited)",
