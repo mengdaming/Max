@@ -185,7 +185,7 @@ static FileConversionController		*sharedController						= nil;
 		[alert addButtonWithTitle: NSLocalizedStringFromTable(@"Show Preferences", @"General", @"")];
 		[alert setMessageText:NSLocalizedStringFromTable(@"No output formats are selected.", @"General", @"")];
 		[alert setInformativeText:NSLocalizedStringFromTable(@"Please select one or more output formats.", @"General", @"")];
-		[alert setAlertStyle: NSWarningAlertStyle];
+        [alert setAlertStyle: NSAlertStyleWarning];
 		
 		NSInteger result = [alert runModal];
 		
@@ -276,7 +276,7 @@ static FileConversionController		*sharedController						= nil;
 			[alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
 			[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while converting the file \"%@\".", @"Exceptions", @""), [[NSFileManager defaultManager] displayNameAtPath:filename]]];
 			[alert setInformativeText:[exception reason]];
-			[alert setAlertStyle:NSWarningAlertStyle];		
+            [alert setAlertStyle:NSAlertStyleWarning];
 			[alert runModal];
 		}			
 		
@@ -297,7 +297,7 @@ static FileConversionController		*sharedController						= nil;
 				[alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
 				[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while converting the file \"%@\".", @"Exceptions", @""), [[NSFileManager defaultManager] displayNameAtPath:filename]]];
 				[alert setInformativeText:[exception reason]];
-				[alert setAlertStyle:NSWarningAlertStyle];		
+                [alert setAlertStyle:NSAlertStyleWarning];		
 				[alert runModal];
 			}			
 		}
@@ -447,7 +447,7 @@ static FileConversionController		*sharedController						= nil;
 	[panel setCanChooseDirectories:NO];
 	[panel setCanChooseFiles:YES];
 	
-	[panel beginSheetForDirectory:nil file:nil types:[NSImage imageFileTypes] modalForWindow:[self window] modalDelegate:self didEndSelector:@selector(selectAlbumArtPanelDidEnd:returnCode:contextInfo:) contextInfo:nil];
+	[panel beginSheetForDirectory:nil file:nil types:[NSImage imageTypes] modalForWindow:[self window] modalDelegate:self didEndSelector:@selector(selectAlbumArtPanelDidEnd:returnCode:contextInfo:) contextInfo:nil];
 }
 
 #pragma mark NSTableView Delegate Methods
@@ -477,7 +477,7 @@ static FileConversionController		*sharedController						= nil;
 
 - (void) addFilesPanelDidEnd:(NSOpenPanel *)panel returnCode:(int)returnCode contextInfo:(void *)contextInfo
 {
-	if(NSOKButton == returnCode) {
+    if(NSModalResponseOK == returnCode) {
 		NSArray *filenames = [panel filenames];
 		for(NSString *filename in filenames)
 			[self addFile:filename];
@@ -508,7 +508,7 @@ static FileConversionController		*sharedController						= nil;
 		[alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
 		[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while opening the document \"%@\".", @"Exceptions", @""), [[NSFileManager defaultManager] displayNameAtPath:filename]]];
 		[alert setInformativeText:[exception reason]];
-		[alert setAlertStyle:NSWarningAlertStyle];		
+        [alert setAlertStyle:NSAlertStyleWarning];
 		[alert runModal];
 		
 		return NO;
@@ -534,7 +534,7 @@ static FileConversionController		*sharedController						= nil;
 
 - (void) selectAlbumArtPanelDidEnd:(NSOpenPanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
 {
-    if(NSOKButton == returnCode) {
+    if(NSModalResponseOK == returnCode) {
 		NSArray		*filesToOpen	= [sheet filenames];
 		NSUInteger	count			= [filesToOpen count];
 		NSUInteger	i;
