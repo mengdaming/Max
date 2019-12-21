@@ -1,2 +1,5 @@
 *.xcuserstate
 *.swp
+project.xcworkspace/
+xcuserdata/
+*.xcuserstate

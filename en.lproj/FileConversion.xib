@@ -325,6 +325,7 @@
                     </connections>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="139" y="481"/>
         </menu>
     </objects>
     <resources>
