@@ -1,0 +1,27 @@
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "8"; */
+"8.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Normal"; ObjectID = "9"; */
+"9.title" = "Normal";
+
+/* Class = "NSMenuItem"; title = "Fast"; ObjectID = "10"; */
+"10.title" = "Fast";
+
+/* Class = "NSMenuItem"; title = "High"; ObjectID = "11"; */
+"11.title" = "High";
+
+/* Class = "NSMenuItem"; title = "Extra High"; ObjectID = "13"; */
+"13.title" = "Extra High";
+
+/* Class = "NSMenuItem"; title = "Insane"; ObjectID = "14"; */
+"14.title" = "Insane";
+
+/* Class = "NSTextFieldCell"; title = "Compression level:"; ObjectID = "31"; */
+"31.title" = "Compression level:";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "32"; */
+"32.title" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "Monkey's Audio"; ObjectID = "33"; */
+"33.title" = "Monkey's Audio";

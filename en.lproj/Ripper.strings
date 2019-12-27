@@ -1,0 +1,36 @@
+
+/* Class = "NSWindow"; title = "Ripper"; ObjectID = "5"; */
+"5.title" = "Ripper";
+
+/* Class = "NSTableColumn"; headerCell.title = "Progress"; ObjectID = "9"; */
+"9.headerCell.title" = "Progress";
+
+/* Class = "NSTableColumn"; headerCell.title = "Track"; ObjectID = "11"; */
+"11.headerCell.title" = "Track";
+
+/* Class = "NSTableColumn"; headerCell.title = "Remaining"; ObjectID = "12"; */
+"12.headerCell.title" = "Remaining";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "Tasks: %{value1}@"; ObjectID = "66"; */
+"66.ibShadowedDisplayPattern" = "Tasks: %{value1}@";
+
+/* Class = "NSTableColumn"; headerCell.title = "Phase"; ObjectID = "112"; */
+"112.headerCell.title" = "Phase";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "Unknown"; ObjectID = "114"; */
+"114.ibShadowedIsNilPlaceholder" = "Unknown";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "Queued"; ObjectID = "115"; */
+"115.ibShadowedIsNilPlaceholder" = "Queued";
+
+/* Class = "NSButtonCell"; title = "Stop All"; ObjectID = "117"; */
+"117.title" = "Stop All";
+
+/* Class = "NSButtonCell"; title = "Stop Selected"; ObjectID = "118"; */
+"118.title" = "Stop Selected";
+
+/* Class = "NSTextFieldCell"; title = "Tasks: 99"; ObjectID = "119"; */
+"119.title" = "Tasks: 99";
+
+/* Class = "NSTextFieldCell"; title = "0%"; ObjectID = "120"; */
+"120.title" = "0%";

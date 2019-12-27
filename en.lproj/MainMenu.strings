@@ -1,0 +1,192 @@
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "5"; */
+"5.title" = "Bring All to Front";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "19"; */
+"19.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "23"; */
+"23.title" = "Minimize";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "24"; */
+"24.title" = "Window";
+
+/* Class = "NSMenu"; title = "MainMenu"; ObjectID = "29"; */
+"29.title" = "MainMenu";
+
+/* Class = "NSMenuItem"; title = "Max"; ObjectID = "56"; */
+"56.title" = "Max";
+
+/* Class = "NSMenu"; title = "Max"; ObjectID = "57"; */
+"57.title" = "Max";
+
+/* Class = "NSMenuItem"; title = "About Max"; ObjectID = "58"; */
+"58.title" = "About Max";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "81"; */
+"81.title" = "File";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "83"; */
+"83.title" = "File";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "103"; */
+"103.title" = "Help";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "106"; */
+"106.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Max Help"; ObjectID = "111"; */
+"111.title" = "Max Help";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "129"; */
+"129.title" = "Preferences…";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "130"; */
+"130.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "131"; */
+"131.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Hide Max"; ObjectID = "134"; */
+"134.title" = "Hide Max";
+
+/* Class = "NSMenuItem"; title = "Quit Max"; ObjectID = "136"; */
+"136.title" = "Quit Max";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145"; */
+"145.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "150"; */
+"150.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "157"; */
+"157.title" = "Copy";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "158"; */
+"158.title" = "Undo";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "160"; */
+"160.title" = "Cut";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "163"; */
+"163.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "164"; */
+"164.title" = "Delete";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "169"; */
+"169.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "171"; */
+"171.title" = "Paste";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "172"; */
+"172.title" = "Select All";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "173"; */
+"173.title" = "Redo";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "197"; */
+"197.title" = "Zoom";
+
+/* Class = "NSMenuItem"; title = "Components"; ObjectID = "729"; */
+"729.title" = "Components";
+
+/* Class = "NSMenuItem"; title = "Max on the Web"; ObjectID = "746"; */
+"746.title" = "Max on the Web";
+
+/* Class = "NSMenuItem"; title = "Save"; ObjectID = "770"; */
+"770.title" = "Save";
+
+/* Class = "NSMenuItem"; title = "Revert to Saved"; ObjectID = "772"; */
+"772.title" = "Revert to Saved";
+
+/* Class = "NSMenuItem"; title = "Close"; ObjectID = "793"; */
+"793.title" = "Close";
+
+/* Class = "NSMenuItem"; title = "Open…"; ObjectID = "798"; */
+"798.title" = "Open…";
+
+/* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "800"; */
+"800.title" = "Open Recent";
+
+/* Class = "NSMenu"; title = "Open Recent"; ObjectID = "801"; */
+"801.title" = "Open Recent";
+
+/* Class = "NSMenuItem"; title = "Clear Menu"; ObjectID = "802"; */
+"802.title" = "Clear Menu";
+
+/* Class = "NSMenuItem"; title = "Log"; ObjectID = "805"; */
+"805.title" = "Log";
+
+/* Class = "NSMenuItem"; title = "Acknowledgements"; ObjectID = "807"; */
+"807.title" = "Acknowledgements";
+
+/* Class = "NSMenuItem"; title = "Compact Disc"; ObjectID = "825"; */
+"825.title" = "Compact Disc";
+
+/* Class = "NSMenu"; title = "Compact Disc"; ObjectID = "826"; */
+"826.title" = "Compact Disc";
+
+/* Class = "NSMenuItem"; title = "Eject"; ObjectID = "831"; */
+"831.title" = "Eject";
+
+/* Class = "NSMenuItem"; title = "Query MusicBrainz"; ObjectID = "835"; */
+"835.title" = "Query MusicBrainz";
+
+/* Class = "NSMenuItem"; title = "Encoder"; ObjectID = "848"; */
+"848.title" = "Encoder";
+
+/* Class = "NSMenuItem"; title = "Convert Files…"; ObjectID = "852"; */
+"852.title" = "Convert Files…";
+
+/* Class = "NSMenuItem"; title = "Check for Updates…"; ObjectID = "857"; */
+"857.title" = "Check for Updates…";
+
+/* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "860"; */
+"860.title" = "Customize Toolbar…";
+
+/* Class = "NSMenuItem"; title = "Select Next Track"; ObjectID = "863"; */
+"863.title" = "Select Next Track";
+
+/* Class = "NSMenuItem"; title = "Select Previous Track"; ObjectID = "864"; */
+"864.title" = "Select Previous Track";
+
+/* Class = "NSMenuItem"; title = "Hide Toolbar"; ObjectID = "874"; */
+"874.title" = "Hide Toolbar";
+
+/* Class = "NSMenu"; title = "Menu"; ObjectID = "877"; */
+"877.title" = "Menu";
+
+/* Class = "NSMenuItem"; title = "Open…"; ObjectID = "878"; */
+"878.title" = "Open…";
+
+/* Class = "NSMenuItem"; title = "Convert Files…"; ObjectID = "879"; */
+"879.title" = "Convert Files…";
+
+/* Class = "NSMenuItem"; title = "Tools"; ObjectID = "903"; */
+"903.title" = "Tools";
+
+/* Class = "NSMenu"; title = "Tools"; ObjectID = "904"; */
+"904.title" = "Tools";
+
+/* Class = "NSMenuItem"; title = "Formats"; ObjectID = "907"; */
+"907.title" = "Formats";
+
+/* Class = "NSMenuItem"; title = "Download Album Art…"; ObjectID = "912"; */
+"912.title" = "Download Album Art…";
+
+/* Class = "NSMenuItem"; title = "Ripper"; ObjectID = "914"; */
+"914.title" = "Ripper";
+
+/* Class = "NSMenuItem"; title = "Encode Selected Tracks"; ObjectID = "918"; */
+"918.title" = "Encode Selected Tracks";
+
+/* Class = "NSMenuItem"; title = "Album Art"; ObjectID = "920"; */
+"920.title" = "Album Art";
+
+/* Class = "NSMenuItem"; title = "Track Information"; ObjectID = "921"; */
+"921.title" = "Track Information";
+
+/* Class = "NSMenuItem"; title = "Submit Disc ID"; ObjectID = "929"; */
+"929.title" = "Submit Disc ID";

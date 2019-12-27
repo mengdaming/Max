@@ -1,0 +1,30 @@
+
+/* Class = "NSWindow"; title = "Encoder"; ObjectID = "5"; */
+"5.title" = "Encoder";
+
+/* Class = "NSTableColumn"; headerCell.title = "Progress"; ObjectID = "9"; */
+"9.headerCell.title" = "Progress";
+
+/* Class = "NSTableColumn"; headerCell.title = "Title"; ObjectID = "11"; */
+"11.headerCell.title" = "Title";
+
+/* Class = "NSTableColumn"; headerCell.title = "Remaining"; ObjectID = "12"; */
+"12.headerCell.title" = "Remaining";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "Tasks: %{value1}@"; ObjectID = "67"; */
+"67.ibShadowedDisplayPattern" = "Tasks: %{value1}@";
+
+/* Class = "NSTableColumn"; headerCell.title = "Format"; ObjectID = "75"; */
+"75.headerCell.title" = "Format";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "Queued"; ObjectID = "99"; */
+"99.ibShadowedIsNilPlaceholder" = "Queued";
+
+/* Class = "NSButtonCell"; title = "Stop All"; ObjectID = "102"; */
+"102.title" = "Stop All";
+
+/* Class = "NSButtonCell"; title = "Stop Selected"; ObjectID = "103"; */
+"103.title" = "Stop Selected";
+
+/* Class = "NSTextFieldCell"; title = "Tasks: 2"; ObjectID = "104"; */
+"104.title" = "Tasks: 2";

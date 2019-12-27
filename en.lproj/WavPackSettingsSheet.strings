@@ -1,0 +1,111 @@
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "20"; */
+"20.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Default"; ObjectID = "21"; */
+"21.title" = "Default";
+
+/* Class = "NSMenuItem"; title = "Joint Stereo"; ObjectID = "22"; */
+"22.title" = "Joint Stereo";
+
+/* Class = "NSMenuItem"; title = "Stereo"; ObjectID = "23"; */
+"23.title" = "Stereo";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "27"; */
+"27.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Fast"; ObjectID = "28"; */
+"28.title" = "Fast";
+
+/* Class = "NSMenuItem"; title = "Very High"; ObjectID = "29"; */
+"29.title" = "Very High";
+
+/* Class = "NSMenuItem"; title = "Default"; ObjectID = "30"; */
+"30.title" = "Default";
+
+/* Class = "NSButtonCell"; title = "Bits per sample"; ObjectID = "47"; */
+"47.title" = "Bits per sample";
+
+/* Class = "NSButtonCell"; title = "Bitrate"; ObjectID = "48"; */
+"48.title" = "Bitrate";
+
+/* Class = "NSMenuItem"; title = "High"; ObjectID = "215"; */
+"215.title" = "High";
+
+/* Class = "NSButtonCell"; title = "Enable hybrid compression"; ObjectID = "217"; */
+"217.title" = "Enable hybrid compression";
+
+/* Class = "NSButtonCell"; title = "Create correction file"; ObjectID = "218"; */
+"218.title" = "Create correction file";
+
+/* Class = "NSButtonCell"; title = "Maximum hybrid compression"; ObjectID = "219"; */
+"219.title" = "Maximum hybrid compression";
+
+/* Class = "NSTextFieldCell"; title = "Stereo mode:"; ObjectID = "222"; */
+"222.title" = "Stereo mode:";
+
+/* Class = "NSTextFieldCell"; title = "Compression:"; ObjectID = "223"; */
+"223.title" = "Compression:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "23.9"; ObjectID = "225"; */
+"225.placeholderString" = "23.9";
+
+/* Class = "NSTextFieldCell"; title = "2.0"; ObjectID = "227"; */
+"227.title" = "2.0";
+
+/* Class = "NSTextFieldCell"; title = "23.9"; ObjectID = "228"; */
+"228.title" = "23.9";
+
+/* Class = "NSTextFieldCell"; title = "9600"; ObjectID = "231"; */
+"231.title" = "9600";
+
+/* Class = "NSTextFieldCell"; title = "24"; ObjectID = "232"; */
+"232.title" = "24";
+
+/* Class = "NSTextFieldCell"; placeholderString = "9600"; ObjectID = "233"; */
+"233.placeholderString" = "9600";
+
+/* Class = "NSTextFieldCell"; title = "1.0"; ObjectID = "236"; */
+"236.title" = "1.0";
+
+/* Class = "NSTextFieldCell"; title = "-1.0"; ObjectID = "237"; */
+"237.title" = "-1.0";
+
+/* Class = "NSTextFieldCell"; placeholderString = "-1.00"; ObjectID = "238"; */
+"238.placeholderString" = "-1.00";
+
+/* Class = "NSTextFieldCell"; title = "0.0"; ObjectID = "239"; */
+"239.title" = "0.0";
+
+/* Class = "NSTextFieldCell"; title = "4800"; ObjectID = "240"; */
+"240.title" = "4800";
+
+/* Class = "NSTextFieldCell"; title = "16.0"; ObjectID = "241"; */
+"241.title" = "16.0";
+
+/* Class = "NSTextFieldCell"; title = "8.0"; ObjectID = "242"; */
+"242.title" = "8.0";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "243"; */
+"243.title" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "WavPack"; ObjectID = "244"; */
+"244.title" = "WavPack";
+
+/* Class = "NSTextFieldCell"; title = "Hybrid compression mode:"; ObjectID = "245"; */
+"245.title" = "Hybrid compression mode:";
+
+/* Class = "NSTextFieldCell"; title = "Hybrid options:"; ObjectID = "246"; */
+"246.title" = "Hybrid options:";
+
+/* Class = "NSTextFieldCell"; title = "Bitrate:"; ObjectID = "247"; */
+"247.title" = "Bitrate:";
+
+/* Class = "NSTextFieldCell"; title = "Bits per sample:"; ObjectID = "248"; */
+"248.title" = "Bits per sample:";
+
+/* Class = "NSTextFieldCell"; title = "Noise shaping override:"; ObjectID = "249"; */
+"249.title" = "Noise shaping override:";
+
+/* Class = "NSButtonCell"; title = "Radio"; ObjectID = "250"; */
+"250.title" = "Radio";

@@ -1,0 +1,75 @@
+
+/* Class = "NSButton"; ibShadowedToolTip = "Whether to enable CD error correction"; ObjectID = "514"; */
+"514.ibShadowedToolTip" = "Whether to enable CD error correction";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "516"; */
+"516.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Full paranoia"; ObjectID = "517"; */
+"517.title" = "Full paranoia";
+
+/* Class = "NSMenuItem"; title = "Overlap checking"; ObjectID = "518"; */
+"518.title" = "Overlap checking";
+
+/* Class = "NSBox"; title = "Comparison Ripper Settings"; ObjectID = "609"; */
+"609.title" = "Comparison Ripper Settings";
+
+/* Class = "NSBox"; title = "Paranoia Settings"; ObjectID = "611"; */
+"611.title" = "Paranoia Settings";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "625"; */
+"625.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "cdparanoia"; ObjectID = "626"; */
+"626.title" = "cdparanoia";
+
+/* Class = "NSMenuItem"; title = "Basic Ripper"; ObjectID = "627"; */
+"627.title" = "Basic Ripper";
+
+/* Class = "NSMenuItem"; title = "Comparison Ripper"; ObjectID = "628"; */
+"628.title" = "Comparison Ripper";
+
+/* Class = "NSBox"; title = "Options"; ObjectID = "629"; */
+"629.title" = "Options";
+
+/* Class = "NSTextFieldCell"; title = "Maximum retries:"; ObjectID = "636"; */
+"636.title" = "Maximum retries:";
+
+/* Class = "NSButtonCell"; title = "Use SHA-256 for sector comparison"; ObjectID = "637"; */
+"637.title" = "Use SHA-256 for sector comparison";
+
+/* Class = "NSTextFieldCell"; title = "Required matches:"; ObjectID = "639"; */
+"639.title" = "Required matches:";
+
+/* Class = "NSTextFieldCell"; title = "per sector"; ObjectID = "640"; */
+"640.title" = "per sector";
+
+/* Class = "NSButtonCell"; title = "Check for C2 errors"; ObjectID = "641"; */
+"641.title" = "Check for C2 errors";
+
+/* Class = "NSButtonCell"; title = "Enabled"; ObjectID = "642"; */
+"642.title" = "Enabled";
+
+/* Class = "NSTextFieldCell"; title = "retries"; ObjectID = "644"; */
+"644.title" = "retries";
+
+/* Class = "NSTextFieldCell"; title = "Allow skipping after:"; ObjectID = "646"; */
+"646.title" = "Allow skipping after:";
+
+/* Class = "NSButtonCell"; title = "Never allow skipping"; ObjectID = "648"; */
+"648.title" = "Never allow skipping";
+
+/* Class = "NSTextFieldCell"; title = "Type:"; ObjectID = "649"; */
+"649.title" = "Type:";
+
+/* Class = "NSTextFieldCell"; title = "Error correction:"; ObjectID = "650"; */
+"650.title" = "Error correction:";
+
+/* Class = "NSButtonCell"; title = "Generate a cue sheet"; ObjectID = "651"; */
+"651.title" = "Generate a cue sheet";
+
+/* Class = "NSButtonCell"; title = "Rip to a single file"; ObjectID = "652"; */
+"652.title" = "Rip to a single file";
+
+/* Class = "NSTextFieldCell"; title = "Ripper:"; ObjectID = "653"; */
+"653.title" = "Ripper:";

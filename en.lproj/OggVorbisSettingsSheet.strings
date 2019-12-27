@@ -1,0 +1,81 @@
+
+/* Class = "NSSlider"; ibShadowedToolTip = "Higher numbers indicate better quality.  Quality settings of 5-6 will yield transparent encoding for most CDs."; ObjectID = "8"; */
+"8.ibShadowedToolTip" = "Higher numbers indicate better quality.  Quality settings of 5-6 will yield transparent encoding for most CDs.";
+
+/* Class = "NSButtonCell"; ibShadowedToolTip = "Generate a variable bitrate (VBR) or constant bitrate (CBR) Ogg Vorbis stream based on the specified bitrate."; ObjectID = "126"; */
+"126.ibShadowedToolTip" = "Generate a variable bitrate (VBR) or constant bitrate (CBR) Ogg Vorbis stream based on the specified bitrate.";
+
+/* Class = "NSButtonCell"; title = "Bitrate"; ObjectID = "126"; */
+"126.title" = "Bitrate";
+
+/* Class = "NSButtonCell"; ibShadowedToolTip = "Generate a variable bitrate (VBR) Ogg Vorbis stream based on quality.  Recommended for most applications."; ObjectID = "127"; */
+"127.ibShadowedToolTip" = "Generate a variable bitrate (VBR) Ogg Vorbis stream based on quality.  Recommended for most applications.";
+
+/* Class = "NSButtonCell"; title = "Quality"; ObjectID = "127"; */
+"127.title" = "Quality";
+
+/* Class = "NSTextFieldCell"; title = "-1"; ObjectID = "256"; */
+"256.title" = "-1";
+
+/* Class = "NSTextFieldCell"; title = "0"; ObjectID = "257"; */
+"257.title" = "0";
+
+/* Class = "NSTextFieldCell"; title = "2"; ObjectID = "258"; */
+"258.title" = "2";
+
+/* Class = "NSTextFieldCell"; title = "4"; ObjectID = "259"; */
+"259.title" = "4";
+
+/* Class = "NSTextFieldCell"; title = "6"; ObjectID = "260"; */
+"260.title" = "6";
+
+/* Class = "NSTextFieldCell"; title = "8"; ObjectID = "261"; */
+"261.title" = "8";
+
+/* Class = "NSTextFieldCell"; title = "10"; ObjectID = "262"; */
+"262.title" = "10";
+
+/* Class = "NSTextFieldCell"; title = "64"; ObjectID = "263"; */
+"263.title" = "64";
+
+/* Class = "NSTextFieldCell"; title = "256"; ObjectID = "264"; */
+"264.title" = "256";
+
+/* Class = "NSTextFieldCell"; title = "160"; ObjectID = "266"; */
+"266.title" = "160";
+
+/* Class = "NSTextFieldCell"; title = "192"; ObjectID = "267"; */
+"267.title" = "192";
+
+/* Class = "NSTextFieldCell"; title = "96"; ObjectID = "268"; */
+"268.title" = "96";
+
+/* Class = "NSTextFieldCell"; title = "48"; ObjectID = "269"; */
+"269.title" = "48";
+
+/* Class = "NSTextFieldCell"; title = "128"; ObjectID = "270"; */
+"270.title" = "128";
+
+/* Class = "NSTextFieldCell"; title = "320"; ObjectID = "271"; */
+"271.title" = "320";
+
+/* Class = "NSButtonCell"; title = "Restrict encoder to constant bitrate"; ObjectID = "272"; */
+"272.title" = "Restrict encoder to constant bitrate";
+
+/* Class = "NSTextFieldCell"; title = "Encoder target:"; ObjectID = "275"; */
+"275.title" = "Encoder target:";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "276"; */
+"276.title" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "Ogg (Vorbis)"; ObjectID = "277"; */
+"277.title" = "Ogg (Vorbis)";
+
+/* Class = "NSTextFieldCell"; title = "Quality:"; ObjectID = "278"; */
+"278.title" = "Quality:";
+
+/* Class = "NSTextFieldCell"; title = "Bitrate:"; ObjectID = "279"; */
+"279.title" = "Bitrate:";
+
+/* Class = "NSButtonCell"; title = "Radio"; ObjectID = "280"; */
+"280.title" = "Radio";

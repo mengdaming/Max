@@ -1,0 +1,48 @@
+
+/* Class = "NSBox"; title = "General Settings"; ObjectID = "9"; */
+"9.title" = "General Settings";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The port to be used on the specified MusicBrainz server"; ObjectID = "12"; */
+"12.ibShadowedToolTip" = "The port to be used on the specified MusicBrainz server";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The MusicBrainz server which will be used for all MusicBrainz operations"; ObjectID = "17"; */
+"17.ibShadowedToolTip" = "The MusicBrainz server which will be used for all MusicBrainz operations";
+
+/* Class = "NSBox"; title = "Proxy Settings"; ObjectID = "32"; */
+"32.title" = "Proxy Settings";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The proxy server to use for connecting to the MusicBrainz"; ObjectID = "36"; */
+"36.ibShadowedToolTip" = "The proxy server to use for connecting to the MusicBrainz";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Your MusicBrainz username"; ObjectID = "37"; */
+"37.ibShadowedToolTip" = "Your MusicBrainz username";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Your MusicBrainz password"; ObjectID = "38"; */
+"38.ibShadowedToolTip" = "Your MusicBrainz password";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The port to use on the specified proxy server"; ObjectID = "43"; */
+"43.ibShadowedToolTip" = "The port to use on the specified proxy server";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "mm.musicbrainz.org"; ObjectID = "77"; */
+"77.ibShadowedIsNilPlaceholder" = "mm.musicbrainz.org";
+
+/* Class = "NSTextFieldCell"; title = "Port:"; ObjectID = "93"; */
+"93.title" = "Port:";
+
+/* Class = "NSTextFieldCell"; title = "Preferred server:"; ObjectID = "95"; */
+"95.title" = "Preferred server:";
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "96"; */
+"96.title" = "Password:";
+
+/* Class = "NSTextFieldCell"; title = "Username:"; ObjectID = "99"; */
+"99.title" = "Username:";
+
+/* Class = "NSTextFieldCell"; title = "Proxy server:"; ObjectID = "102"; */
+"102.title" = "Proxy server:";
+
+/* Class = "NSTextFieldCell"; title = "Port:"; ObjectID = "104"; */
+"104.title" = "Port:";
+
+/* Class = "NSButtonCell"; title = "Use a proxy to connect"; ObjectID = "105"; */
+"105.title" = "Use a proxy to connect";

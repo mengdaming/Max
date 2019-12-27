@@ -1,0 +1,66 @@
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "10"; */
+"10.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Track Composer"; ObjectID = "11"; */
+"11.title" = "Track Composer";
+
+/* Class = "NSMenuItem"; title = "Track Title"; ObjectID = "12"; */
+"12.title" = "Track Title";
+
+/* Class = "NSMenuItem"; title = "Album Composer"; ObjectID = "13"; */
+"13.title" = "Album Composer";
+
+/* Class = "NSMenuItem"; title = "Album Artist"; ObjectID = "16"; */
+"16.title" = "Album Artist";
+
+/* Class = "NSMenuItem"; title = "Album Title"; ObjectID = "17"; */
+"17.title" = "Album Title";
+
+/* Class = "NSMenuItem"; title = "File Format"; ObjectID = "18"; */
+"18.title" = "File Format";
+
+/* Class = "NSMenuItem"; title = "Album Year"; ObjectID = "19"; */
+"19.title" = "Album Year";
+
+/* Class = "NSMenuItem"; title = "Track Artist"; ObjectID = "20"; */
+"20.title" = "Track Artist";
+
+/* Class = "NSMenuItem"; title = "Track Year"; ObjectID = "22"; */
+"22.title" = "Track Year";
+
+/* Class = "NSMenuItem"; title = "Disc Number"; ObjectID = "23"; */
+"23.title" = "Disc Number";
+
+/* Class = "NSMenuItem"; title = "Disc Total"; ObjectID = "24"; */
+"24.title" = "Disc Total";
+
+/* Class = "NSMenuItem"; title = "Track Total"; ObjectID = "25"; */
+"25.title" = "Track Total";
+
+/* Class = "NSMenuItem"; title = "Album Genre"; ObjectID = "26"; */
+"26.title" = "Album Genre";
+
+/* Class = "NSMenuItem"; title = "Add Format Specifier"; ObjectID = "27"; */
+"27.title" = "Add Format Specifier";
+
+/* Class = "NSMenuItem"; title = "Source Filename"; ObjectID = "29"; */
+"29.title" = "Source Filename";
+
+/* Class = "NSMenuItem"; title = "Track Genre"; ObjectID = "31"; */
+"31.title" = "Track Genre";
+
+/* Class = "NSMenuItem"; title = "Track Number"; ObjectID = "32"; */
+"32.title" = "Track Number";
+
+/* Class = "NSBox"; title = "iTunes Options"; ObjectID = "50"; */
+"50.title" = "iTunes Options";
+
+/* Class = "NSButtonCell"; title = "Add output files to iTunes library"; ObjectID = "54"; */
+"54.title" = "Add output files to iTunes library";
+
+/* Class = "NSButtonCell"; title = "Add files to a playlist"; ObjectID = "55"; */
+"55.title" = "Add files to a playlist";
+
+/* Class = "NSButtonCell"; title = "Use iTunes compatibility mode"; ObjectID = "58"; */
+"58.title" = "Use iTunes compatibility mode";

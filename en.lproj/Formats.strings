@@ -1,0 +1,18 @@
+
+/* Class = "NSWindow"; title = "Formats"; ObjectID = "5"; */
+"5.title" = "Formats";
+
+/* Class = "NSTableColumn"; headerCell.title = "✔"; ObjectID = "12"; */
+"12.headerCell.title" = "✔";
+
+/* Class = "NSTableColumn"; headerCell.title = "Nickname"; ObjectID = "14"; */
+"14.headerCell.title" = "Nickname";
+
+/* Class = "NSTableColumn"; headerCell.title = "Format"; ObjectID = "15"; */
+"15.headerCell.title" = "Format";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "34"; */
+"34.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "35"; */
+"35.title" = "Text Cell";

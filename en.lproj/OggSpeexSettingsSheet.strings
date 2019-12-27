@@ -1,0 +1,129 @@
+
+/* Class = "NSButtonCell"; title = "Quality"; ObjectID = "43"; */
+"43.title" = "Quality";
+
+/* Class = "NSButtonCell"; title = "Bitrate"; ObjectID = "44"; */
+"44.title" = "Bitrate";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "49"; */
+"49.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Ultra-wideband (32 kHz)"; ObjectID = "50"; */
+"50.title" = "Ultra-wideband (32 kHz)";
+
+/* Class = "NSMenuItem"; title = "Narrowband (8 kHz)"; ObjectID = "51"; */
+"51.title" = "Narrowband (8 kHz)";
+
+/* Class = "NSMenuItem"; title = "Wideband (16 kHz)"; ObjectID = "52"; */
+"52.title" = "Wideband (16 kHz)";
+
+/* Class = "NSButtonCell"; title = "Enable voice activity detection (VAD)"; ObjectID = "178"; */
+"178.title" = "Enable voice activity detection (VAD)";
+
+/* Class = "NSButtonCell"; title = "Enable discontinuous transmission (DTX)"; ObjectID = "179"; */
+"179.title" = "Enable discontinuous transmission (DTX)";
+
+/* Class = "NSTextFieldCell"; title = "Frames per Ogg packet:"; ObjectID = "181"; */
+"181.title" = "Frames per Ogg packet:";
+
+/* Class = "NSButtonCell"; title = "Denoise input"; ObjectID = "182"; */
+"182.title" = "Denoise input";
+
+/* Class = "NSButtonCell"; title = "Apply adaptive gain control (AGC)"; ObjectID = "183"; */
+"183.title" = "Apply adaptive gain control (AGC)";
+
+/* Class = "NSTextFieldCell"; title = "6"; ObjectID = "184"; */
+"184.title" = "6";
+
+/* Class = "NSTextFieldCell"; title = "10"; ObjectID = "185"; */
+"185.title" = "10";
+
+/* Class = "NSTextFieldCell"; title = "8"; ObjectID = "186"; */
+"186.title" = "8";
+
+/* Class = "NSTextFieldCell"; title = "2"; ObjectID = "188"; */
+"188.title" = "2";
+
+/* Class = "NSTextFieldCell"; title = "4"; ObjectID = "189"; */
+"189.title" = "4";
+
+/* Class = "NSTextFieldCell"; title = "4"; ObjectID = "190"; */
+"190.title" = "4";
+
+/* Class = "NSTextFieldCell"; title = "Mode:"; ObjectID = "193"; */
+"193.title" = "Mode:";
+
+/* Class = "NSTextFieldCell"; title = "10"; ObjectID = "194"; */
+"194.title" = "10";
+
+/* Class = "NSTextFieldCell"; title = "2"; ObjectID = "195"; */
+"195.title" = "2";
+
+/* Class = "NSTextFieldCell"; title = "6"; ObjectID = "196"; */
+"196.title" = "6";
+
+/* Class = "NSTextFieldCell"; title = "4"; ObjectID = "198"; */
+"198.title" = "4";
+
+/* Class = "NSTextFieldCell"; title = "8"; ObjectID = "199"; */
+"199.title" = "8";
+
+/* Class = "NSTextFieldCell"; title = "0"; ObjectID = "200"; */
+"200.title" = "0";
+
+/* Class = "NSButtonCell"; title = "Enable variable bitrate mode (VBR)"; ObjectID = "201"; */
+"201.title" = "Enable variable bitrate mode (VBR)";
+
+/* Class = "NSButtonCell"; title = "Enable VBR average bitrate mode (ABR)"; ObjectID = "202"; */
+"202.title" = "Enable VBR average bitrate mode (ABR)";
+
+/* Class = "NSButtonCell"; title = "Resample input"; ObjectID = "203"; */
+"203.title" = "Resample input";
+
+/* Class = "NSTextFieldCell"; title = "8"; ObjectID = "204"; */
+"204.title" = "8";
+
+/* Class = "NSTextFieldCell"; title = "12"; ObjectID = "205"; */
+"205.title" = "12";
+
+/* Class = "NSTextFieldCell"; title = "16"; ObjectID = "206"; */
+"206.title" = "16";
+
+/* Class = "NSTextFieldCell"; title = "20"; ObjectID = "207"; */
+"207.title" = "20";
+
+/* Class = "NSTextFieldCell"; title = "24"; ObjectID = "208"; */
+"208.title" = "24";
+
+/* Class = "NSTextFieldCell"; title = "28"; ObjectID = "209"; */
+"209.title" = "28";
+
+/* Class = "NSTextFieldCell"; title = "Ogg (Speex)"; ObjectID = "211"; */
+"211.title" = "Ogg (Speex)";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "212"; */
+"212.title" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "Pre-encoding options:"; ObjectID = "213"; */
+"213.title" = "Pre-encoding options:";
+
+/* Class = "NSTextFieldCell"; title = "Encoder target:"; ObjectID = "214"; */
+"214.title" = "Encoder target:";
+
+/* Class = "NSTextFieldCell"; title = "Options:"; ObjectID = "215"; */
+"215.title" = "Options:";
+
+/* Class = "NSTextFieldCell"; title = "Bitrate:"; ObjectID = "216"; */
+"216.title" = "Bitrate:";
+
+/* Class = "NSTextFieldCell"; title = "Quality:"; ObjectID = "217"; */
+"217.title" = "Quality:";
+
+/* Class = "NSTextFieldCell"; title = "Complexity:"; ObjectID = "218"; */
+"218.title" = "Complexity:";
+
+/* Class = "NSTextFieldCell"; title = "Other options:"; ObjectID = "219"; */
+"219.title" = "Other options:";
+
+/* Class = "NSButtonCell"; title = "Radio"; ObjectID = "220"; */
+"220.title" = "Radio";

@@ -1,0 +1,114 @@
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "50"; */
+"50.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "amazon.ca"; ObjectID = "51"; */
+"51.title" = "amazon.ca";
+
+/* Class = "NSMenuItem"; title = "amazon.com"; ObjectID = "52"; */
+"52.title" = "amazon.com";
+
+/* Class = "NSMenuItem"; title = "amazon.fr"; ObjectID = "53"; */
+"53.title" = "amazon.fr";
+
+/* Class = "NSMenuItem"; title = "amazon.de"; ObjectID = "54"; */
+"54.title" = "amazon.de";
+
+/* Class = "NSMenuItem"; title = "amazon.co.uk"; ObjectID = "55"; */
+"55.title" = "amazon.co.uk";
+
+/* Class = "NSMenuItem"; title = "amazon.co.jp"; ObjectID = "56"; */
+"56.title" = "amazon.co.jp";
+
+/* Class = "NSBox"; title = "Amazon Web Services"; ObjectID = "103"; */
+"103.title" = "Amazon Web Services";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "108"; */
+"108.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "GIF"; ObjectID = "109"; */
+"109.title" = "GIF";
+
+/* Class = "NSMenuItem"; title = "JPEG"; ObjectID = "110"; */
+"110.title" = "JPEG";
+
+/* Class = "NSMenuItem"; title = "PNG"; ObjectID = "111"; */
+"111.title" = "PNG";
+
+/* Class = "NSMenuItem"; title = "BMP"; ObjectID = "112"; */
+"112.title" = "BMP";
+
+/* Class = "NSMenuItem"; title = "JPEG2000"; ObjectID = "113"; */
+"113.title" = "JPEG2000";
+
+/* Class = "NSMenuItem"; title = "TIFF"; ObjectID = "114"; */
+"114.title" = "TIFF";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "116"; */
+"116.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Track Title"; ObjectID = "118"; */
+"118.title" = "Track Title";
+
+/* Class = "NSMenuItem"; title = "Track Genre"; ObjectID = "119"; */
+"119.title" = "Track Genre";
+
+/* Class = "NSMenuItem"; title = "Album Genre"; ObjectID = "121"; */
+"121.title" = "Album Genre";
+
+/* Class = "NSMenuItem"; title = "Track Composer"; ObjectID = "122"; */
+"122.title" = "Track Composer";
+
+/* Class = "NSMenuItem"; title = "File Format"; ObjectID = "123"; */
+"123.title" = "File Format";
+
+/* Class = "NSMenuItem"; title = "Album Year"; ObjectID = "124"; */
+"124.title" = "Album Year";
+
+/* Class = "NSMenuItem"; title = "Disc Number"; ObjectID = "125"; */
+"125.title" = "Disc Number";
+
+/* Class = "NSMenuItem"; title = "Album Artist"; ObjectID = "126"; */
+"126.title" = "Album Artist";
+
+/* Class = "NSMenuItem"; title = "Track Artist"; ObjectID = "127"; */
+"127.title" = "Track Artist";
+
+/* Class = "NSMenuItem"; title = "Add Format Specifier"; ObjectID = "128"; */
+"128.title" = "Add Format Specifier";
+
+/* Class = "NSMenuItem"; title = "Source Filename"; ObjectID = "130"; */
+"130.title" = "Source Filename";
+
+/* Class = "NSMenuItem"; title = "Album Composer"; ObjectID = "131"; */
+"131.title" = "Album Composer";
+
+/* Class = "NSMenuItem"; title = "Disc Total"; ObjectID = "132"; */
+"132.title" = "Disc Total";
+
+/* Class = "NSMenuItem"; title = "Track Number"; ObjectID = "134"; */
+"134.title" = "Track Number";
+
+/* Class = "NSMenuItem"; title = "Track Year"; ObjectID = "135"; */
+"135.title" = "Track Year";
+
+/* Class = "NSMenuItem"; title = "Track Total"; ObjectID = "137"; */
+"137.title" = "Track Total";
+
+/* Class = "NSMenuItem"; title = "Album Title"; ObjectID = "138"; */
+"138.title" = "Album Title";
+
+/* Class = "NSBox"; title = "Album Art Options"; ObjectID = "140"; */
+"140.title" = "Album Art Options";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "cover"; ObjectID = "153"; */
+"153.ibShadowedIsNilPlaceholder" = "cover";
+
+/* Class = "NSTextFieldCell"; title = "Default amazon locale:"; ObjectID = "155"; */
+"155.title" = "Default amazon locale:";
+
+/* Class = "NSButtonCell"; title = "Save album art with output files"; ObjectID = "157"; */
+"157.title" = "Save album art with output files";
+
+/* Class = "NSTextFieldCell"; title = "File format:"; ObjectID = "158"; */
+"158.title" = "File format:";

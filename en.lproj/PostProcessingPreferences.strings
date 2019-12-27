@@ -1,0 +1,9 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Application"; ObjectID = "13"; */
+"13.headerCell.title" = "Application";
+
+/* Class = "NSBox"; title = "Applications"; ObjectID = "16"; */
+"16.title" = "Applications";
+
+/* Class = "NSTextFieldCell"; title = "Open output files with:"; ObjectID = "28"; */
+"28.title" = "Open output files with:";

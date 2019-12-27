@@ -39,11 +39,11 @@
 		32C614F912E80CB800F714C9 /* OutputPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614D412E80CB800F714C9 /* OutputPreferences.xib */; };
 		32C614FA12E80CB800F714C9 /* PostProcessingPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614D612E80CB800F714C9 /* PostProcessingPreferences.xib */; };
 		32C614FB12E80CB800F714C9 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614D812E80CB800F714C9 /* Preferences.xib */; };
-		32C614FC12E80CB800F714C9 /* Ripper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614DA12E80CB800F714C9 /* Ripper.xib */; };
 		32C614FD12E80CB800F714C9 /* RipperPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614DC12E80CB800F714C9 /* RipperPreferences.xib */; };
 		32C614FE12E80CB800F714C9 /* TaggingPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614DE12E80CB800F714C9 /* TaggingPreferences.xib */; };
 		32C614FF12E80CB800F714C9 /* WavPackSettingsSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614E012E80CB800F714C9 /* WavPackSettingsSheet.xib */; };
 		32C8F0EE10632AB0004AB74F /* GaplessUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C8F0ED10632AB0004AB74F /* GaplessUtilities.m */; };
+		6D422F8523B60FCD0091A549 /* Ripper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D422F8323B60FCD0091A549 /* Ripper.xib */; };
 		6D44E8822370F82B00E883B2 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D44E8812370F82B00E883B2 /* Images-2.xcassets */; };
 		6DB9AF9A23A4E5A300E4E698 /* cuetools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A516D23773BAF001B86CC /* cuetools.framework */; };
 		6DB9AFA323A55A1E00E4E698 /* cdparanoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524FC2377324400DA0958 /* cdparanoia.framework */; };
@@ -762,9 +762,9 @@
 		6D0A51B223773CDD001B86CC /* speex.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = speex.xcodeproj; path = ../AudioFrameworks/speex/speex.xcodeproj; sourceTree = "<group>"; };
 		6D0A51BB23773D1C001B86CC /* musepack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = musepack.xcodeproj; path = ../AudioFrameworks/musepack/musepack.xcodeproj; sourceTree = "<group>"; };
 		6D0A51C423773F50001B86CC /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = ../Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
-		6D2B805623A85018006479D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Ripper.xib; sourceTree = "<group>"; };
 		6D336C192370F8B6003602CE /* wavpack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wavpack.xcodeproj; path = ../AudioFrameworks/wavpack/wavpack.xcodeproj; sourceTree = "<group>"; };
 		6D336C2C2370F90F003602CE /* taglib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = taglib.xcodeproj; path = ../AudioFrameworks/taglib/taglib.xcodeproj; sourceTree = "<group>"; };
+		6D422F8423B60FCD0091A549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Ripper.xib; sourceTree = "<group>"; };
 		6D44E85D2370F27500E883B2 /* Max.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Max.entitlements; path = Max/Max.entitlements; sourceTree = "<group>"; };
 		6D44E8602370F7DB00E883B2 /* flac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = flac.xcodeproj; path = ../AudioFrameworks/flac/flac.xcodeproj; sourceTree = "<group>"; };
 		6D44E8812370F82B00E883B2 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "Max/Images-2.xcassets"; sourceTree = "<group>"; };
@@ -811,12 +811,42 @@
 		6DB9AFFE23A80DD000E4E698 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preferences.strings; sourceTree = "<group>"; };
 		6DB9AFFF23A80DD000E4E698 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Exceptions.strings; sourceTree = "<group>"; };
 		6DB9B00023A80DD000E4E698 /* en */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en; path = "en.lproj/Max Help"; sourceTree = "<group>"; };
-		6DC3A20723A8CAF700B56CBE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Encoder.xib; sourceTree = "<group>"; };
 		6DD524C7237730BC00DA0958 /* sndfile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sndfile.xcodeproj; path = ../AudioFrameworks/sndfile/sndfile.xcodeproj; sourceTree = "<group>"; };
 		6DD524E02377311B00DA0958 /* ogg.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ogg.xcodeproj; path = ../AudioFrameworks/ogg/ogg.xcodeproj; sourceTree = "<group>"; };
 		6DD524EF237731D900DA0958 /* shorten.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = shorten.xcodeproj; path = ../AudioFrameworks/shorten/shorten.xcodeproj; sourceTree = "<group>"; };
 		6DD524F72377324400DA0958 /* cdparanoia.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cdparanoia.xcodeproj; path = ../AudioFrameworks/cdparanoia/cdparanoia.xcodeproj; sourceTree = "<group>"; };
 		6DD524FF2377335400DA0958 /* vorbis.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vorbis.xcodeproj; path = ../AudioFrameworks/vorbis/vorbis.xcodeproj; sourceTree = "<group>"; };
+		6DE965FE23B6613900C56D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Encoder.xib; sourceTree = "<group>"; };
+		6DE9662623B6664D00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MP3SettingsSheet.strings; sourceTree = "<group>"; };
+		6DE9662823B6665A00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Ripper.strings; sourceTree = "<group>"; };
+		6DE9662A23B6667000C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Encoder.strings; sourceTree = "<group>"; };
+		6DE9662C23B6668800C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Acknowledgments.strings; sourceTree = "<group>"; };
+		6DE9662E23B6669300C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AlbumArtPreferences.strings; sourceTree = "<group>"; };
+		6DE9663023B666A200C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AmazonAlbumArtSheet.strings; sourceTree = "<group>"; };
+		6DE9663223B666AF00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CompactDiscDocument.strings; sourceTree = "<group>"; };
+		6DE9663423B666C800C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ComponentVersions.strings; sourceTree = "<group>"; };
+		6DE9663623B666D200C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CoreAudioSettingsSheet.strings; sourceTree = "<group>"; };
+		6DE9663823B666EB00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CueSheetDocument.strings; sourceTree = "<group>"; };
+		6DE9663923B6670500C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FileConversion.strings; sourceTree = "<group>"; };
+		6DE9663B23B6671000C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FLACSettingsSheet.strings; sourceTree = "<group>"; };
+		6DE9663D23B6672200C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Formats.strings; sourceTree = "<group>"; };
+		6DE9663F23B6672C00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FormatsPreferences.strings; sourceTree = "<group>"; };
+		6DE9664123B6673500C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GeneralPreferences.strings; sourceTree = "<group>"; };
+		6DE9664323B6673E00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/iTunesPreferences.strings; sourceTree = "<group>"; };
+		6DE9664523B6674700C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LibsndfileSettingsSheet.strings; sourceTree = "<group>"; };
+		6DE9664623B6675A00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Log.strings; sourceTree = "<group>"; };
+		6DE9664823B6676400C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		6DE9664A23B6677900C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MonkeysAudioSettingsSheet.strings; sourceTree = "<group>"; };
+		6DE9664C23B6679E00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MusicBrainzMatchSheet.strings; sourceTree = "<group>"; };
+		6DE9664E23B667AD00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MusicBrainzPreferences.strings; sourceTree = "<group>"; };
+		6DE9665023B667B800C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OggSpeexSettingsSheet.strings; sourceTree = "<group>"; };
+		6DE9665223B667C800C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OggVorbisSettingsSheet.strings; sourceTree = "<group>"; };
+		6DE9665423B667DA00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OutputPreferences.strings; sourceTree = "<group>"; };
+		6DE9665623B667F200C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PostProcessingPreferences.strings; sourceTree = "<group>"; };
+		6DE9665823B6680400C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preferences.strings; sourceTree = "<group>"; };
+		6DE9665A23B6681700C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RipperPreferences.strings; sourceTree = "<group>"; };
+		6DE9665C23B6682600C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TaggingPreferences.strings; sourceTree = "<group>"; };
+		6DE9665E23B6682F00C56D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WavPackSettingsSheet.strings; sourceTree = "<group>"; };
 		8C0883580A092EA500CAC5D0 /* AlbumArtDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = AlbumArtDefaults.plist; sourceTree = "<group>"; };
 		8C0883590A092EA500CAC5D0 /* ApplicationControllerDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = ApplicationControllerDefaults.plist; sourceTree = "<group>"; };
 		8C08835E0A092EA500CAC5D0 /* MediaControllerDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = MediaControllerDefaults.plist; sourceTree = "<group>"; };
@@ -1201,6 +1231,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6D422F8323B60FCD0091A549 /* Ripper.xib */,
 				6DC3A20623A8CAF700B56CBE /* Encoder.xib */,
 				6D44E8812370F82B00E883B2 /* Images-2.xcassets */,
 				32C614A612E80CB800F714C9 /* Acknowledgments.xib */,
@@ -1228,7 +1259,6 @@
 				32C614D412E80CB800F714C9 /* OutputPreferences.xib */,
 				32C614D612E80CB800F714C9 /* PostProcessingPreferences.xib */,
 				32C614D812E80CB800F714C9 /* Preferences.xib */,
-				32C614DA12E80CB800F714C9 /* Ripper.xib */,
 				32C614DC12E80CB800F714C9 /* RipperPreferences.xib */,
 				32C614DE12E80CB800F714C9 /* TaggingPreferences.xib */,
 				32C614E012E80CB800F714C9 /* WavPackSettingsSheet.xib */,
@@ -2416,6 +2446,7 @@
 				8CD7F5E1098B0A30002C4D9F /* Credits.rtf in Resources */,
 				8CB6E20108DACB8100345B8F /* COPYING.txt in Resources */,
 				8C8B0CCF092E5DAA00418C45 /* Max Help in Resources */,
+				6D422F8523B60FCD0091A549 /* Ripper.xib in Resources */,
 				8C328182096D12CA00608C9D /* Exceptions.strings in Resources */,
 				8C5266BB0970E6FB008F1B55 /* Acknowledgments.rtf in Resources */,
 				8C29D8DB097F3D5D00E8B766 /* Preferences.strings in Resources */,
@@ -2490,7 +2521,6 @@
 				32C614F912E80CB800F714C9 /* OutputPreferences.xib in Resources */,
 				32C614FA12E80CB800F714C9 /* PostProcessingPreferences.xib in Resources */,
 				32C614FB12E80CB800F714C9 /* Preferences.xib in Resources */,
-				32C614FC12E80CB800F714C9 /* Ripper.xib in Resources */,
 				32C614FD12E80CB800F714C9 /* RipperPreferences.xib in Resources */,
 				32C614FE12E80CB800F714C9 /* TaggingPreferences.xib in Resources */,
 				6D44E8822370F82B00E883B2 /* Images-2.xcassets in Resources */,
@@ -2732,6 +2762,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67623B5202F0093EF93 /* Base */,
+				6DE9662C23B6668800C56D27 /* en */,
 			);
 			name = Acknowledgments.xib;
 			sourceTree = "<group>";
@@ -2740,6 +2771,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67723B5202F0093EF93 /* Base */,
+				6DE9662E23B6669300C56D27 /* en */,
 			);
 			name = AlbumArtPreferences.xib;
 			sourceTree = "<group>";
@@ -2748,6 +2780,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67823B5202F0093EF93 /* Base */,
+				6DE9663023B666A200C56D27 /* en */,
 			);
 			name = AmazonAlbumArtSheet.xib;
 			sourceTree = "<group>";
@@ -2756,6 +2789,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67923B5202F0093EF93 /* Base */,
+				6DE9663223B666AF00C56D27 /* en */,
 			);
 			name = CompactDiscDocument.xib;
 			sourceTree = "<group>";
@@ -2764,6 +2798,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67A23B5202F0093EF93 /* Base */,
+				6DE9663423B666C800C56D27 /* en */,
 			);
 			name = ComponentVersions.xib;
 			sourceTree = "<group>";
@@ -2772,6 +2807,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67B23B5202F0093EF93 /* Base */,
+				6DE9663623B666D200C56D27 /* en */,
 			);
 			name = CoreAudioSettingsSheet.xib;
 			sourceTree = "<group>";
@@ -2780,6 +2816,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67C23B5202F0093EF93 /* Base */,
+				6DE9663823B666EB00C56D27 /* en */,
 			);
 			name = CueSheetDocument.xib;
 			sourceTree = "<group>";
@@ -2788,6 +2825,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67D23B5202F0093EF93 /* Base */,
+				6DE9663923B6670500C56D27 /* en */,
 			);
 			name = FileConversion.xib;
 			sourceTree = "<group>";
@@ -2796,6 +2834,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67E23B5202F0093EF93 /* Base */,
+				6DE9663B23B6671000C56D27 /* en */,
 			);
 			name = FLACSettingsSheet.xib;
 			sourceTree = "<group>";
@@ -2804,6 +2843,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F67F23B5202F0093EF93 /* Base */,
+				6DE9663D23B6672200C56D27 /* en */,
 			);
 			name = Formats.xib;
 			sourceTree = "<group>";
@@ -2812,6 +2852,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68023B520300093EF93 /* Base */,
+				6DE9663F23B6672C00C56D27 /* en */,
 			);
 			name = FormatsPreferences.xib;
 			sourceTree = "<group>";
@@ -2820,6 +2861,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68123B520300093EF93 /* Base */,
+				6DE9664123B6673500C56D27 /* en */,
 			);
 			name = GeneralPreferences.xib;
 			sourceTree = "<group>";
@@ -2828,6 +2870,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68223B520300093EF93 /* Base */,
+				6DE9664323B6673E00C56D27 /* en */,
 			);
 			name = iTunesPreferences.xib;
 			sourceTree = "<group>";
@@ -2836,6 +2879,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68323B520300093EF93 /* Base */,
+				6DE9664523B6674700C56D27 /* en */,
 			);
 			name = LibsndfileSettingsSheet.xib;
 			sourceTree = "<group>";
@@ -2844,6 +2888,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68423B520300093EF93 /* Base */,
+				6DE9664623B6675A00C56D27 /* en */,
 			);
 			name = Log.xib;
 			sourceTree = "<group>";
@@ -2852,6 +2897,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68523B520300093EF93 /* Base */,
+				6DE9664823B6676400C56D27 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -2860,6 +2906,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68623B520300093EF93 /* Base */,
+				6DE9664A23B6677900C56D27 /* en */,
 			);
 			name = MonkeysAudioSettingsSheet.xib;
 			sourceTree = "<group>";
@@ -2868,6 +2915,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68723B520300093EF93 /* Base */,
+				6DE9662623B6664D00C56D27 /* en */,
 			);
 			name = MP3SettingsSheet.xib;
 			sourceTree = "<group>";
@@ -2876,6 +2924,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68823B520300093EF93 /* Base */,
+				6DE9664C23B6679E00C56D27 /* en */,
 			);
 			name = MusicBrainzMatchSheet.xib;
 			sourceTree = "<group>";
@@ -2884,6 +2933,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68923B520300093EF93 /* Base */,
+				6DE9664E23B667AD00C56D27 /* en */,
 			);
 			name = MusicBrainzPreferences.xib;
 			sourceTree = "<group>";
@@ -2892,6 +2942,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68A23B520300093EF93 /* Base */,
+				6DE9665023B667B800C56D27 /* en */,
 			);
 			name = OggSpeexSettingsSheet.xib;
 			sourceTree = "<group>";
@@ -2900,6 +2951,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68B23B520300093EF93 /* Base */,
+				6DE9665223B667C800C56D27 /* en */,
 			);
 			name = OggVorbisSettingsSheet.xib;
 			sourceTree = "<group>";
@@ -2908,6 +2960,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68C23B520310093EF93 /* Base */,
+				6DE9665423B667DA00C56D27 /* en */,
 			);
 			name = OutputPreferences.xib;
 			sourceTree = "<group>";
@@ -2916,6 +2969,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68D23B520310093EF93 /* Base */,
+				6DE9665623B667F200C56D27 /* en */,
 			);
 			name = PostProcessingPreferences.xib;
 			sourceTree = "<group>";
@@ -2924,22 +2978,16 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68E23B520310093EF93 /* Base */,
+				6DE9665823B6680400C56D27 /* en */,
 			);
 			name = Preferences.xib;
-			sourceTree = "<group>";
-		};
-		32C614DA12E80CB800F714C9 /* Ripper.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D2B805623A85018006479D5 /* en */,
-			);
-			name = Ripper.xib;
 			sourceTree = "<group>";
 		};
 		32C614DC12E80CB800F714C9 /* RipperPreferences.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6D74F68F23B520310093EF93 /* Base */,
+				6DE9665A23B6681700C56D27 /* en */,
 			);
 			name = RipperPreferences.xib;
 			sourceTree = "<group>";
@@ -2948,6 +2996,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F69023B520310093EF93 /* Base */,
+				6DE9665C23B6682600C56D27 /* en */,
 			);
 			name = TaggingPreferences.xib;
 			sourceTree = "<group>";
@@ -2956,14 +3005,25 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D74F69123B520310093EF93 /* Base */,
+				6DE9665E23B6682F00C56D27 /* en */,
 			);
 			name = WavPackSettingsSheet.xib;
+			sourceTree = "<group>";
+		};
+		6D422F8323B60FCD0091A549 /* Ripper.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D422F8423B60FCD0091A549 /* Base */,
+				6DE9662823B6665A00C56D27 /* en */,
+			);
+			name = Ripper.xib;
 			sourceTree = "<group>";
 		};
 		6DC3A20623A8CAF700B56CBE /* Encoder.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6DC3A20723A8CAF700B56CBE /* en */,
+				6DE965FE23B6613900C56D27 /* Base */,
+				6DE9662A23B6667000C56D27 /* en */,
 			);
 			name = Encoder.xib;
 			sourceTree = "<group>";

@@ -1,0 +1,66 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "29"; */
+"29.headerCell.title" = "Type";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "33"; */
+"33.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Item1"; ObjectID = "34"; */
+"34.title" = "Item1";
+
+/* Class = "NSMenuItem"; title = "Item3"; ObjectID = "35"; */
+"35.title" = "Item3";
+
+/* Class = "NSMenuItem"; title = "Item2"; ObjectID = "36"; */
+"36.title" = "Item2";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "40"; */
+"40.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Low"; ObjectID = "41"; */
+"41.title" = "Low";
+
+/* Class = "NSMenuItem"; title = "Minimum"; ObjectID = "42"; */
+"42.title" = "Minimum";
+
+/* Class = "NSMenuItem"; title = "Maximum"; ObjectID = "43"; */
+"43.title" = "Maximum";
+
+/* Class = "NSMenuItem"; title = "High"; ObjectID = "44"; */
+"44.title" = "High";
+
+/* Class = "NSMenuItem"; title = "Medium"; ObjectID = "45"; */
+"45.title" = "Medium";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "101"; */
+"101.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Item3"; ObjectID = "102"; */
+"102.title" = "Item3";
+
+/* Class = "NSMenuItem"; title = "Item1"; ObjectID = "103"; */
+"103.title" = "Item1";
+
+/* Class = "NSMenuItem"; title = "Item2"; ObjectID = "104"; */
+"104.title" = "Item2";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "116"; */
+"116.title" = "OK";
+
+/* Class = "NSButtonCell"; title = "Use VBR"; ObjectID = "119"; */
+"119.title" = "Use VBR";
+
+/* Class = "NSTextFieldCell"; title = "Quality:"; ObjectID = "120"; */
+"120.title" = "Quality:";
+
+/* Class = "NSTextFieldCell"; title = "Bitrate:"; ObjectID = "121"; */
+"121.title" = "Bitrate:";
+
+/* Class = "NSTextFieldCell"; title = "System Font Text"; ObjectID = "122"; */
+"122.title" = "System Font Text";
+
+/* Class = "NSTextFieldCell"; title = "Available data formats:"; ObjectID = "123"; */
+"123.title" = "Available data formats:";
+
+/* Class = "NSTextFieldCell"; title = "Extension:"; ObjectID = "124"; */
+"124.title" = "Extension:";

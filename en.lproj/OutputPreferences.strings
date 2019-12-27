@@ -1,0 +1,123 @@
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "689"; */
+"689.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Track Title"; ObjectID = "690"; */
+"690.title" = "Track Title";
+
+/* Class = "NSMenuItem"; title = "Track Artist"; ObjectID = "692"; */
+"692.title" = "Track Artist";
+
+/* Class = "NSMenuItem"; title = "Album Genre"; ObjectID = "693"; */
+"693.title" = "Album Genre";
+
+/* Class = "NSMenuItem"; title = "Album Artist"; ObjectID = "694"; */
+"694.title" = "Album Artist";
+
+/* Class = "NSMenuItem"; title = "Add Format Specifier"; ObjectID = "696"; */
+"696.title" = "Add Format Specifier";
+
+/* Class = "NSMenuItem"; title = "Source Filename"; ObjectID = "698"; */
+"698.title" = "Source Filename";
+
+/* Class = "NSMenuItem"; title = "File Format"; ObjectID = "699"; */
+"699.title" = "File Format";
+
+/* Class = "NSMenuItem"; title = "Track Genre"; ObjectID = "700"; */
+"700.title" = "Track Genre";
+
+/* Class = "NSMenuItem"; title = "Disc Total"; ObjectID = "701"; */
+"701.title" = "Disc Total";
+
+/* Class = "NSMenuItem"; title = "Track Number"; ObjectID = "702"; */
+"702.title" = "Track Number";
+
+/* Class = "NSMenuItem"; title = "Album Year"; ObjectID = "704"; */
+"704.title" = "Album Year";
+
+/* Class = "NSMenuItem"; title = "Track Total"; ObjectID = "705"; */
+"705.title" = "Track Total";
+
+/* Class = "NSMenuItem"; title = "Track Composer"; ObjectID = "707"; */
+"707.title" = "Track Composer";
+
+/* Class = "NSMenuItem"; title = "Disc Number"; ObjectID = "708"; */
+"708.title" = "Disc Number";
+
+/* Class = "NSMenuItem"; title = "Album Composer"; ObjectID = "709"; */
+"709.title" = "Album Composer";
+
+/* Class = "NSMenuItem"; title = "Track Year"; ObjectID = "710"; */
+"710.title" = "Track Year";
+
+/* Class = "NSMenuItem"; title = "Album Title"; ObjectID = "711"; */
+"711.title" = "Album Title";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "715"; */
+"715.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Choose Directory…"; ObjectID = "716"; */
+"716.title" = "Choose Directory…";
+
+/* Class = "NSMenuItem"; title = "Music"; ObjectID = "717"; */
+"717.title" = "Music";
+
+/* Class = "NSMenuItem"; title = "Same as source file"; ObjectID = "718"; */
+"718.title" = "Same as source file";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "722"; */
+"722.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Custom directory"; ObjectID = "724"; */
+"724.title" = "Custom directory";
+
+/* Class = "NSMenuItem"; title = "Choose Directory…"; ObjectID = "726"; */
+"726.title" = "Choose Directory…";
+
+/* Class = "NSMenuItem"; title = "Default"; ObjectID = "727"; */
+"727.title" = "Default";
+
+/* Class = "NSBox"; title = "Locations"; ObjectID = "732"; */
+"732.title" = "Locations";
+
+/* Class = "NSBox"; title = "File Naming"; ObjectID = "734"; */
+"734.title" = "File Naming";
+
+/* Class = "NSBox"; title = "Options"; ObjectID = "736"; */
+"736.title" = "Options";
+
+/* Class = "NSBox"; title = "File Conversion Options"; ObjectID = "765"; */
+"765.title" = "File Conversion Options";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "{albumArtist}/{albumTitle}/{trackNumber} {trackTitle}"; ObjectID = "771"; */
+"771.ibShadowedIsNilPlaceholder" = "{albumArtist}/{albumTitle}/{trackNumber} {trackTitle}";
+
+/* Class = "NSTextFieldCell"; title = "Output files:"; ObjectID = "774"; */
+"774.title" = "Output files:";
+
+/* Class = "NSTextFieldCell"; title = "Temporary files:"; ObjectID = "777"; */
+"777.title" = "Temporary files:";
+
+/* Class = "NSButtonCell"; title = "Use two digit track numbers"; ObjectID = "778"; */
+"778.title" = "Use two digit track numbers";
+
+/* Class = "NSButtonCell"; title = "Fallback to album tags if track tags unset"; ObjectID = "779"; */
+"779.title" = "Fallback to album tags if track tags unset";
+
+/* Class = "NSButtonCell"; title = "Use a custom format for output file naming"; ObjectID = "782"; */
+"782.title" = "Use a custom format for output file naming";
+
+/* Class = "NSButtonCell"; title = "Save encoder settings in comment"; ObjectID = "783"; */
+"783.title" = "Save encoder settings in comment";
+
+/* Class = "NSButtonCell"; title = "Overwrite existing output files"; ObjectID = "784"; */
+"784.title" = "Overwrite existing output files";
+
+/* Class = "NSButtonCell"; title = "Prompt before overwriting"; ObjectID = "785"; */
+"785.title" = "Prompt before overwriting";
+
+/* Class = "NSButtonCell"; title = "Delete source files after encoding"; ObjectID = "786"; */
+"786.title" = "Delete source files after encoding";
+
+/* Class = "NSButtonCell"; title = "Join input files"; ObjectID = "787"; */
+"787.title" = "Join input files";

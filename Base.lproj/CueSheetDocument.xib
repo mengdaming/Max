@@ -778,6 +778,7 @@
                     </connections>
                 </textField>
             </subviews>
+            <point key="canvasLocation" x="68" y="638"/>
         </customView>
         <arrayController id="159" userLabel="GenreController">
             <connections>
@@ -822,6 +823,7 @@
                     </connections>
                 </imageView>
             </subviews>
+            <point key="canvasLocation" x="-258" y="411"/>
         </customView>
     </objects>
 </document>

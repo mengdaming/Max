@@ -1,0 +1,15 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Artist"; ObjectID = "9"; */
+"9.headerCell.title" = "Artist";
+
+/* Class = "NSTableColumn"; headerCell.title = "Album"; ObjectID = "10"; */
+"10.headerCell.title" = "Album";
+
+/* Class = "NSButtonCell"; title = "Use Selected"; ObjectID = "27"; */
+"27.title" = "Use Selected";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "28"; */
+"28.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "MusicBrainz found multiple matches for this disc:"; ObjectID = "29"; */
+"29.title" = "MusicBrainz found multiple matches for this disc:";

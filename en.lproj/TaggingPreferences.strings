@@ -1,0 +1,528 @@
+
+/* Class = "NSTabViewItem"; label = "Ogg Vorbis"; ObjectID = "8"; */
+"8.label" = "Ogg Vorbis";
+
+/* Class = "NSTabViewItem"; label = "FLAC"; ObjectID = "10"; */
+"10.label" = "FLAC";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ALBUM"; ObjectID = "125"; */
+"125.ibShadowedIsNilPlaceholder" = "ALBUM";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "GENRE"; ObjectID = "127"; */
+"127.ibShadowedIsNilPlaceholder" = "GENRE";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMPOSER"; ObjectID = "128"; */
+"128.ibShadowedIsNilPlaceholder" = "COMPOSER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "MCN"; ObjectID = "129"; */
+"129.ibShadowedIsNilPlaceholder" = "MCN";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ISRC"; ObjectID = "130"; */
+"130.ibShadowedIsNilPlaceholder" = "ISRC";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TRACKNUMBER"; ObjectID = "133"; */
+"133.ibShadowedIsNilPlaceholder" = "TRACKNUMBER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TRACKTOTAL"; ObjectID = "134"; */
+"134.ibShadowedIsNilPlaceholder" = "TRACKTOTAL";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DISCNUMBER"; ObjectID = "135"; */
+"135.ibShadowedIsNilPlaceholder" = "DISCNUMBER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DISCTOTAL"; ObjectID = "136"; */
+"136.ibShadowedIsNilPlaceholder" = "DISCTOTAL";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMPILATION"; ObjectID = "137"; */
+"137.ibShadowedIsNilPlaceholder" = "COMPILATION";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ALBUM"; ObjectID = "178"; */
+"178.ibShadowedIsNilPlaceholder" = "ALBUM";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TITLE"; ObjectID = "179"; */
+"179.ibShadowedIsNilPlaceholder" = "TITLE";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ARTIST"; ObjectID = "180"; */
+"180.ibShadowedIsNilPlaceholder" = "ARTIST";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "GENRE"; ObjectID = "188"; */
+"188.ibShadowedIsNilPlaceholder" = "GENRE";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMPOSER"; ObjectID = "194"; */
+"194.ibShadowedIsNilPlaceholder" = "COMPOSER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "MCN"; ObjectID = "198"; */
+"198.ibShadowedIsNilPlaceholder" = "MCN";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ISRC"; ObjectID = "202"; */
+"202.ibShadowedIsNilPlaceholder" = "ISRC";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TRACKNUMBER"; ObjectID = "214"; */
+"214.ibShadowedIsNilPlaceholder" = "TRACKNUMBER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TRACKTOTAL"; ObjectID = "218"; */
+"218.ibShadowedIsNilPlaceholder" = "TRACKTOTAL";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DISCNUMBER"; ObjectID = "222"; */
+"222.ibShadowedIsNilPlaceholder" = "DISCNUMBER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DISCTOTAL"; ObjectID = "226"; */
+"226.ibShadowedIsNilPlaceholder" = "DISCTOTAL";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMPILATION"; ObjectID = "230"; */
+"230.ibShadowedIsNilPlaceholder" = "COMPILATION";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ARTIST"; ObjectID = "235"; */
+"235.ibShadowedIsNilPlaceholder" = "ARTIST";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TITLE"; ObjectID = "292"; */
+"292.ibShadowedIsNilPlaceholder" = "TITLE";
+
+/* Class = "NSTabViewItem"; label = "Monkey's Audio"; ObjectID = "309"; */
+"309.label" = "Monkey's Audio";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TITLE"; ObjectID = "376"; */
+"376.ibShadowedIsNilPlaceholder" = "TITLE";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ARTIST"; ObjectID = "377"; */
+"377.ibShadowedIsNilPlaceholder" = "ARTIST";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ALBUM"; ObjectID = "378"; */
+"378.ibShadowedIsNilPlaceholder" = "ALBUM";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "YEAR"; ObjectID = "379"; */
+"379.ibShadowedIsNilPlaceholder" = "YEAR";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "GENRE"; ObjectID = "380"; */
+"380.ibShadowedIsNilPlaceholder" = "GENRE";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMPOSER"; ObjectID = "381"; */
+"381.ibShadowedIsNilPlaceholder" = "COMPOSER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "MCN"; ObjectID = "382"; */
+"382.ibShadowedIsNilPlaceholder" = "MCN";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ISRC"; ObjectID = "383"; */
+"383.ibShadowedIsNilPlaceholder" = "ISRC";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMMENT"; ObjectID = "385"; */
+"385.ibShadowedIsNilPlaceholder" = "COMMENT";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TRACK"; ObjectID = "386"; */
+"386.ibShadowedIsNilPlaceholder" = "TRACK";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TRACKTOTAL"; ObjectID = "387"; */
+"387.ibShadowedIsNilPlaceholder" = "TRACKTOTAL";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DISCNUMBER"; ObjectID = "388"; */
+"388.ibShadowedIsNilPlaceholder" = "DISCNUMBER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DISCTOTAL"; ObjectID = "389"; */
+"389.ibShadowedIsNilPlaceholder" = "DISCTOTAL";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMPILATION"; ObjectID = "390"; */
+"390.ibShadowedIsNilPlaceholder" = "COMPILATION";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DESCRIPTION"; ObjectID = "424"; */
+"424.ibShadowedIsNilPlaceholder" = "DESCRIPTION";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DESCRIPTION"; ObjectID = "426"; */
+"426.ibShadowedIsNilPlaceholder" = "DESCRIPTION";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DATE"; ObjectID = "428"; */
+"428.ibShadowedIsNilPlaceholder" = "DATE";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DATE"; ObjectID = "430"; */
+"430.ibShadowedIsNilPlaceholder" = "DATE";
+
+/* Class = "NSTabViewItem"; label = "WavPack"; ObjectID = "431"; */
+"431.label" = "WavPack";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TITLE"; ObjectID = "492"; */
+"492.ibShadowedIsNilPlaceholder" = "TITLE";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ARTIST"; ObjectID = "493"; */
+"493.ibShadowedIsNilPlaceholder" = "ARTIST";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ALBUM"; ObjectID = "494"; */
+"494.ibShadowedIsNilPlaceholder" = "ALBUM";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "YEAR"; ObjectID = "495"; */
+"495.ibShadowedIsNilPlaceholder" = "YEAR";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "GENRE"; ObjectID = "496"; */
+"496.ibShadowedIsNilPlaceholder" = "GENRE";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMPOSER"; ObjectID = "497"; */
+"497.ibShadowedIsNilPlaceholder" = "COMPOSER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMMENT"; ObjectID = "498"; */
+"498.ibShadowedIsNilPlaceholder" = "COMMENT";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TRACK"; ObjectID = "499"; */
+"499.ibShadowedIsNilPlaceholder" = "TRACK";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "TRACKTOTAL"; ObjectID = "500"; */
+"500.ibShadowedIsNilPlaceholder" = "TRACKTOTAL";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DISCNUMBER"; ObjectID = "501"; */
+"501.ibShadowedIsNilPlaceholder" = "DISCNUMBER";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "DISCTOTAL"; ObjectID = "502"; */
+"502.ibShadowedIsNilPlaceholder" = "DISCTOTAL";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "COMPILATION"; ObjectID = "503"; */
+"503.ibShadowedIsNilPlaceholder" = "COMPILATION";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "MCN"; ObjectID = "504"; */
+"504.ibShadowedIsNilPlaceholder" = "MCN";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "ISRC"; ObjectID = "505"; */
+"505.ibShadowedIsNilPlaceholder" = "ISRC";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TITLE"; ObjectID = "507"; */
+"507.placeholderString" = "TITLE";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ARTIST"; ObjectID = "508"; */
+"508.placeholderString" = "ARTIST";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ALBUM"; ObjectID = "509"; */
+"509.placeholderString" = "ALBUM";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DATE"; ObjectID = "510"; */
+"510.placeholderString" = "DATE";
+
+/* Class = "NSTextFieldCell"; placeholderString = "GENRE"; ObjectID = "511"; */
+"511.placeholderString" = "GENRE";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMPOSER"; ObjectID = "512"; */
+"512.placeholderString" = "COMPOSER";
+
+/* Class = "NSTextFieldCell"; placeholderString = "MCN"; ObjectID = "513"; */
+"513.placeholderString" = "MCN";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ISRC"; ObjectID = "514"; */
+"514.placeholderString" = "ISRC";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DESCRIPTION"; ObjectID = "515"; */
+"515.placeholderString" = "DESCRIPTION";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TRACKNUMBER"; ObjectID = "516"; */
+"516.placeholderString" = "TRACKNUMBER";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TRACKTOTAL"; ObjectID = "517"; */
+"517.placeholderString" = "TRACKTOTAL";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DISCNUMBER"; ObjectID = "518"; */
+"518.placeholderString" = "DISCNUMBER";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DISCTOTAL"; ObjectID = "519"; */
+"519.placeholderString" = "DISCTOTAL";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMPILATION"; ObjectID = "520"; */
+"520.placeholderString" = "COMPILATION";
+
+/* Class = "NSTextFieldCell"; title = "To customize the tag mapping, enter the name of the Ogg Vorbis tag to be used for the corresponding editor field.  Leave an entry blank for the default behavior."; ObjectID = "521"; */
+"521.title" = "To customize the tag mapping, enter the name of the Ogg Vorbis tag to be used for the corresponding editor field.  Leave an entry blank for the default behavior.";
+
+/* Class = "NSTextFieldCell"; title = "MCN:"; ObjectID = "522"; */
+"522.title" = "MCN:";
+
+/* Class = "NSTextFieldCell"; title = "ISRC:"; ObjectID = "523"; */
+"523.title" = "ISRC:";
+
+/* Class = "NSTextFieldCell"; title = "Track number:"; ObjectID = "524"; */
+"524.title" = "Track number:";
+
+/* Class = "NSTextFieldCell"; title = "Total tracks:"; ObjectID = "525"; */
+"525.title" = "Total tracks:";
+
+/* Class = "NSTextFieldCell"; title = "Disc number:"; ObjectID = "526"; */
+"526.title" = "Disc number:";
+
+/* Class = "NSTextFieldCell"; title = "Total discs:"; ObjectID = "527"; */
+"527.title" = "Total discs:";
+
+/* Class = "NSTextFieldCell"; title = "Compilation:"; ObjectID = "528"; */
+"528.title" = "Compilation:";
+
+/* Class = "NSTextFieldCell"; title = "Title:"; ObjectID = "529"; */
+"529.title" = "Title:";
+
+/* Class = "NSTextFieldCell"; title = "Artist:"; ObjectID = "530"; */
+"530.title" = "Artist:";
+
+/* Class = "NSTextFieldCell"; title = "Album:"; ObjectID = "531"; */
+"531.title" = "Album:";
+
+/* Class = "NSTextFieldCell"; title = "Date:"; ObjectID = "532"; */
+"532.title" = "Date:";
+
+/* Class = "NSTextFieldCell"; title = "Genre:"; ObjectID = "533"; */
+"533.title" = "Genre:";
+
+/* Class = "NSTextFieldCell"; title = "Composer:"; ObjectID = "534"; */
+"534.title" = "Composer:";
+
+/* Class = "NSTextFieldCell"; title = "Comment:"; ObjectID = "535"; */
+"535.title" = "Comment:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TITLE"; ObjectID = "536"; */
+"536.placeholderString" = "TITLE";
+
+/* Class = "NSTextFieldCell"; title = "Title:"; ObjectID = "537"; */
+"537.title" = "Title:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ARTIST"; ObjectID = "538"; */
+"538.placeholderString" = "ARTIST";
+
+/* Class = "NSTextFieldCell"; title = "Artist:"; ObjectID = "539"; */
+"539.title" = "Artist:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ALBUM"; ObjectID = "540"; */
+"540.placeholderString" = "ALBUM";
+
+/* Class = "NSTextFieldCell"; title = "Album:"; ObjectID = "541"; */
+"541.title" = "Album:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DATE"; ObjectID = "542"; */
+"542.placeholderString" = "DATE";
+
+/* Class = "NSTextFieldCell"; title = "Date:"; ObjectID = "543"; */
+"543.title" = "Date:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "GENRE"; ObjectID = "544"; */
+"544.placeholderString" = "GENRE";
+
+/* Class = "NSTextFieldCell"; title = "Genre:"; ObjectID = "545"; */
+"545.title" = "Genre:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMPOSER"; ObjectID = "546"; */
+"546.placeholderString" = "COMPOSER";
+
+/* Class = "NSTextFieldCell"; title = "Composer:"; ObjectID = "547"; */
+"547.title" = "Composer:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "MCN"; ObjectID = "548"; */
+"548.placeholderString" = "MCN";
+
+/* Class = "NSTextFieldCell"; title = "MCN:"; ObjectID = "549"; */
+"549.title" = "MCN:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ISRC"; ObjectID = "550"; */
+"550.placeholderString" = "ISRC";
+
+/* Class = "NSTextFieldCell"; title = "ISRC:"; ObjectID = "551"; */
+"551.title" = "ISRC:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DESCRIPTION"; ObjectID = "552"; */
+"552.placeholderString" = "DESCRIPTION";
+
+/* Class = "NSTextFieldCell"; title = "Comment:"; ObjectID = "553"; */
+"553.title" = "Comment:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TRACKNUMBER"; ObjectID = "554"; */
+"554.placeholderString" = "TRACKNUMBER";
+
+/* Class = "NSTextFieldCell"; title = "Track number:"; ObjectID = "555"; */
+"555.title" = "Track number:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TRACKTOTAL"; ObjectID = "556"; */
+"556.placeholderString" = "TRACKTOTAL";
+
+/* Class = "NSTextFieldCell"; title = "Total tracks:"; ObjectID = "557"; */
+"557.title" = "Total tracks:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DISCNUMBER"; ObjectID = "558"; */
+"558.placeholderString" = "DISCNUMBER";
+
+/* Class = "NSTextFieldCell"; title = "Disc number:"; ObjectID = "559"; */
+"559.title" = "Disc number:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DISCTOTAL"; ObjectID = "560"; */
+"560.placeholderString" = "DISCTOTAL";
+
+/* Class = "NSTextFieldCell"; title = "Total discs:"; ObjectID = "561"; */
+"561.title" = "Total discs:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMPILATION"; ObjectID = "562"; */
+"562.placeholderString" = "COMPILATION";
+
+/* Class = "NSTextFieldCell"; title = "Compilation:"; ObjectID = "563"; */
+"563.title" = "Compilation:";
+
+/* Class = "NSTextFieldCell"; title = "To customize the tag mapping, enter the name of the FLAC tag to be used for the corresponding editor field.  Leave an entry blank for the default behavior."; ObjectID = "564"; */
+"564.title" = "To customize the tag mapping, enter the name of the FLAC tag to be used for the corresponding editor field.  Leave an entry blank for the default behavior.";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TITLE"; ObjectID = "565"; */
+"565.placeholderString" = "TITLE";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ARTIST"; ObjectID = "566"; */
+"566.placeholderString" = "ARTIST";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ALBUM"; ObjectID = "567"; */
+"567.placeholderString" = "ALBUM";
+
+/* Class = "NSTextFieldCell"; placeholderString = "YEAR"; ObjectID = "568"; */
+"568.placeholderString" = "YEAR";
+
+/* Class = "NSTextFieldCell"; placeholderString = "GENRE"; ObjectID = "569"; */
+"569.placeholderString" = "GENRE";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMPOSER"; ObjectID = "570"; */
+"570.placeholderString" = "COMPOSER";
+
+/* Class = "NSTextFieldCell"; placeholderString = "MCN"; ObjectID = "571"; */
+"571.placeholderString" = "MCN";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ISRC"; ObjectID = "572"; */
+"572.placeholderString" = "ISRC";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMMENT"; ObjectID = "573"; */
+"573.placeholderString" = "COMMENT";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TRACK"; ObjectID = "574"; */
+"574.placeholderString" = "TRACK";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TRACKTOTAL"; ObjectID = "575"; */
+"575.placeholderString" = "TRACKTOTAL";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DISCNUMBER"; ObjectID = "576"; */
+"576.placeholderString" = "DISCNUMBER";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DISCTOTAL"; ObjectID = "577"; */
+"577.placeholderString" = "DISCTOTAL";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMPILATION"; ObjectID = "578"; */
+"578.placeholderString" = "COMPILATION";
+
+/* Class = "NSTextFieldCell"; title = "To customize the tag mapping, enter the name of the APE tag to be used for the corresponding editor field.  Leave an entry blank for the default behavior."; ObjectID = "579"; */
+"579.title" = "To customize the tag mapping, enter the name of the APE tag to be used for the corresponding editor field.  Leave an entry blank for the default behavior.";
+
+/* Class = "NSTextFieldCell"; title = "MCN:"; ObjectID = "580"; */
+"580.title" = "MCN:";
+
+/* Class = "NSTextFieldCell"; title = "ISRC:"; ObjectID = "581"; */
+"581.title" = "ISRC:";
+
+/* Class = "NSTextFieldCell"; title = "Track number:"; ObjectID = "582"; */
+"582.title" = "Track number:";
+
+/* Class = "NSTextFieldCell"; title = "Total tracks:"; ObjectID = "583"; */
+"583.title" = "Total tracks:";
+
+/* Class = "NSTextFieldCell"; title = "Disc number:"; ObjectID = "584"; */
+"584.title" = "Disc number:";
+
+/* Class = "NSTextFieldCell"; title = "Total discs:"; ObjectID = "585"; */
+"585.title" = "Total discs:";
+
+/* Class = "NSTextFieldCell"; title = "Compilation:"; ObjectID = "586"; */
+"586.title" = "Compilation:";
+
+/* Class = "NSTextFieldCell"; title = "Title:"; ObjectID = "587"; */
+"587.title" = "Title:";
+
+/* Class = "NSTextFieldCell"; title = "Artist:"; ObjectID = "588"; */
+"588.title" = "Artist:";
+
+/* Class = "NSTextFieldCell"; title = "Album:"; ObjectID = "589"; */
+"589.title" = "Album:";
+
+/* Class = "NSTextFieldCell"; title = "Date:"; ObjectID = "590"; */
+"590.title" = "Date:";
+
+/* Class = "NSTextFieldCell"; title = "Genre:"; ObjectID = "591"; */
+"591.title" = "Genre:";
+
+/* Class = "NSTextFieldCell"; title = "Composer:"; ObjectID = "592"; */
+"592.title" = "Composer:";
+
+/* Class = "NSTextFieldCell"; title = "Comment:"; ObjectID = "593"; */
+"593.title" = "Comment:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TITLE"; ObjectID = "594"; */
+"594.placeholderString" = "TITLE";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ARTIST"; ObjectID = "595"; */
+"595.placeholderString" = "ARTIST";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ALBUM"; ObjectID = "596"; */
+"596.placeholderString" = "ALBUM";
+
+/* Class = "NSTextFieldCell"; placeholderString = "YEAR"; ObjectID = "597"; */
+"597.placeholderString" = "YEAR";
+
+/* Class = "NSTextFieldCell"; placeholderString = "GENRE"; ObjectID = "598"; */
+"598.placeholderString" = "GENRE";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMPOSER"; ObjectID = "599"; */
+"599.placeholderString" = "COMPOSER";
+
+/* Class = "NSTextFieldCell"; placeholderString = "MCN"; ObjectID = "600"; */
+"600.placeholderString" = "MCN";
+
+/* Class = "NSTextFieldCell"; placeholderString = "ISRC"; ObjectID = "601"; */
+"601.placeholderString" = "ISRC";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMMENT"; ObjectID = "602"; */
+"602.placeholderString" = "COMMENT";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TRACK"; ObjectID = "603"; */
+"603.placeholderString" = "TRACK";
+
+/* Class = "NSTextFieldCell"; placeholderString = "TRACKTOTAL"; ObjectID = "604"; */
+"604.placeholderString" = "TRACKTOTAL";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DISCNUMBER"; ObjectID = "605"; */
+"605.placeholderString" = "DISCNUMBER";
+
+/* Class = "NSTextFieldCell"; placeholderString = "DISCTOTAL"; ObjectID = "606"; */
+"606.placeholderString" = "DISCTOTAL";
+
+/* Class = "NSTextFieldCell"; placeholderString = "COMPILATION"; ObjectID = "607"; */
+"607.placeholderString" = "COMPILATION";
+
+/* Class = "NSTextFieldCell"; title = "To customize the tag mapping, enter the name of the APE tag to be used for the corresponding editor field.  Leave an entry blank for the default behavior."; ObjectID = "608"; */
+"608.title" = "To customize the tag mapping, enter the name of the APE tag to be used for the corresponding editor field.  Leave an entry blank for the default behavior.";
+
+/* Class = "NSTextFieldCell"; title = "MCN:"; ObjectID = "609"; */
+"609.title" = "MCN:";
+
+/* Class = "NSTextFieldCell"; title = "ISRC:"; ObjectID = "610"; */
+"610.title" = "ISRC:";
+
+/* Class = "NSTextFieldCell"; title = "Total tracks:"; ObjectID = "611"; */
+"611.title" = "Total tracks:";
+
+/* Class = "NSTextFieldCell"; title = "Disc number:"; ObjectID = "612"; */
+"612.title" = "Disc number:";
+
+/* Class = "NSTextFieldCell"; title = "Total discs:"; ObjectID = "613"; */
+"613.title" = "Total discs:";
+
+/* Class = "NSTextFieldCell"; title = "Compilation:"; ObjectID = "614"; */
+"614.title" = "Compilation:";
+
+/* Class = "NSTextFieldCell"; title = "Track number:"; ObjectID = "615"; */
+"615.title" = "Track number:";
+
+/* Class = "NSTextFieldCell"; title = "Title:"; ObjectID = "616"; */
+"616.title" = "Title:";
+
+/* Class = "NSTextFieldCell"; title = "Artist:"; ObjectID = "617"; */
+"617.title" = "Artist:";
+
+/* Class = "NSTextFieldCell"; title = "Album:"; ObjectID = "618"; */
+"618.title" = "Album:";
+
+/* Class = "NSTextFieldCell"; title = "Date:"; ObjectID = "619"; */
+"619.title" = "Date:";
+
+/* Class = "NSTextFieldCell"; title = "Genre:"; ObjectID = "620"; */
+"620.title" = "Genre:";
+
+/* Class = "NSTextFieldCell"; title = "Composer:"; ObjectID = "621"; */
+"621.title" = "Composer:";
+
+/* Class = "NSTextFieldCell"; title = "Comment:"; ObjectID = "622"; */
+"622.title" = "Comment:";

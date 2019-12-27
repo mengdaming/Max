@@ -1,0 +1,45 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Format"; ObjectID = "353"; */
+"353.headerCell.title" = "Format";
+
+/* Class = "NSTableColumn"; headerCell.title = "Nickname"; ObjectID = "354"; */
+"354.headerCell.title" = "Nickname";
+
+/* Class = "NSTableColumn"; headerCell.title = "Format"; ObjectID = "363"; */
+"363.headerCell.title" = "Format";
+
+/* Class = "NSTableColumn"; headerCell.title = "Source"; ObjectID = "364"; */
+"364.headerCell.title" = "Source";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayName = "Search"; ObjectID = "388"; */
+"388.ibShadowedDisplayName" = "Search";
+
+/* Class = "NSTableColumn"; headerCell.title = "✔"; ObjectID = "411"; */
+"411.headerCell.title" = "✔";
+
+/* Class = "NSButtonCell"; title = "Check"; ObjectID = "414"; */
+"414.title" = "Check";
+
+/* Class = "NSButtonCell"; title = "Encoder Settings"; ObjectID = "417"; */
+"417.title" = "Encoder Settings";
+
+/* Class = "NSTextFieldCell"; title = "Configured output formats:"; ObjectID = "420"; */
+"420.title" = "Configured output formats:";
+
+/* Class = "NSTextFieldCell"; title = "Available output formats:"; ObjectID = "421"; */
+"421.title" = "Available output formats:";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Search"; ObjectID = "422"; */
+"422.placeholderString" = "Search";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "423"; */
+"423.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "424"; */
+"424.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "425"; */
+"425.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "426"; */
+"426.title" = "Text Cell";

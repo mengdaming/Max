@@ -264,7 +264,7 @@
         <drawer trailingOffset="15" id="99" userLabel="MetadataDrawer">
             <size key="contentSize" width="400" height="413"/>
             <size key="minContentSize" width="50" height="50"/>
-            <size key="maxContentSize" width="600" height="400"/>
+            <size key="maxContentSize" width="600" height="500"/>
             <connections>
                 <outlet property="parentWindow" destination="5" id="100"/>
             </connections>

@@ -1,0 +1,78 @@
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "227"; */
+"227.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "0"; ObjectID = "228"; */
+"228.title" = "0";
+
+/* Class = "NSMenuItem"; title = "2"; ObjectID = "229"; */
+"229.title" = "2";
+
+/* Class = "NSMenuItem"; title = "1"; ObjectID = "230"; */
+"230.title" = "1";
+
+/* Class = "NSMenuItem"; title = "5"; ObjectID = "233"; */
+"233.title" = "5";
+
+/* Class = "NSMenuItem"; title = "3"; ObjectID = "234"; */
+"234.title" = "3";
+
+/* Class = "NSMenuItem"; title = "4"; ObjectID = "235"; */
+"235.title" = "4";
+
+/* Class = "NSMenuItem"; title = "6"; ObjectID = "236"; */
+"236.title" = "6";
+
+/* Class = "NSMenuItem"; title = "Custom"; ObjectID = "237"; */
+"237.title" = "Custom";
+
+/* Class = "NSMenuItem"; title = "7"; ObjectID = "238"; */
+"238.title" = "7";
+
+/* Class = "NSMenuItem"; title = "8"; ObjectID = "239"; */
+"239.title" = "8";
+
+/* Class = "NSButtonCell"; title = "Exhaustive model search"; ObjectID = "608"; */
+"608.title" = "Exhaustive model search";
+
+/* Class = "NSButtonCell"; title = "Enable mid-side coding for stereo input"; ObjectID = "609"; */
+"609.title" = "Enable mid-side coding for stereo input";
+
+/* Class = "NSButtonCell"; title = "Enable loose mid-side adaptive switching for stereo input"; ObjectID = "610"; */
+"610.title" = "Enable loose mid-side adaptive switching for stereo input";
+
+/* Class = "NSTextFieldCell"; title = "QLP coefficient precision:"; ObjectID = "612"; */
+"612.title" = "QLP coefficient precision:";
+
+/* Class = "NSTextFieldCell"; title = "Minimum residual partition order:"; ObjectID = "614"; */
+"614.title" = "Minimum residual partition order:";
+
+/* Class = "NSTextFieldCell"; title = "Maximum residual partition order:"; ObjectID = "616"; */
+"616.title" = "Maximum residual partition order:";
+
+/* Class = "NSTextFieldCell"; title = "Maximum LPC order:"; ObjectID = "618"; */
+"618.title" = "Maximum LPC order:";
+
+/* Class = "NSTextFieldCell"; title = "Compression level:"; ObjectID = "620"; */
+"620.title" = "Compression level:";
+
+/* Class = "NSTextFieldCell"; title = "Reserve:"; ObjectID = "627"; */
+"627.title" = "Reserve:";
+
+/* Class = "NSTextFieldCell"; title = "bytes for metadata"; ObjectID = "628"; */
+"628.title" = "bytes for metadata";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "629"; */
+"629.title" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "FLAC"; ObjectID = "630"; */
+"630.title" = "FLAC";
+
+/* Class = "NSTextFieldCell"; title = "Apodization:"; ObjectID = "631"; */
+"631.title" = "Apodization:";
+
+/* Class = "NSButtonCell"; title = "Enable QLP coefficient precision search"; ObjectID = "633"; */
+"633.title" = "Enable QLP coefficient precision search";
+
+/* Class = "NSButtonCell"; title = "Verify encoding"; ObjectID = "634"; */
+"634.title" = "Verify encoding";

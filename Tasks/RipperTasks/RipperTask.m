@@ -167,7 +167,7 @@
 	[alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
 	[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while ripping tracks from the disc \"%@\".", @"Exceptions", @""), [[[self objectInTracksAtIndex:0] document] title]]];
 	[alert setInformativeText:[[self exception] reason]];
-	[alert setAlertStyle:NSWarningAlertStyle];		
+    [alert setAlertStyle:NSAlertStyleWarning];		
 	[alert runModal];
 }
 

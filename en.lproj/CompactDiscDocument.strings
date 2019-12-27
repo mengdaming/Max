@@ -1,0 +1,87 @@
+
+/* Class = "NSWindow"; title = "Compact Disc 0xsfb+jmr"; ObjectID = "25"; */
+"25.title" = "Compact Disc 0xsfb+jmr";
+
+/* Class = "NSTableColumn"; headerCell.title = "Title"; ObjectID = "34"; */
+"34.headerCell.title" = "Title";
+
+/* Class = "NSTableColumn"; headerCell.title = "✔"; ObjectID = "35"; */
+"35.headerCell.title" = "✔";
+
+/* Class = "NSTableColumn"; headerCell.title = "Track"; ObjectID = "36"; */
+"36.headerCell.title" = "Track";
+
+/* Class = "NSTableColumn"; headerCell.title = "Length"; ObjectID = "304"; */
+"304.headerCell.title" = "Length";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "1"; ObjectID = "816"; */
+"816.ibShadowedIsNilPlaceholder" = "1";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "?"; ObjectID = "817"; */
+"817.ibShadowedIsNilPlaceholder" = "?";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "None Specified"; ObjectID = "874"; */
+"874.ibShadowedIsNilPlaceholder" = "None Specified";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "None Specified"; ObjectID = "875"; */
+"875.ibShadowedIsNilPlaceholder" = "None Specified";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "None Specified"; ObjectID = "876"; */
+"876.ibShadowedIsNilPlaceholder" = "None Specified";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "None Specified"; ObjectID = "877"; */
+"877.ibShadowedIsNilPlaceholder" = "None Specified";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "None Specified"; ObjectID = "878"; */
+"878.ibShadowedIsNilPlaceholder" = "None Specified";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "None"; ObjectID = "886"; */
+"886.ibShadowedIsNilPlaceholder" = "None";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "None Specified"; ObjectID = "952"; */
+"952.ibShadowedIsNilPlaceholder" = "None Specified";
+
+/* Class = "NSTextFieldCell"; title = "Artist:"; ObjectID = "1017"; */
+"1017.title" = "Artist:";
+
+/* Class = "NSTextFieldCell"; title = "Genre:"; ObjectID = "1019"; */
+"1019.title" = "Genre:";
+
+/* Class = "NSTextFieldCell"; title = "Title:"; ObjectID = "1020"; */
+"1020.title" = "Title:";
+
+/* Class = "NSTextFieldCell"; title = "Date:"; ObjectID = "1023"; */
+"1023.title" = "Date:";
+
+/* Class = "NSButtonCell"; title = "Compilation"; ObjectID = "1025"; */
+"1025.title" = "Compilation";
+
+/* Class = "NSTextFieldCell"; title = "Disc:"; ObjectID = "1026"; */
+"1026.title" = "Disc:";
+
+/* Class = "NSTextFieldCell"; title = "of"; ObjectID = "1028"; */
+"1028.title" = "of";
+
+/* Class = "NSButtonCell"; title = "Select All"; ObjectID = "1030"; */
+"1030.title" = "Select All";
+
+/* Class = "NSButtonCell"; title = "Select None"; ObjectID = "1031"; */
+"1031.title" = "Select None";
+
+/* Class = "NSTextFieldCell"; title = "Comment:"; ObjectID = "1032"; */
+"1032.title" = "Comment:";
+
+/* Class = "NSTextFieldCell"; title = "Composer:"; ObjectID = "1034"; */
+"1034.title" = "Composer:";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1070"; */
+"1070.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1071"; */
+"1071.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1072"; */
+"1072.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Output Directory not specified"; ObjectID = "QWY-5i-Dwb"; */
+"QWY-5i-Dwb.title" = "Output Directory not specified";

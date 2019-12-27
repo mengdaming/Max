@@ -1,0 +1,153 @@
+
+/* Class = "NSButtonCell"; ibShadowedToolTip = "Generate an average bitrate (ABR) or constant bitrate (CBR) MP3 file"; ObjectID = "101"; */
+"101.ibShadowedToolTip" = "Generate an average bitrate (ABR) or constant bitrate (CBR) MP3 file";
+
+/* Class = "NSButtonCell"; title = "Bitrate"; ObjectID = "101"; */
+"101.title" = "Bitrate";
+
+/* Class = "NSButtonCell"; ibShadowedToolTip = "Generate a variable bitrate (VBR) mp3 file"; ObjectID = "102"; */
+"102.ibShadowedToolTip" = "Generate a variable bitrate (VBR) mp3 file";
+
+/* Class = "NSButtonCell"; title = "Quality"; ObjectID = "102"; */
+"102.title" = "Quality";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "106"; */
+"106.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "High"; ObjectID = "107"; */
+"107.title" = "High";
+
+/* Class = "NSMenuItem"; title = "Fast"; ObjectID = "108"; */
+"108.title" = "Fast";
+
+/* Class = "NSMenuItem"; title = "Standard"; ObjectID = "109"; */
+"109.title" = "Standard";
+
+/* Class = "NSSlider"; ibShadowedToolTip = "Higher numbers indicate better quality.  Quality settings of 70-100 should yield transparent encoding for most CDs."; ObjectID = "127"; */
+"127.ibShadowedToolTip" = "Higher numbers indicate better quality.  Quality settings of 70-100 should yield transparent encoding for most CDs.";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "130"; */
+"130.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; ibShadowedToolTip = "Recommended"; ObjectID = "131"; */
+"131.ibShadowedToolTip" = "Recommended";
+
+/* Class = "NSMenuItem"; title = "Fast"; ObjectID = "131"; */
+"131.title" = "Fast";
+
+/* Class = "NSMenuItem"; title = "Standard"; ObjectID = "132"; */
+"132.title" = "Standard";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "266"; */
+"266.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; ibShadowedToolTip = "Suitable for archiving"; ObjectID = "267"; */
+"267.ibShadowedToolTip" = "Suitable for archiving";
+
+/* Class = "NSMenuItem"; title = "Best"; ObjectID = "267"; */
+"267.title" = "Best";
+
+/* Class = "NSMenuItem"; ibShadowedToolTip = "Use custom encoder settings"; ObjectID = "268"; */
+"268.ibShadowedToolTip" = "Use custom encoder settings";
+
+/* Class = "NSMenuItem"; title = "Custom"; ObjectID = "268"; */
+"268.title" = "Custom";
+
+/* Class = "NSMenuItem"; ibShadowedToolTip = "CD-quality; suitable for most uses"; ObjectID = "269"; */
+"269.ibShadowedToolTip" = "CD-quality; suitable for most uses";
+
+/* Class = "NSMenuItem"; title = "Transparent"; ObjectID = "269"; */
+"269.title" = "Transparent";
+
+/* Class = "NSMenuItem"; ibShadowedToolTip = "Sacrifice some quality for space"; ObjectID = "270"; */
+"270.ibShadowedToolTip" = "Sacrifice some quality for space";
+
+/* Class = "NSMenuItem"; title = "Portable"; ObjectID = "270"; */
+"270.title" = "Portable";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "291"; */
+"291.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Joint Stereo"; ObjectID = "292"; */
+"292.title" = "Joint Stereo";
+
+/* Class = "NSMenuItem"; title = "Stereo"; ObjectID = "293"; */
+"293.title" = "Stereo";
+
+/* Class = "NSMenuItem"; title = "Default"; ObjectID = "294"; */
+"294.title" = "Default";
+
+/* Class = "NSMenuItem"; title = "Mono"; ObjectID = "295"; */
+"295.title" = "Mono";
+
+/* Class = "NSTextFieldCell"; title = "48"; ObjectID = "385"; */
+"385.title" = "48";
+
+/* Class = "NSButtonCell"; title = "Restrict encoder to constant bitrate"; ObjectID = "386"; */
+"386.title" = "Restrict encoder to constant bitrate";
+
+/* Class = "NSTextFieldCell"; title = "160"; ObjectID = "387"; */
+"387.title" = "160";
+
+/* Class = "NSTextFieldCell"; title = "64"; ObjectID = "388"; */
+"388.title" = "64";
+
+/* Class = "NSTextFieldCell"; title = "96"; ObjectID = "390"; */
+"390.title" = "96";
+
+/* Class = "NSTextFieldCell"; title = "128"; ObjectID = "391"; */
+"391.title" = "128";
+
+/* Class = "NSTextFieldCell"; title = "192"; ObjectID = "392"; */
+"392.title" = "192";
+
+/* Class = "NSTextFieldCell"; title = "320"; ObjectID = "393"; */
+"393.title" = "320";
+
+/* Class = "NSTextFieldCell"; title = "256"; ObjectID = "394"; */
+"394.title" = "256";
+
+/* Class = "NSTextFieldCell"; title = "32"; ObjectID = "395"; */
+"395.title" = "32";
+
+/* Class = "NSTextFieldCell"; title = "Variable bitrate mode:"; ObjectID = "396"; */
+"396.title" = "Variable bitrate mode:";
+
+/* Class = "NSTextFieldCell"; title = "100"; ObjectID = "397"; */
+"397.title" = "100";
+
+/* Class = "NSTextFieldCell"; title = "10"; ObjectID = "399"; */
+"399.title" = "10";
+
+/* Class = "NSTextFieldCell"; title = "50"; ObjectID = "401"; */
+"401.title" = "50";
+
+/* Class = "NSTextFieldCell"; title = "Encoder quality:"; ObjectID = "402"; */
+"402.title" = "Encoder quality:";
+
+/* Class = "NSTextFieldCell"; title = "Label Font Text"; ObjectID = "404"; */
+"404.title" = "Label Font Text";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "406"; */
+"406.title" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "Encoder target:"; ObjectID = "407"; */
+"407.title" = "Encoder target:";
+
+/* Class = "NSTextFieldCell"; title = "Encoding engine quality:"; ObjectID = "408"; */
+"408.title" = "Encoding engine quality:";
+
+/* Class = "NSTextFieldCell"; title = "Stereo mode:"; ObjectID = "409"; */
+"409.title" = "Stereo mode:";
+
+/* Class = "NSTextFieldCell"; title = "Quality:"; ObjectID = "410"; */
+"410.title" = "Quality:";
+
+/* Class = "NSTextFieldCell"; title = "Bitrate:"; ObjectID = "411"; */
+"411.title" = "Bitrate:";
+
+/* Class = "NSTextFieldCell"; title = "MP3"; ObjectID = "412"; */
+"412.title" = "MP3";
+
+/* Class = "NSButtonCell"; title = "Radio"; ObjectID = "413"; */
+"413.title" = "Radio";

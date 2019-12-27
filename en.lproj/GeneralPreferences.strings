@@ -1,0 +1,42 @@
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The maximum number of files that will be encoded simultaneously"; ObjectID = "101"; */
+"101.ibShadowedToolTip" = "The maximum number of files that will be encoded simultaneously";
+
+/* Class = "NSBox"; title = "When a new compact disc is inserted:"; ObjectID = "207"; */
+"207.title" = "When a new compact disc is inserted:";
+
+/* Class = "NSBox"; title = "When any compact disc is inserted:"; ObjectID = "209"; */
+"209.title" = "When any compact disc is inserted:";
+
+/* Class = "NSBox"; title = "General Options"; ObjectID = "213"; */
+"213.title" = "General Options";
+
+/* Class = "NSButtonCell"; title = "Restore Defaults"; ObjectID = "221"; */
+"221.title" = "Restore Defaults";
+
+/* Class = "NSTextFieldCell"; title = "Maximum number of encoders:"; ObjectID = "223"; */
+"223.title" = "Maximum number of encoders:";
+
+/* Class = "NSButtonCell"; title = "Automatically acquire artist and track names"; ObjectID = "225"; */
+"225.title" = "Automatically acquire artist and track names";
+
+/* Class = "NSButtonCell"; title = "Automatically save disc information"; ObjectID = "226"; */
+"226.title" = "Automatically save disc information";
+
+/* Class = "NSButtonCell"; title = "Automatically encode all tracks"; ObjectID = "227"; */
+"227.title" = "Automatically encode all tracks";
+
+/* Class = "NSButtonCell"; title = "Eject disc when ripping completes"; ObjectID = "228"; */
+"228.title" = "Eject disc when ripping completes";
+
+/* Class = "NSButtonCell"; title = "Close window when encoding completes"; ObjectID = "229"; */
+"229.title" = "Close window when encoding completes";
+
+/* Class = "NSButtonCell"; title = "Only when disc is seen for the first time"; ObjectID = "230"; */
+"230.title" = "Only when disc is seen for the first time";
+
+/* Class = "NSButtonCell"; title = "Automatically check for new versions"; ObjectID = "231"; */
+"231.title" = "Automatically check for new versions";
+
+/* Class = "NSButtonCell"; title = "Dynamically show and hide windows"; ObjectID = "232"; */
+"232.title" = "Dynamically show and hide windows";

@@ -1,0 +1,36 @@
+
+/* Class = "NSBox"; title = "LAME MP3 Encoder"; ObjectID = "18"; */
+"18.title" = "LAME MP3 Encoder";
+
+/* Class = "NSBox"; title = "FLAC/Ogg (FLAC) Encoders"; ObjectID = "20"; */
+"20.title" = "FLAC/Ogg (FLAC) Encoders";
+
+/* Class = "NSBox"; title = "libsndfile Conversion Library"; ObjectID = "22"; */
+"22.title" = "libsndfile Conversion Library";
+
+/* Class = "NSBox"; title = "Speex Encoder"; ObjectID = "32"; */
+"32.title" = "Speex Encoder";
+
+/* Class = "NSBox"; title = "Monkey's Audio Compressor"; ObjectID = "37"; */
+"37.title" = "Monkey's Audio Compressor";
+
+/* Class = "NSBox"; title = "WavPack Encoder"; ObjectID = "43"; */
+"43.title" = "WavPack Encoder";
+
+/* Class = "NSTextFieldCell"; title = "System Font Text"; ObjectID = "50"; */
+"50.title" = "System Font Text";
+
+/* Class = "NSTextFieldCell"; title = "System Font Text"; ObjectID = "52"; */
+"52.title" = "System Font Text";
+
+/* Class = "NSTextFieldCell"; title = "System Font Text"; ObjectID = "54"; */
+"54.title" = "System Font Text";
+
+/* Class = "NSTextFieldCell"; title = "System Font Text"; ObjectID = "56"; */
+"56.title" = "System Font Text";
+
+/* Class = "NSTextFieldCell"; title = "System Font Text"; ObjectID = "58"; */
+"58.title" = "System Font Text";
+
+/* Class = "NSTextFieldCell"; title = "Small System Font Text"; ObjectID = "60"; */
+"60.title" = "Small System Font Text";

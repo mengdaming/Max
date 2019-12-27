@@ -1,0 +1,75 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Image"; ObjectID = "66"; */
+"66.headerCell.title" = "Image";
+
+/* Class = "NSTableColumn"; headerCell.title = "Width"; ObjectID = "67"; */
+"67.headerCell.title" = "Width";
+
+/* Class = "NSTableColumn"; headerCell.title = "Height"; ObjectID = "68"; */
+"68.headerCell.title" = "Height";
+
+/* Class = "NSBox"; title = "Search Results"; ObjectID = "84"; */
+"84.title" = "Search Results";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@ x %{value2}@"; ObjectID = "89"; */
+"89.ibShadowedDisplayPattern" = "%{value1}@ x %{value2}@";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@ x %{value2}@"; ObjectID = "90"; */
+"90.ibShadowedDisplayPattern" = "%{value1}@ x %{value2}@";
+
+/* Class = "NSBox"; title = "Query Parameters"; ObjectID = "110"; */
+"110.title" = "Query Parameters";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "113"; */
+"113.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "amazon.co.uk"; ObjectID = "114"; */
+"114.title" = "amazon.co.uk";
+
+/* Class = "NSMenuItem"; title = "amazon.com"; ObjectID = "115"; */
+"115.title" = "amazon.com";
+
+/* Class = "NSMenuItem"; title = "amazon.co.jp"; ObjectID = "116"; */
+"116.title" = "amazon.co.jp";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "Matches Found: %{value1}@"; ObjectID = "129"; */
+"129.ibShadowedDisplayPattern" = "Matches Found: %{value1}@";
+
+/* Class = "NSMenuItem"; title = "amazon.fr"; ObjectID = "133"; */
+"133.title" = "amazon.fr";
+
+/* Class = "NSMenuItem"; title = "amazon.de"; ObjectID = "134"; */
+"134.title" = "amazon.de";
+
+/* Class = "NSMenuItem"; title = "amazon.ca"; ObjectID = "135"; */
+"135.title" = "amazon.ca";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "139"; */
+"139.title" = "Cancel";
+
+/* Class = "NSButtonCell"; title = "Use Selected"; ObjectID = "140"; */
+"140.title" = "Use Selected";
+
+/* Class = "NSTextFieldCell"; title = "200 x 200"; ObjectID = "142"; */
+"142.title" = "200 x 200";
+
+/* Class = "NSTextFieldCell"; title = "No Image"; ObjectID = "143"; */
+"143.title" = "No Image";
+
+/* Class = "NSTextFieldCell"; title = "Matches Found: 12"; ObjectID = "144"; */
+"144.title" = "Matches Found: 12";
+
+/* Class = "NSTextFieldCell"; title = "Artist:"; ObjectID = "145"; */
+"145.title" = "Artist:";
+
+/* Class = "NSTextFieldCell"; title = "Title:"; ObjectID = "147"; */
+"147.title" = "Title:";
+
+/* Class = "NSTextFieldCell"; title = "Locale:"; ObjectID = "150"; */
+"150.title" = "Locale:";
+
+/* Class = "NSButtonCell"; title = "Search"; ObjectID = "151"; */
+"151.title" = "Search";
+
+/* Class = "NSButtonCell"; title = "Visit"; ObjectID = "152"; */
+"152.title" = "Visit";
