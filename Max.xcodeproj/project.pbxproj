@@ -75,7 +75,7 @@
 		6DB9AFBE23A55A5500E4E698 /* wavpack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C2A2370F8B6003602CE /* wavpack.framework */; };
 		6DB9AFBF23A55A5500E4E698 /* wavpack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D336C2A2370F8B6003602CE /* wavpack.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6DB9AFCF23A6A6DB00E4E698 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB9AFCE23A6A6DB00E4E698 /* Growl.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6DB9AFD023A6AC8200E4E698 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51D723773F51001B86CC /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DB9AFD023A6AC8200E4E698 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51D723773F51001B86CC /* Sparkle.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6DB9AFD123A6ACE100E4E698 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A51D723773F51001B86CC /* Sparkle.framework */; };
 		6DC3A22D23A8CAF700B56CBE /* Encoder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DC3A20623A8CAF700B56CBE /* Encoder.xib */; };
 		8C0883620A092EA500CAC5D0 /* AlbumArtDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C0883580A092EA500CAC5D0 /* AlbumArtDefaults.plist */; };
@@ -3226,8 +3226,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -3263,7 +3263,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
