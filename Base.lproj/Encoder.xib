@@ -84,11 +84,11 @@
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" id="105">
-                                                <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0%" negativeFormat="-0%" hasThousandSeparators="NO" thousandSeparator="," id="10">
-                                                    <attributedString key="attributedStringForZero"/>
-                                                    <decimal key="minimum" value="NaN"/>
-                                                    <decimal key="maximum" value="NaN"/>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" title="0%" id="105">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="percent" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" id="10">
+                                                    <integer key="multiplier" value="100"/>
+                                                    <real key="minimum" value="0.0"/>
+                                                    <real key="maximum" value="100"/>
                                                 </numberFormatter>
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -171,7 +171,7 @@
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="64">
-                        <rect key="frame" x="18" y="22" width="47" height="14"/>
+                        <rect key="frame" x="18" y="22" width="47" height="13"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Tasks: 2" id="104">
                             <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -199,11 +199,15 @@
                     <constraint firstItem="13" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="7" id="CYK-KS-3zE"/>
                     <constraint firstItem="13" firstAttribute="leading" secondItem="14" secondAttribute="trailing" constant="8" symbolic="YES" id="R5Q-D8-h0n"/>
                     <constraint firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="20" symbolic="YES" id="VVe-1H-RKM"/>
+                    <constraint firstItem="14" firstAttribute="centerY" secondItem="64" secondAttribute="centerY" id="X8P-kD-3D4"/>
+                    <constraint firstItem="13" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="ci2-cB-aNs"/>
                     <constraint firstItem="7" firstAttribute="top" secondItem="6" secondAttribute="top" constant="20" symbolic="YES" id="eUs-3M-UuY"/>
                     <constraint firstItem="14" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="7" id="eds-2e-M4j"/>
                     <constraint firstItem="7" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" symbolic="YES" id="ejN-x3-RDt"/>
                     <constraint firstItem="14" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="64" secondAttribute="trailing" constant="8" symbolic="YES" id="guV-0P-VoQ"/>
+                    <constraint firstItem="64" firstAttribute="leading" secondItem="7" secondAttribute="leading" id="opb-Bw-8Kk"/>
                     <constraint firstAttribute="bottom" secondItem="14" secondAttribute="bottom" constant="19" id="rEv-wF-PQz"/>
+                    <constraint firstItem="13" firstAttribute="centerY" secondItem="64" secondAttribute="centerY" id="shl-wt-gJy"/>
                     <constraint firstItem="7" firstAttribute="trailing" secondItem="13" secondAttribute="trailing" id="v9d-Ab-1HE"/>
                     <constraint firstItem="64" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" id="wMQ-Be-hIV"/>
                 </constraints>
