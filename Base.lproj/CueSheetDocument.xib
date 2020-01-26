@@ -541,6 +541,7 @@
             <size key="minContentSize" width="314" height="214"/>
             <size key="maxContentSize" width="600" height="400"/>
             <connections>
+                <binding destination="25" name="visible" keyPath="selection" id="GbT-lc-EOK"/>
                 <outlet property="contentView" destination="46" id="47"/>
                 <outlet property="parentWindow" destination="5" id="45"/>
             </connections>
