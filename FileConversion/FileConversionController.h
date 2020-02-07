@@ -26,8 +26,6 @@
 @interface FileConversionController : NSWindowController <AlbumArtMethods>
 {
 	IBOutlet FileArrayController	*_filesController;
-	IBOutlet NSDrawer				*_metadataDrawer;
-	IBOutlet NSDrawer				*_artDrawer;
 	IBOutlet NSTableView			*_filesTableView;
 	IBOutlet NSTextField			*_trackNumberTextField;
 	IBOutlet NSTextField			*_trackTotalTextField;
@@ -57,14 +55,8 @@
 - (BOOL)							encodeAllowed;
 - (IBAction)						encode:(id)sender;
 
-- (IBAction)						toggleTrackInformation:(id)sender;
-- (IBAction)						toggleAlbumArt:(id)sender;
-
 - (IBAction)						addFiles:(id)sender;
 - (IBAction)						removeFiles:(id)sender;
-
-- (IBAction)						downloadAlbumArt:(id)sender;
-- (IBAction)						selectAlbumArt:(id)sender;
 
 - (BOOL)							addFile:(NSString *)filename;
 - (BOOL)							addFile:(NSString *)filename atIndex:(NSUInteger)index;

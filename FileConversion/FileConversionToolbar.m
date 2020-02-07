@@ -42,8 +42,6 @@ static NSString		*AlbumArtToolbarItemIdentifier			= @"org.sbooth.Max.FileConvers
 	for(item in visibleItems) {
 		if([item action] == @selector(encode:))
 			[item setEnabled:[[FileConversionController sharedController] encodeAllowed]];
-//		if([item action] == @selector(queryMusicBrainz:))
-//			[item setEnabled:[[FileConversionController sharedController] queryMusicBrainzAllowed]];
 		else
 			[item setEnabled:YES];
 	}
@@ -65,28 +63,6 @@ static NSString		*AlbumArtToolbarItemIdentifier			= @"org.sbooth.Max.FileConvers
 		
 		[toolbarItem setTarget:[FileConversionController sharedController]];
 		[toolbarItem setAction:@selector(encode:)];
-	}
-	else if([itemIdentifier isEqualToString:MetadataToolbarItemIdentifier]) {
-		toolbarItem = [[[NSToolbarItem alloc] initWithItemIdentifier:itemIdentifier] autorelease];
-		
-		[toolbarItem setLabel: NSLocalizedStringFromTable(@"Metadata", @"FileConversion", @"")];
-		[toolbarItem setPaletteLabel: NSLocalizedStringFromTable(@"Metadata", @"FileConversion", @"")];
-		[toolbarItem setToolTip: NSLocalizedStringFromTable(@"Show or hide the metadata associated with the selected files", @"FileConversion", @"")];
-		[toolbarItem setImage: [NSImage imageNamed:@"TrackInfoToolbarImage"]];
-		
-		[toolbarItem setTarget:[FileConversionController sharedController]];
-		[toolbarItem setAction:@selector(toggleTrackInformation:)];
-	}
-	else if([itemIdentifier isEqualToString:AlbumArtToolbarItemIdentifier]) {
-		toolbarItem = [[[NSToolbarItem alloc] initWithItemIdentifier:itemIdentifier] autorelease];
-		
-		[toolbarItem setLabel: NSLocalizedStringFromTable(@"Album Art", @"FileConversion", @"")];
-		[toolbarItem setPaletteLabel: NSLocalizedStringFromTable(@"Album Art", @"FileConversion", @"")];
-		[toolbarItem setToolTip: NSLocalizedStringFromTable(@"Show or hide the artwork associated with the selected files", @"FileConversion", @"")];
-		[toolbarItem setImage: [NSImage imageNamed:@"AlbumArtToolbarImage"]];
-		
-		[toolbarItem setTarget:[FileConversionController sharedController]];
-		[toolbarItem setAction:@selector(toggleAlbumArt:)];
 	}
 	else
 		toolbarItem = nil;
