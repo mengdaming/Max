@@ -35,6 +35,19 @@
 	IBOutlet NSTextField			*_discTotalTextField;
 	
 	NSMutableArray					*_files;
+    
+    // DM Metadata Drawer
+    IBOutlet NSTextField *_title;
+    IBOutlet NSTextField *_artist;
+    IBOutlet NSTextField *_album;
+    IBOutlet NSTextField *_date;
+    IBOutlet NSComboBox *_genre;
+    IBOutlet NSButton *_compilation;
+    IBOutlet NSTextField *_composer;
+    IBOutlet NSTextField *_mcn;
+    IBOutlet NSTextField *_isrc;
+    IBOutlet NSTextField *_comment;
+    
 }
 
 + (FileConversionController *)		sharedController;
