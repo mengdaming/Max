@@ -21,73 +21,67 @@
 #import "FileConversionToolbar.h"
 #import "FileConversionController.h"
 
-static NSString		*EncodeToolbarItemIdentifier			= @"org.sbooth.Max.FileConversion.Toolbar.Encode";
-static NSString		*MetadataToolbarItemIdentifier			= @"org.sbooth.Max.FileConversion.Toolbar.Metadata";
-static NSString		*AlbumArtToolbarItemIdentifier			= @"org.sbooth.Max.FileConversion.Toolbar.AlbumArt";
+static NSString	*EncodeToolbarItemIdentifier = @"org.sbooth.Max.FileConversion.Toolbar.Encode";
 
 @implementation FileConversionToolbar
 
 - (id) init
 {
-	if((self = [super initWithIdentifier:@"org.sbooth.Max.FileConversion.Toolbar"])) {
-	}
-	return self;
+    if((self = [super initWithIdentifier:@"org.sbooth.Max.FileConversion.Toolbar"])) {
+    }
+    return self;
 }
 
 - (void) validateVisibleItems
 {
-	NSArray			*visibleItems	= [self visibleItems];
-	NSToolbarItem	*item;
-	
-	for(item in visibleItems) {
-		if([item action] == @selector(encode:))
-			[item setEnabled:[[FileConversionController sharedController] encodeAllowed]];
-		else
-			[item setEnabled:YES];
-	}
+    NSArray			*visibleItems	= [self visibleItems];
+    NSToolbarItem	*item;
+    
+    for(item in visibleItems) {
+        if([item action] == @selector(encode:))
+            [item setEnabled:[[FileConversionController sharedController] encodeAllowed]];
+        else
+            [item setEnabled:YES];
+    }
 }
 
 #pragma mark Delegate Methods
 
 - (NSToolbarItem *) toolbar:(NSToolbar *)toolbar itemForItemIdentifier:(NSString *)itemIdentifier willBeInsertedIntoToolbar:(BOOL)flag 
 {
-	NSToolbarItem *toolbarItem = nil;
-	
-	if([itemIdentifier isEqualToString:EncodeToolbarItemIdentifier]) {
-		toolbarItem = [[[NSToolbarItem alloc] initWithItemIdentifier:itemIdentifier] autorelease];
-		
-		[toolbarItem setLabel: NSLocalizedStringFromTable(@"Convert", @"FileConversion", @"")];
-		[toolbarItem setPaletteLabel: NSLocalizedStringFromTable(@"Convert", @"FileConversion", @"")];
-		[toolbarItem setToolTip: NSLocalizedStringFromTable(@"Convert the selected files", @"FileConversion", @"")];
-		[toolbarItem setImage: [NSImage imageNamed:@"EncodeToolbarImage"]];
-		
-		[toolbarItem setTarget:[FileConversionController sharedController]];
-		[toolbarItem setAction:@selector(encode:)];
-	}
-	else
-		toolbarItem = nil;
-	
-	return toolbarItem;	
+    NSToolbarItem *toolbarItem = nil;
+    
+    if([itemIdentifier isEqualToString:EncodeToolbarItemIdentifier]) {
+        toolbarItem = [[[NSToolbarItem alloc] initWithItemIdentifier:itemIdentifier] autorelease];
+        
+        [toolbarItem setLabel: NSLocalizedStringFromTable(@"Convert", @"FileConversion", @"")];
+        [toolbarItem setPaletteLabel: NSLocalizedStringFromTable(@"Convert", @"FileConversion", @"")];
+        [toolbarItem setToolTip: NSLocalizedStringFromTable(@"Convert the selected files", @"FileConversion", @"")];
+        [toolbarItem setImage: [NSImage imageNamed:@"EncodeToolbarImage"]];
+        
+        [toolbarItem setTarget:[FileConversionController sharedController]];
+        [toolbarItem setAction:@selector(encode:)];
+    }
+    else
+        toolbarItem = nil;
+    
+    return toolbarItem;
 }
 
 - (NSArray *) toolbarDefaultItemIdentifiers:(NSToolbar *)toolbar 
 {
-    return [NSArray arrayWithObjects:EncodeToolbarItemIdentifier, 
-			MetadataToolbarItemIdentifier, 
-			AlbumArtToolbarItemIdentifier, 
-			nil];
+    return [NSArray arrayWithObjects:EncodeToolbarItemIdentifier,
+            nil];
 }
 
 - (NSArray *) toolbarAllowedItemIdentifiers:(NSToolbar *) toolbar 
 {
-    return [NSArray arrayWithObjects:EncodeToolbarItemIdentifier, 
-			MetadataToolbarItemIdentifier, 
-			AlbumArtToolbarItemIdentifier,
-			NSToolbarSeparatorItemIdentifier, 
-			NSToolbarSpaceItemIdentifier, 
-			NSToolbarFlexibleSpaceItemIdentifier,
-			NSToolbarCustomizeToolbarItemIdentifier, 
-			nil];
+    return [NSArray arrayWithObjects:EncodeToolbarItemIdentifier,
+            NSToolbarSeparatorItemIdentifier,
+            NSToolbarSpaceItemIdentifier,
+            NSToolbarFlexibleSpaceItemIdentifier,
+            NSToolbarCustomizeToolbarItemIdentifier,
+            nil];
 }
 
 @end

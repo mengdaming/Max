@@ -36,9 +36,18 @@
         return YES;
 }
 
-- (NSDragOperation) draggingSourceOperationMaskForLocal:(BOOL)isLocal
+- (NSDragOperation)draggingSession:(NSDraggingSession *)session sourceOperationMaskForDraggingContext:(NSDraggingContext)context
 {
-    return (isLocal ? NSDragOperationMove : NSDragOperationCopy);
+    switch(context) {
+        case NSDraggingContextOutsideApplication:
+            return NSDragOperationCopy;
+            break;
+            
+        case NSDraggingContextWithinApplication:
+        default:
+            return NSDragOperationMove;
+            break;
+    }
 }
 
 - (void) keyDown:(NSEvent *)event
@@ -60,12 +69,12 @@
 }
 
 // TODO: provide prettier dragging images for files (larger icons ??)
-/*
- - (NSImage *) dragImageForRowsWithIndexes:(NSIndexSet *)dragRows tableColumns:(NSArray *)tableColumns event:(NSEvent*)dragEvent offset:(NSPointPointer)dragImageOffset
- {
- return [super dragImageForRowsWithIndexes:dragRows tableColumns:tableColumns event:dragEvent offset:dragImageOffset];
- }
- */
+
+- (NSImage *) dragImageForRowsWithIndexes:(NSIndexSet *)dragRows tableColumns:(NSArray *)tableColumns event:(NSEvent*)dragEvent offset:(NSPointPointer)dragImageOffset
+{
+    return [super dragImageForRowsWithIndexes:dragRows tableColumns:tableColumns event:dragEvent offset:dragImageOffset];
+}
+
 
 - (NSMenu *) menuForEvent:(NSEvent *)event
 {
@@ -148,6 +157,6 @@
             }
         }
     }];
- }
+}
 
 @end

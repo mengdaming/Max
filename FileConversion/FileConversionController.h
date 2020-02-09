@@ -25,40 +25,23 @@
 
 @interface FileConversionController : NSWindowController <AlbumArtMethods>
 {
-	IBOutlet FileArrayController	*_filesController;
-	IBOutlet NSTableView			*_filesTableView;
-	IBOutlet NSTextField			*_trackNumberTextField;
-	IBOutlet NSTextField			*_trackTotalTextField;
-	IBOutlet NSTextField			*_discNumberTextField;
-	IBOutlet NSTextField			*_discTotalTextField;
-	
-	NSMutableArray					*_files;
-    
-    // DM Metadata Drawer
-    IBOutlet NSTextField *_title;
-    IBOutlet NSTextField *_artist;
-    IBOutlet NSTextField *_album;
-    IBOutlet NSTextField *_date;
-    IBOutlet NSComboBox *_genre;
-    IBOutlet NSButton *_compilation;
-    IBOutlet NSTextField *_composer;
-    IBOutlet NSTextField *_mcn;
-    IBOutlet NSTextField *_isrc;
-    IBOutlet NSTextField *_comment;
-    
+    IBOutlet FileArrayController    *_filesController;
+    IBOutlet NSTableView            *_filesTableView;
+    NSMutableArray                    *_files;
 }
 
-+ (FileConversionController *)		sharedController;
++ (FileConversionController *)        sharedController;
 
-- (NSArray *)						genres;
+- (NSArray *)                        genres;
 
-- (BOOL)							encodeAllowed;
-- (IBAction)						encode:(id)sender;
+- (BOOL)                            encodeAllowed;
+- (IBAction)                        encode:(id)sender;
 
-- (IBAction)						addFiles:(id)sender;
-- (IBAction)						removeFiles:(id)sender;
+- (IBAction)                        addFiles:(id)sender;
+- (IBAction)                        removeFiles:(id)sender;
 
-- (BOOL)							addFile:(NSString *)filename;
-- (BOOL)							addFile:(NSString *)filename atIndex:(NSUInteger)index;
+- (BOOL)                            addFile:(NSString *)filename;
+- (BOOL)                            addFile:(NSString *)filename atIndex:(NSUInteger)index;
 
 @end
+

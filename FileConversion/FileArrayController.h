@@ -22,7 +22,7 @@
 
 @interface FileArrayController : NSArrayController
 {
-	IBOutlet NSTableView		*_tableView;
+    IBOutlet NSTableView		*_tableView;
 }
 
 - (NSDictionary *)			findFile:(NSString *)filename;

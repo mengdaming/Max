@@ -31,7 +31,7 @@
 
 - (void) awakeFromNib
 {
-	[_tableView registerForDraggedTypes:[NSArray arrayWithObject:NSFilenamesPboardType]];
+    [_tableView registerForDraggedTypes:[NSArray arrayWithObject:NSFilenamesPboardType]];
 }
 
 #pragma mark Data Source Overrides
@@ -39,127 +39,127 @@
 // Fall back to bindings
 - (NSInteger) numberOfRowsInTableView:(NSTableView *)aTableView
 {
-	return -1;
+    return -1;
 }
 
 - (id) tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
 {
-	return nil;
+    return nil;
 }
 
 - (BOOL) containsFile:(NSString *)filename
 {
-	return (nil == [self findFile:filename] ? NO :  YES);
+    return (nil == [self findFile:filename] ? NO :  YES);
 }
 
 - (NSDictionary *) findFile:(NSString *)filename
 {
-	NSParameterAssert(nil != filename);
-	
-	NSEnumerator			*enumerator;
-	NSDictionary			*current;
-	
-	enumerator = [[self arrangedObjects] objectEnumerator];		
-	while((current = [enumerator nextObject])) {
-		if([[current valueForKey:@"filename"] isEqualToString:filename]) {
-			return current;
-		}
-	}	
-	
-	return nil;
+    NSParameterAssert(nil != filename);
+    
+    NSEnumerator			*enumerator;
+    NSDictionary			*current;
+    
+    enumerator = [[self arrangedObjects] objectEnumerator];
+    while((current = [enumerator nextObject])) {
+        if([[current valueForKey:@"filename"] isEqualToString:filename]) {
+            return current;
+        }
+    }
+    
+    return nil;
 }
 
 - (void) selectFile:(NSString *)filename
 {
-	NSParameterAssert(nil != filename);
-
-	NSDictionary *file = [self findFile:filename];
-	if(nil != file) {
-		[self setSelectionIndex:[[self arrangedObjects] indexOfObject:file]];
-	}
+    NSParameterAssert(nil != filename);
+    
+    NSDictionary *file = [self findFile:filename];
+    if(nil != file) {
+        [self setSelectionIndex:[[self arrangedObjects] indexOfObject:file]];
+    }
 }
 
 - (BOOL) tableView:(NSTableView *)tv writeRowsWithIndexes:(NSIndexSet *)rowIndexes toPasteboard:(NSPasteboard *)pboard
 {
-	NSArray				*rows				= [self arrangedObjects];
-	NSMutableArray		*filenames			= [NSMutableArray arrayWithCapacity:[rowIndexes count]];
-	NSUInteger			index				= [rowIndexes firstIndex];
-		
-	while(NSNotFound != index) {
-		[filenames addObject:[[rows objectAtIndex:index] valueForKey:@"filename"]];
-		index = [rowIndexes indexGreaterThanIndex:index];
-	}
-	
-	[pboard declareTypes:[NSArray arrayWithObject:NSFilenamesPboardType] owner:nil];
-	[pboard setPropertyList:filenames forType:NSFilenamesPboardType];
-
-	return YES;
+    NSArray				*rows				= [self arrangedObjects];
+    NSMutableArray		*filenames			= [NSMutableArray arrayWithCapacity:[rowIndexes count]];
+    NSUInteger			index				= [rowIndexes firstIndex];
+    
+    while(NSNotFound != index) {
+        [filenames addObject:[[rows objectAtIndex:index] valueForKey:@"filename"]];
+        index = [rowIndexes indexGreaterThanIndex:index];
+    }
+    
+    [pboard declareTypes:[NSArray arrayWithObject:NSFilenamesPboardType] owner:nil];
+    [pboard setPropertyList:filenames forType:NSFilenamesPboardType];
+    
+    return YES;
 }
 
 - (NSDragOperation) tableView:(NSTableView*)tv validateDrop:(id <NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)op
 {
-	NSDragOperation		dragOperation		= NSDragOperationNone;
-
-	// Move rows if this is an internal drag
-	if(tv == [info draggingSource]) {
-		[tv setDropRow:row dropOperation:NSTableViewDropAbove];
-		dragOperation = NSDragOperationMove;
-	}	
-	else if([[[info draggingPasteboard] types] containsObject:NSFilenamesPboardType]) {
-		[tv setDropRow:row dropOperation:NSTableViewDropAbove];
-		dragOperation = NSDragOperationCopy;
-	}
-
-	return dragOperation;
+    NSDragOperation		dragOperation		= NSDragOperationNone;
+    
+    // Move rows if this is an internal drag
+    if(tv == [info draggingSource]) {
+        [tv setDropRow:row dropOperation:NSTableViewDropAbove];
+        dragOperation = NSDragOperationMove;
+    }
+    else if([[[info draggingPasteboard] types] containsObject:NSFilenamesPboardType]) {
+        [tv setDropRow:row dropOperation:NSTableViewDropAbove];
+        dragOperation = NSDragOperationCopy;
+    }
+    
+    return dragOperation;
 }
 
 - (BOOL) tableView:(NSTableView*)tv acceptDrop:(id <NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)op
 {
-	BOOL				success			= YES;
-
+    BOOL				success			= YES;
+    
     if(0 > row) {
-		row = 0;
-	}
-	
+        row = 0;
+    }
+    
     if(_tableView == [info draggingSource]) {
-		NSArray			*filenames		= [[info draggingPasteboard] propertyListForType:NSFilenamesPboardType];
-		NSIndexSet		*indexSet		= [self indexSetForRows:filenames];
-		NSInteger		rowsAbove;
-		NSRange			range;
-
-		[self moveObjectsInArrangedObjectsFromIndexes:indexSet toIndex:row];
-		
-		rowsAbove	= [self rowsAboveRow:row inIndexSet:indexSet];
-		range		= NSMakeRange(row - rowsAbove, [indexSet count]);
-		indexSet	= [NSIndexSet indexSetWithIndexesInRange:range];
-		
-		[self setSelectionIndexes:indexSet];
-	}
-	else if([[[info draggingPasteboard] types] containsObject:NSFilenamesPboardType]) {
-		NSEnumerator		*enumerator;
-		NSString			*current;
-		NSMutableArray		*newFiles	= [NSMutableArray array];
-		NSDictionary		*file;
-		
-		enumerator = [[[info draggingPasteboard] propertyListForType:NSFilenamesPboardType] objectEnumerator];
-		while((current = [enumerator nextObject])) {
-			
-			success &= [[FileConversionController sharedController] addFile:current atIndex:row++];
-			
-			if(success) {
-				file = [self findFile:current];
-				if(nil != file) {
-					[newFiles addObject:file];
-				}
-			}
-		}
-		
-		if(success) {
-			[self setSelectedObjects:newFiles];
-		}		
-	}
-	
-	return success;
+        NSArray			*filenames		= [[info draggingPasteboard] propertyListForType:NSFilenamesPboardType];
+        NSIndexSet		*indexSet		= [self indexSetForRows:filenames];
+        NSInteger		rowsAbove;
+        NSRange			range;
+        
+        [self moveObjectsInArrangedObjectsFromIndexes:indexSet toIndex:row];
+        
+        rowsAbove	= [self rowsAboveRow:row inIndexSet:indexSet];
+        range		= NSMakeRange(row - rowsAbove, [indexSet count]);
+        indexSet	= [NSIndexSet indexSetWithIndexesInRange:range];
+        
+        [self setSelectionIndexes:indexSet];
+    }
+    else if([[[info draggingPasteboard] types] containsObject:NSFilenamesPboardType]) {
+        NSEnumerator		*enumerator;
+        NSString			*current;
+        NSMutableArray		*newFiles	= [NSMutableArray array];
+        NSDictionary		*file;
+        
+        enumerator = [[[info draggingPasteboard] propertyListForType:NSFilenamesPboardType] objectEnumerator];
+        while((current = [enumerator nextObject])) {
+            
+            success &= [[FileConversionController sharedController] addFile:current atIndex:row++];
+            
+            if(success) {
+                file = [self findFile:current];
+                if(nil != file) {
+                    [newFiles addObject:file];
+                }
+            }
+        }
+        
+        if(success) {
+            [self setSelectedObjects:newFiles];
+        }
+    }
+    
+    return success;
 }
 
 @end
@@ -168,63 +168,63 @@
 
 - (void) moveObjectsInArrangedObjectsFromIndexes:(NSIndexSet*)indexSet toIndex:(unsigned)insertIndex
 {
-	NSArray			*objects					= [self arrangedObjects];
-	NSUInteger		index						= [indexSet lastIndex];
-	NSUInteger		aboveInsertIndexCount		= 0;
-	NSUInteger		removeIndex;
-	id				object;
-
-	while(NSNotFound != index) {
-		if(index >= insertIndex) {
-			removeIndex = index + aboveInsertIndexCount;
-			++aboveInsertIndexCount;
-	}
-	else {
-		removeIndex = index;
-		--insertIndex;
-	}
-	object = [[objects objectAtIndex:removeIndex] retain];
-	[self removeObjectAtArrangedObjectIndex:removeIndex];
-	[self insertObject:[object autorelease] atArrangedObjectIndex:insertIndex];
-
-	index = [indexSet indexLessThanIndex:index];
-	}
+    NSArray			*objects					= [self arrangedObjects];
+    NSUInteger		index						= [indexSet lastIndex];
+    NSUInteger		aboveInsertIndexCount		= 0;
+    NSUInteger		removeIndex;
+    id				object;
+    
+    while(NSNotFound != index) {
+        if(index >= insertIndex) {
+            removeIndex = index + aboveInsertIndexCount;
+            ++aboveInsertIndexCount;
+        }
+        else {
+            removeIndex = index;
+            --insertIndex;
+        }
+        object = [[objects objectAtIndex:removeIndex] retain];
+        [self removeObjectAtArrangedObjectIndex:removeIndex];
+        [self insertObject:[object autorelease] atArrangedObjectIndex:insertIndex];
+        
+        index = [indexSet indexLessThanIndex:index];
+    }
 }
 
 - (NSIndexSet *) indexSetForRows:(NSArray *)rows
 {
-	NSArray					*arrangedObjects		= [self arrangedObjects];
-	NSEnumerator			*enumerator				= nil;
-	NSMutableIndexSet		*indexSet				= [NSMutableIndexSet indexSet];
-	id						object;
-	NSString				*filename;
-
-	for(filename in rows) {
-		enumerator = [arrangedObjects objectEnumerator];
-		while((object = [enumerator nextObject])) {
-			if([[object valueForKey:@"filename"] isEqualToString:filename]) {
-				[indexSet addIndex:[arrangedObjects indexOfObject:object]];
-			}
-		}
-	}
-
-	return indexSet;
+    NSArray					*arrangedObjects		= [self arrangedObjects];
+    NSEnumerator			*enumerator				= nil;
+    NSMutableIndexSet		*indexSet				= [NSMutableIndexSet indexSet];
+    id						object;
+    NSString				*filename;
+    
+    for(filename in rows) {
+        enumerator = [arrangedObjects objectEnumerator];
+        while((object = [enumerator nextObject])) {
+            if([[object valueForKey:@"filename"] isEqualToString:filename]) {
+                [indexSet addIndex:[arrangedObjects indexOfObject:object]];
+            }
+        }
+    }
+    
+    return indexSet;
 }
 
 - (int) rowsAboveRow:(int)row inIndexSet:(NSIndexSet *)indexSet
 {
-	int				i				= 0;
-	NSUInteger		currentIndex	= [indexSet firstIndex];
-
-	while(NSNotFound != currentIndex) {
-		if(currentIndex < (unsigned)row) {
-			++i;
-		}
-
-		currentIndex = [indexSet indexGreaterThanIndex:currentIndex];
-	}
-
-	return i;
+    int				i				= 0;
+    NSUInteger		currentIndex	= [indexSet firstIndex];
+    
+    while(NSNotFound != currentIndex) {
+        if(currentIndex < (unsigned)row) {
+            ++i;
+        }
+        
+        currentIndex = [indexSet indexGreaterThanIndex:currentIndex];
+    }
+    
+    return i;
 }
 
 @end

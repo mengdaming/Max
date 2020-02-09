@@ -24,7 +24,7 @@
 
 @interface FilesTableView : NSTableView 
 {
-	IBOutlet FileArrayController	*_filesController;
+    IBOutlet FileArrayController	*_filesController;
 }
 
 - (IBAction)	openWithFinder:(id)sender;
