@@ -180,7 +180,7 @@ static void comment_add(char **comments, int *length, const char *tag, const cha
 
 	unsigned					sample, wideSample;
 
-	double						percentComplete;
+	float						percentComplete;
 	NSTimeInterval				interval;
 	unsigned					secondsRemaining;	
 	
@@ -202,7 +202,7 @@ static void comment_add(char **comments, int *length, const char *tag, const cha
 		// Create the appropriate kind of decoder
 		if(nil != [[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"]) {
 			SInt64 startingFrame = [[[[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"] valueForKey:@"startingFrame"] longLongValue];
-			UInt32 frameCount = [[[[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"] valueForKey:@"frameCount"] unsignedIntValue];
+            frameCount = [[[[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"] valueForKey:@"frameCount"] unsignedIntValue];
 			decoder = [RegionDecoder decoderWithFilename:sourceFilename startingFrame:startingFrame frameCount:frameCount];
 		}
 		else
@@ -530,7 +530,7 @@ static void comment_add(char **comments, int *length, const char *tag, const cha
 				}
 				
 				// Update UI
-				percentComplete		= ((double)(totalFileFrames - framesToRead)/(double) totalFileFrames) * 100.0;
+				percentComplete		= (float)(totalFileFrames - framesToRead) / (float)totalFileFrames;
 				interval			= -1.0 * [startTime timeIntervalSinceNow];
 				secondsRemaining	= interval / ((double)(totalFileFrames - framesToRead)/(double) totalFileFrames) - interval;
 				

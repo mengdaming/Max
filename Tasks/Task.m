@@ -28,36 +28,36 @@
 
 + (void) initialize
 {
-	[self exposeBinding:@"startTime"];
-	[self exposeBinding:@"endTime"];
-	[self exposeBinding:@"percentComplete"];
-	[self exposeBinding:@"secondsRemaining"];
+    [self exposeBinding:@"startTime"];
+    [self exposeBinding:@"endTime"];
+    [self exposeBinding:@"percentComplete"];
+    [self exposeBinding:@"secondsRemaining"];
 }
 
 - (id) init
 {
-	if((self = [super init])) {
-		_secondsRemaining = UINT_MAX;
-		return self;
-	}
-	
-	return nil;
+    if((self = [super init])) {
+        _secondsRemaining = UINT_MAX;
+        return self;
+    }
+    
+    return nil;
 }
 
 - (void) dealloc
 {
-	if([self shouldDeleteOutputFile]) {
-		[self deleteOutputFile];
-	}
-
-	[_taskInfo release];		_taskInfo = nil;
-	[_startTime release];		_startTime = nil;
-	[_endTime release];			_endTime = nil;
-	[_phase release];			_phase = nil;
-	[_exception release];		_exception = nil;
-	[_outputFilename release];	_outputFilename = nil;
-	
-	[super dealloc];
+    if([self shouldDeleteOutputFile]) {
+        [self deleteOutputFile];
+    }
+    
+    [_taskInfo release];		_taskInfo = nil;
+    [_startTime release];		_startTime = nil;
+    [_endTime release];			_endTime = nil;
+    [_phase release];			_phase = nil;
+    [_exception release];		_exception = nil;
+    [_outputFilename release];	_outputFilename = nil;
+    
+    [super dealloc];
 }
 
 #pragma mark TaskMethods method implementations
@@ -86,21 +86,21 @@
 - (BOOL)			shouldStop									{ return _shouldStop; }
 - (void)			setShouldStop:(BOOL)shouldStop				{ _shouldStop = shouldStop; }
 
-- (unsigned)		secondsRemaining							{ return _secondsRemaining; }
-- (void)			setSecondsRemaining:(unsigned)secondsRemaining { _secondsRemaining = secondsRemaining; }
+- (NSUInteger)		secondsRemaining							{ return _secondsRemaining; }
+- (void)			setSecondsRemaining:(NSUInteger)secondsRemaining { _secondsRemaining = secondsRemaining; }
 
 - (NSException *)	exception									{ return [[_exception retain] autorelease]; }
 - (void)			setException:(NSException *)exception		{ [_exception release]; _exception = [exception retain]; }
 
-- (void)			updateProgress:(float)percentComplete secondsRemaining:(unsigned)secondsRemaining
+- (void)			updateProgress:(float)percentComplete secondsRemaining:(NSUInteger)secondsRemaining
 {
-	[self setPercentComplete:percentComplete];
-	[self setSecondsRemaining:secondsRemaining];
+    [self setPercentComplete:percentComplete];
+    [self setSecondsRemaining:secondsRemaining];
 }
 
 #pragma mark Task methods
 
-- (void)			run											{}
+- (void) run											{}
 - (void)			stop										{}
 
 - (NSString *)		outputFilename								{ return [[_outputFilename retain] autorelease];}
@@ -115,10 +115,10 @@
 
 - (void) deleteOutputFile
 {
-	if([[NSFileManager defaultManager] fileExistsAtPath:[self outputFilename]]) {
-		BOOL			result			= [[NSFileManager defaultManager] removeItemAtPath:[self outputFilename] error:nil];
-		NSAssert(YES == result, NSLocalizedStringFromTable(@"Unable to delete the output file.", @"Exceptions", @"") );
-	}
+    if([[NSFileManager defaultManager] fileExistsAtPath:[self outputFilename]]) {
+        BOOL			result			= [[NSFileManager defaultManager] removeItemAtPath:[self outputFilename] error:nil];
+        NSAssert(YES == result, NSLocalizedStringFromTable(@"Unable to delete the output file.", @"Exceptions", @"") );
+    }
 }
 
 @end

@@ -74,7 +74,7 @@ static int writeWavPackBlock(void *wv_id, void *data, int32_t bcount)
 
 	unsigned						wideSample, sample, channel;
 
-	double							percentComplete;
+	float							percentComplete;
 	NSTimeInterval					interval;
 	unsigned						secondsRemaining;
 	
@@ -96,7 +96,7 @@ static int writeWavPackBlock(void *wv_id, void *data, int32_t bcount)
 		// Create the appropriate kind of decoder
 		if(nil != [[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"]) {
 			SInt64 startingFrame = [[[[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"] valueForKey:@"startingFrame"] longLongValue];
-			UInt32 frameCount = [[[[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"] valueForKey:@"frameCount"] unsignedIntValue];
+            frameCount = [[[[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"] valueForKey:@"frameCount"] unsignedIntValue];
 			decoder = [RegionDecoder decoderWithFilename:sourceFilename startingFrame:startingFrame frameCount:frameCount];
 		}
 		else
@@ -117,17 +117,17 @@ static int writeWavPackBlock(void *wv_id, void *data, int32_t bcount)
 			case 8:				
 			case 24:
 				bufferList.mBuffers[0].mData			= calloc(bufferLen, sizeof(int8_t));
-				bufferList.mBuffers[0].mDataByteSize	= bufferLen * sizeof(int8_t);
+				bufferList.mBuffers[0].mDataByteSize	= (UInt32)bufferLen * sizeof(int8_t);
 				break;
 				
 			case 16:
 				bufferList.mBuffers[0].mData			= calloc(bufferLen, sizeof(int16_t));
-				bufferList.mBuffers[0].mDataByteSize	= bufferLen * sizeof(int16_t);
+				bufferList.mBuffers[0].mDataByteSize	= (UInt32)bufferLen * sizeof(int16_t);
 				break;
 				
 			case 32:
 				bufferList.mBuffers[0].mData			= calloc(bufferLen, sizeof(int32_t));
-				bufferList.mBuffers[0].mDataByteSize	= bufferLen * sizeof(int32_t);
+				bufferList.mBuffers[0].mDataByteSize	= (UInt32)bufferLen * sizeof(int32_t);
 				break;
 				
 			default:
@@ -259,7 +259,7 @@ static int writeWavPackBlock(void *wv_id, void *data, int32_t bcount)
 				}
 				
 				// Update UI
-				percentComplete		= ((double)(totalFrames - framesToRead)/(double) totalFrames) * 100.0;
+                percentComplete     = (float)(totalFrames - framesToRead) / (float)totalFrames;
 				interval			= -1.0 * [startTime timeIntervalSinceNow];
 				secondsRemaining	= (unsigned) (interval / ((double)(totalFrames - framesToRead)/(double) totalFrames) - interval);
 				

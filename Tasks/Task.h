@@ -39,7 +39,7 @@
 	
 	BOOL				_shouldStop;
 	
-	unsigned			_secondsRemaining;
+	NSUInteger			_secondsRemaining;
 		
 	NSException			*_exception;
 	

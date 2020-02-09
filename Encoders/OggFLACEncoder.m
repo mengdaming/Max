@@ -69,7 +69,7 @@
 	FLAC__StreamMetadata			*metadata					[1];
 	SInt64							totalFrames, framesToRead;
 	UInt32							frameCount;
-	double							percentComplete;
+	float							percentComplete;
 	NSTimeInterval					interval;
 	unsigned						secondsRemaining;
 	
@@ -83,7 +83,7 @@
 		// Create the appropriate kind of decoder
 		if(nil != [[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"]) {
 			SInt64 startingFrame = [[[[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"] valueForKey:@"startingFrame"] longLongValue];
-			UInt32 frameCount = [[[[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"] valueForKey:@"frameCount"] unsignedIntValue];
+            frameCount = [[[[[[self delegate] taskInfo] settings] valueForKey:@"framesToConvert"] valueForKey:@"frameCount"] unsignedIntValue];
 			decoder = [RegionDecoder decoderWithFilename:sourceFilename startingFrame:startingFrame frameCount:frameCount];
 		}
 		else
@@ -228,7 +228,7 @@
 				}
 				
 				// Update UI
-				percentComplete		= ((double)(totalFrames - framesToRead)/(double) totalFrames) * 100.0;
+				percentComplete		= (float)(totalFrames - framesToRead) / (float)totalFrames;
 				interval			= -1.0 * [startTime timeIntervalSinceNow];
 				secondsRemaining	= (unsigned) (interval / ((double)(totalFrames - framesToRead)/(double) totalFrames) - interval);
 				
