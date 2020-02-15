@@ -40,7 +40,7 @@ typedef enum OggStreamType OggStreamType;
 
 	
 // Get data directory (~/Application Support/Max/)
-NSString * getApplicationDataDirectory();
+NSString * getApplicationDataDirectory(void);
 
 // Create directory structure for path
 void createDirectoryStructure(NSString *path);
@@ -56,16 +56,16 @@ NSString * generateUniqueFilename(NSString *basename,
 void validateAndCreateDirectory(NSString *path);
 
 // Get an array of file types with built-in support
-NSArray * getBuiltinExtensions();
+NSArray * getBuiltinExtensions(void);
 
 // Get an array of file types supported by libsndfile
-NSArray * getLibsndfileExtensions();
+NSArray * getLibsndfileExtensions(void);
 
 // Get an array of permissible file types
-NSArray * getAudioExtensions();
+NSArray * getAudioExtensions(void);
 
 // Get a timestamp in the ID3v2 format
-NSString * getID3v2Timestamp();
+NSString * getID3v2Timestamp(void);
 
 // Add a Vorbis comment to a FLAC file
 void addVorbisComment(FLAC__StreamMetadata		*block,

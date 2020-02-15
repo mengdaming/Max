@@ -297,9 +297,9 @@ oggStreamType(NSString *filename)
 		unsigned			i;
 		
 		memset(buffer, 0, 6);
-		oggpack_readinit(&opb, op.packet, op.bytes);
+		oggpack_readinit(&opb, op.packet, (int)op.bytes);
 		
-		packtype		= oggpack_read(&opb, 8);
+		packtype		= (int)oggpack_read(&opb, 8);
 		for(i = 0; i < 6; ++i) {
 			buffer[i] = oggpack_read(&opb, 8);
 		}
@@ -349,7 +349,7 @@ oggStreamType(NSString *filename)
 NSData *
 getPNGDataForImage(NSImage *image)
 {
-	return getBitmapDataForImage(image, NSPNGFileType); 
+    return getBitmapDataForImage(image, NSBitmapImageFileTypePNG);
 }
 
 NSData *
@@ -410,7 +410,7 @@ getIconForFile(NSString *filename, NSSize iconSize)
 		newIcon = [[[NSImage alloc] initWithSize:iconSize] autorelease];
 		[newIcon lockFocus];
 		[[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
-		[icon drawInRect:NSMakeRect(0, 0, iconSize.width, iconSize.height) fromRect:NSMakeRect(0, 0, [icon size].width, [icon size].height) operation:NSCompositeCopy fraction:1.0];
+        [icon drawInRect:NSMakeRect(0, 0, iconSize.width, iconSize.height) fromRect:NSMakeRect(0, 0, [icon size].width, [icon size].height) operation:NSCompositingOperationCopy fraction:1.0];
 		[newIcon unlockFocus];
 		icon = newIcon;
 	}
@@ -493,7 +493,7 @@ generateTemporaryFilename(NSString *directory, NSString *extension)
 	SecuritySessionId		sessionID;
 	SessionAttributeBits	sessionInfo;
 	char					path [MAXPATHLEN];
-	int						fd;
+	int		        		fd;
 	
 	if(nil == directory) {
 		directory = NSTemporaryDirectory();
@@ -511,7 +511,7 @@ generateTemporaryFilename(NSString *directory, NSString *extension)
 	pathString	= [NSString stringWithFormat:@"%@/%@-%.8x-XXXXXXXX.%@", directory, @"Max", sessionID, extension];
 	strlcpy(path, [pathString fileSystemRepresentation], MAXPATHLEN); 
 	
-	fd			= mkstemps(path, 1 + [extension length]);
+	fd			= mkstemps(path, 1 + (int)[extension length]);
 	NSCAssert1(-1 != fd, @"Unable to create a temporary file: %s", strerror(errno));
 	
 	intResult = close(fd);
