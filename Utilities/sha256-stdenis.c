@@ -45,29 +45,42 @@ static const unsigned long K[64] = {
 #define Gamma0(x)	(S(x, 7) ^ S(x, 18) ^ R(x, 3))
 #define Gamma1(x)	(S(x, 17) ^ S(x, 19) ^ R(x, 10))
 
+void sha_init(sha_state * md);
+void sha_process(sha_state * md, unsigned char *buf, int len);
+void sha_done(sha_state * md, unsigned char *hash);
+void sha_memory(unsigned char *buf, int len, unsigned char *hash);
+int sha_file(const char *filename, unsigned char *hash);
+
 /* compress 512-bits */
 static void sha_compress(sha_state * md)
 {
     unsigned long S[8], W[64], t0, t1;
     int i;
-
+    
     /* copy state into S */
     for (i = 0; i < 8; i++)
+    {
         S[i] = md->state[i];
-
+    }
+    
     /* copy the state into 512-bits into W[0..15] */
     for (i = 0; i < 16; i++)
+    {
         W[i] = (((unsigned long) md->buf[(4 * i) + 0]) << 24) |
-            (((unsigned long) md->buf[(4 * i) + 1]) << 16) |
-            (((unsigned long) md->buf[(4 * i) + 2]) << 8) |
-            (((unsigned long) md->buf[(4 * i) + 3]));
-
+        (((unsigned long) md->buf[(4 * i) + 1]) << 16) |
+        (((unsigned long) md->buf[(4 * i) + 2]) << 8) |
+        (((unsigned long) md->buf[(4 * i) + 3]));
+    }
+    
     /* fill W[16..63] */
     for (i = 16; i < 64; i++)
+    {
         W[i] = Gamma1(W[i - 2]) + W[i - 7] + Gamma0(W[i - 15]) + W[i - 16];
-
+    }
+    
     /* Compress */
-    for (i = 0; i < 64; i++) {
+    for (i = 0; i < 64; i++)
+    {
         t0 = S[7] + Sigma1(S[4]) + Ch(S[4], S[5], S[6]) + K[i] + W[i];
         t1 = Sigma0(S[0]) + Maj(S[0], S[1], S[2]);
         S[7] = S[6];
@@ -79,10 +92,12 @@ static void sha_compress(sha_state * md)
         S[1] = S[0];
         S[0] = t0 + t1;
     }
-
+    
     /* feedback */
     for (i = 0; i < 8; i++)
+    {
         md->state[i] += S[i];
+    }
 }
 
 /* init the SHA state */
@@ -101,12 +116,14 @@ void sha_init(sha_state * md)
 
 void sha_process(sha_state * md, unsigned char *buf, int len)
 {
-    while (len--) {
+    while (len--)
+    {
         /* copy byte */
         md->buf[md->curlen++] = *buf++;
-
+        
         /* is 64 bytes full? */
-        if (md->curlen == 64) {
+        if (md->curlen == 64)
+        {
             sha_compress(md);
             md->length += 512;
             md->curlen = 0;
@@ -117,47 +134,58 @@ void sha_process(sha_state * md, unsigned char *buf, int len)
 void sha_done(sha_state * md, unsigned char *hash)
 {
     int i;
-
+    
     /* increase the length of the message */
     md->length += md->curlen * 8;
-
+    
     /* append the '1' bit */
     md->buf[md->curlen++] = 0x80;
-
+    
     /* if the length is currenlly above 56 bytes we append zeros
-                               * then compress.  Then we can fall back to padding zeros and length
-                               * encoding like normal.
-                             */
-    if (md->curlen >= 56) {
+     * then compress.  Then we can fall back to padding zeros and length
+     * encoding like normal.
+     */
+    if (md->curlen >= 56)
+    {
         for (; md->curlen < 64;)
+        {
             md->buf[md->curlen++] = 0;
+        }
         sha_compress(md);
         md->curlen = 0;
     }
-
+    
     /* pad upto 56 bytes of zeroes */
     for (; md->curlen < 56;)
+    {
         md->buf[md->curlen++] = 0;
-
+    }
+    
     /* since all messages are under 2^32 bits we mark the top bits zero */
     for (i = 56; i < 60; i++)
+    {
         md->buf[i] = 0;
-
+    }
+    
     /* append length */
     for (i = 60; i < 64; i++)
+    {
         md->buf[i] = (md->length >> ((63 - i) * 8)) & 255;
+    }
     sha_compress(md);
-
+    
     /* copy output */
     for (i = 0; i < 32; i++)
+    {
         hash[i] = (md->state[i >> 2] >> (((3 - i) & 3) << 3)) & 255;
+    }
 }
 
 /* sha-256 a block of memory */
 void sha_memory(unsigned char *buf, int len, unsigned char *hash)
 {
     sha_state md;
-
+    
     sha_init(&md);
     sha_process(&md, buf, len);
     sha_done(&md, hash);
@@ -170,46 +198,21 @@ int sha_file(const char *filename, unsigned char *hash)
     int i;
     FILE *in;
     sha_state md;
-
+    
     sha_init(&md);
     in = fopen(filename, "rb");
     if (!in)
+    {
         return 0;
-    do {
-        i = fread(buf, 1, 512, in);
+    }
+    do
+    {
+        i = (int)fread(buf, 1, 512, in);
         sha_process(&md, buf, i);
     }
     while (i == 512);
+    
     sha_done(&md, hash);
     fclose(in);
     return 1;
 }
-
-/*int main(int argc, char **argv)
-{
-    int i, i2;
-    unsigned char buf[32];
-
-    if (argc == 1) {
-        printf("Usage:\n%s: file1 [file2 file3 ...]\n", argv[0]);
-        return 0;
-    }
-
-    for (i2 = 1; i2 < argc; i2++)
-        if (sha_file(argv[i2], buf)) {
-            printf("%24s: ", argv[i2]);
-            for (i = 0; i < 32;) {
-                printf("%02x", buf[i]);
-                if (!(++i & 3))
-                    printf(" ");
-                if (i == 16)
-                    printf("\n%26s", "");
-
-            }
-            printf("\n");
-        }
-    else
-        printf("%20s: file not found.\n", argv[i2]);
-    return 0;
-}*/
-/* crc==3210950260, version==3, Fri Mar 23 23:23:49 2001 */

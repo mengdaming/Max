@@ -68,7 +68,7 @@ enum {
 
 - (void) awakeFromNib
 {
-	NSString		*outputDirectory;
+	// NSString		*outputDirectory;
 	//	NSArray			*patterns			= nil;
 	//	unsigned		i;
 	
@@ -267,7 +267,7 @@ enum {
 
 	switch(returnCode) {
 		
-		case NSOKButton:
+		case NSModalResponseOK:
 			filesToOpen		= [sheet filenames];
 			count			= [filesToOpen count];
 			
@@ -281,7 +281,7 @@ enum {
 			[_outputDirectoryPopUpButton selectItemWithTag:kCurrentDirectoryMenuItemTag];	
 			break;
 			
-		case NSCancelButton:
+		case NSModalResponseCancel:
 			[self updateOutputDirectoryMenuItemImage];
 			[_outputDirectoryPopUpButton selectItemWithTag:([[NSUserDefaults standardUserDefaults] boolForKey:@"convertInPlace"] ? kSameAsSourceFileMenuItemTag : kCurrentDirectoryMenuItemTag)];	
 			break;
@@ -298,7 +298,7 @@ enum {
 	
 	switch(returnCode) {
 		
-		case NSOKButton:
+		case NSModalResponseOK:
 			filesToOpen		= [sheet filenames];
 			count			= [filesToOpen count];
 			
@@ -311,7 +311,7 @@ enum {
 			[_temporaryDirectoryPopUpButton selectItemWithTag:kCurrentTempDirectoryMenuItemTag];	
 			break;
 			
-		case NSCancelButton:
+		case NSModalResponseCancel:
 			[_temporaryDirectoryPopUpButton selectItemWithTag:(nil != [[NSUserDefaults standardUserDefaults] stringForKey:@"temporaryDirectory"] ? kCurrentTempDirectoryMenuItemTag : kDefaultTempDirectoryMenuItemTag)];
 			break;
 	}	

@@ -354,7 +354,7 @@
 						if(c2Buffer[j]) {
 							for(k = 0; k < 8; ++k) {
 								if((1 << k) & c2Buffer[j]) {
-									[self logMessage:[NSString stringWithFormat:@"C2 error for sector %u", [readRange firstSector] + (8 * j) + k]];
+                                    [self logMessage:[NSString stringWithFormat:@"C2 error for sector %lu", [readRange firstSector] + (8 * j) + k]];
 								}
 							}					
 						}
@@ -635,7 +635,7 @@
 							if(c2Buffer[j]) {
 								for(k = 0; k < 8; ++k) {
 									if((1 << k) & c2Buffer[j]) {
-										[self logMessage:[NSString stringWithFormat:@"C2 error for sector %u", [readRange firstSector] + (8 * j) + k]];
+										[self logMessage:[NSString stringWithFormat:@"C2 error for sector %lu", [readRange firstSector] + (8 * j) + k]];
 									}
 								}					
 							}
