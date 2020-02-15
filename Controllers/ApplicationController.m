@@ -375,7 +375,7 @@ static ApplicationController *sharedController = nil;
 		[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while opening the file \"%@\" for conversion.", @"Exceptions", @""), [[exception userInfo] objectForKey:@"filename"]]];
 		[[LogController sharedController] logMessage:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while opening the file \"%@\" for conversion.", @"Exceptions", @""), [[exception userInfo] objectForKey:@"filename"]]];
 		[alert setInformativeText:[exception reason]];
-		[alert setAlertStyle:NSWarningAlertStyle];		
+        [alert setAlertStyle:NSAlertStyleWarning];
 		[alert runModal];
 	}
 	
@@ -391,7 +391,7 @@ static ApplicationController *sharedController = nil;
 			[[LogController sharedController] logMessage:NSLocalizedStringFromTable(@"An error occurred during file conversion.", @"Exceptions", @"")];
 		}
 		[alert setInformativeText:[exception reason]];
-		[alert setAlertStyle:NSWarningAlertStyle];		
+        [alert setAlertStyle:NSAlertStyleWarning];
 		[alert runModal];
 	}
 

@@ -191,7 +191,7 @@ getCoreAudioFileDataFormats(OSType filetype)
 							unsigned n;
 							for(n = 0; n < bitrateCount; ++n) {
 								unsigned long minRate = (unsigned long) bitrates[n].mMinimum;
-								unsigned long maxRate = (unsigned long) bitrates[n].mMaximum;
+								//unsigned long maxRate = (unsigned long) bitrates[n].mMaximum;
 								if(0 != minRate)
 									[bitratesA addObject:[NSNumber numberWithUnsignedLong: minRate / 1000]];
 							}
