@@ -27,14 +27,16 @@
 {
     IBOutlet FileArrayController    *_filesController;
     IBOutlet NSTableView            *_filesTableView;
-    NSMutableArray                    *_files;
+    NSMutableArray                  *_files;
 }
 
-+ (FileConversionController *)        sharedController;
++ (FileConversionController *)      sharedController;
 
-- (NSArray *)                        genres;
+- (NSArray *)                       genres;
 
+- (BOOL)                            tagAllowed;
 - (BOOL)                            encodeAllowed;
+- (IBAction)                        editWithTag:(id)sender;
 - (IBAction)                        encode:(id)sender;
 
 - (IBAction)                        addFiles:(id)sender;

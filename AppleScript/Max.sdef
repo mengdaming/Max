@@ -270,6 +270,10 @@
 				<cocoa key="fileURL"/>
 			</property>
 			<element type="track"/>
+			<property name="tag allowed" code="Tag" type="boolean" access="r" 
+				description="Does the state of the document allow the selected tracks to be edited using Tag application?">
+				<cocoa key="tagAllowed"/>
+			</property>
 			<property name="encode allowed" code="Enco" type="boolean" access="r" 
 				description="Does the state of the document allow the selected tracks to be encoded?">
 				<cocoa key="encodeAllowed"/>

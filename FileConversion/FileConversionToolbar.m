@@ -21,6 +21,7 @@
 #import "FileConversionToolbar.h"
 #import "FileConversionController.h"
 
+static NSString *TagToolbarItemIdentifier = @"org.sbooth.Max.FileConversion.Toolbar.Tag";
 static NSString	*EncodeToolbarItemIdentifier = @"org.sbooth.Max.FileConversion.Toolbar.Encode";
 
 @implementation FileConversionToolbar
@@ -38,7 +39,9 @@ static NSString	*EncodeToolbarItemIdentifier = @"org.sbooth.Max.FileConversion.T
     NSToolbarItem	*item;
     
     for(item in visibleItems) {
-        if([item action] == @selector(encode:))
+        if([item action] == @selector(editWithTag:))
+            [item setEnabled:[[FileConversionController sharedController] tagAllowed]];
+        else if([item action] == @selector(encode:))
             [item setEnabled:[[FileConversionController sharedController] encodeAllowed]];
         else
             [item setEnabled:YES];
@@ -51,7 +54,18 @@ static NSString	*EncodeToolbarItemIdentifier = @"org.sbooth.Max.FileConversion.T
 {
     NSToolbarItem *toolbarItem = nil;
     
-    if([itemIdentifier isEqualToString:EncodeToolbarItemIdentifier]) {
+    if([itemIdentifier isEqualToString:TagToolbarItemIdentifier]) {
+        toolbarItem = [[[NSToolbarItem alloc] initWithItemIdentifier:itemIdentifier] autorelease];
+        
+        [toolbarItem setLabel: NSLocalizedStringFromTable(@"Tag", @"TagEdition", @"")];
+        [toolbarItem setPaletteLabel: NSLocalizedStringFromTable(@"Tag", @"TagEdition", @"")];
+        [toolbarItem setToolTip: NSLocalizedStringFromTable(@"Edit the selected files metadata using Tag", @"TagEdition", @"")];
+        [toolbarItem setImage: [NSImage imageNamed:@"TagAppToolbarImage"]];
+        
+        [toolbarItem setTarget:[FileConversionController sharedController]];
+        [toolbarItem setAction:@selector(editWithTag:)];
+    }
+    else if([itemIdentifier isEqualToString:EncodeToolbarItemIdentifier]) {
         toolbarItem = [[[NSToolbarItem alloc] initWithItemIdentifier:itemIdentifier] autorelease];
         
         [toolbarItem setLabel: NSLocalizedStringFromTable(@"Convert", @"FileConversion", @"")];
@@ -70,13 +84,17 @@ static NSString	*EncodeToolbarItemIdentifier = @"org.sbooth.Max.FileConversion.T
 
 - (NSArray *) toolbarDefaultItemIdentifiers:(NSToolbar *)toolbar 
 {
-    return [NSArray arrayWithObjects:EncodeToolbarItemIdentifier,
+    return [NSArray arrayWithObjects:
+            TagToolbarItemIdentifier,
+            EncodeToolbarItemIdentifier,
             nil];
 }
 
 - (NSArray *) toolbarAllowedItemIdentifiers:(NSToolbar *) toolbar 
 {
-    return [NSArray arrayWithObjects:EncodeToolbarItemIdentifier,
+    return [NSArray arrayWithObjects:
+            TagToolbarItemIdentifier,
+            EncodeToolbarItemIdentifier,
             NSToolbarSeparatorItemIdentifier,
             NSToolbarSpaceItemIdentifier,
             NSToolbarFlexibleSpaceItemIdentifier,

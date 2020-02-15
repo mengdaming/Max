@@ -115,21 +115,21 @@
 
 - (BOOL) tableView:(NSTableView*)tv acceptDrop:(id <NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)op
 {
-    BOOL				success			= YES;
+    BOOL success = YES;
     
-    if(0 > row) {
+    if (0 > row) {
         row = 0;
     }
     
-    if(_tableView == [info draggingSource]) {
+    if (_tableView == [info draggingSource]) {
         NSArray			*filenames		= [[info draggingPasteboard] propertyListForType:NSFilenamesPboardType];
         NSIndexSet		*indexSet		= [self indexSetForRows:filenames];
         NSInteger		rowsAbove;
         NSRange			range;
         
-        [self moveObjectsInArrangedObjectsFromIndexes:indexSet toIndex:row];
+        [self moveObjectsInArrangedObjectsFromIndexes:indexSet toIndex:(int)row];
         
-        rowsAbove	= [self rowsAboveRow:row inIndexSet:indexSet];
+        rowsAbove	= [self rowsAboveRow:(int)row inIndexSet:indexSet];
         range		= NSMakeRange(row - rowsAbove, [indexSet count]);
         indexSet	= [NSIndexSet indexSetWithIndexesInRange:range];
         
@@ -158,7 +158,6 @@
             [self setSelectedObjects:newFiles];
         }
     }
-    
     return success;
 }
 
@@ -207,24 +206,21 @@
             }
         }
     }
-    
     return indexSet;
 }
 
 - (int) rowsAboveRow:(int)row inIndexSet:(NSIndexSet *)indexSet
 {
-    int				i				= 0;
-    NSUInteger		currentIndex	= [indexSet firstIndex];
+    int	index = 0;
+    NSUInteger currentIndex	= [indexSet firstIndex];
     
     while(NSNotFound != currentIndex) {
         if(currentIndex < (unsigned)row) {
-            ++i;
+            ++index;
         }
-        
         currentIndex = [indexSet indexGreaterThanIndex:currentIndex];
     }
-    
-    return i;
+    return index;
 }
 
 @end

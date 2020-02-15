@@ -43,6 +43,7 @@
 		32C614FE12E80CB800F714C9 /* TaggingPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614DE12E80CB800F714C9 /* TaggingPreferences.xib */; };
 		32C614FF12E80CB800F714C9 /* WavPackSettingsSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C614E012E80CB800F714C9 /* WavPackSettingsSheet.xib */; };
 		32C8F0EE10632AB0004AB74F /* GaplessUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C8F0ED10632AB0004AB74F /* GaplessUtilities.m */; };
+		6D0D9E0423F85FD5003BDA41 /* TagAppToolbarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0D9DDE23F85FD5003BDA41 /* TagAppToolbarImage.png */; };
 		6D422F8523B60FCD0091A549 /* Ripper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D422F8323B60FCD0091A549 /* Ripper.xib */; };
 		6D44E8822370F82B00E883B2 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D44E8812370F82B00E883B2 /* Images-2.xcassets */; };
 		6DB9AF9A23A4E5A300E4E698 /* cuetools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A516D23773BAF001B86CC /* cuetools.framework */; };
@@ -762,6 +763,7 @@
 		6D0A51B223773CDD001B86CC /* speex.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = speex.xcodeproj; path = ../AudioFrameworks/speex/speex.xcodeproj; sourceTree = "<group>"; };
 		6D0A51BB23773D1C001B86CC /* musepack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = musepack.xcodeproj; path = ../AudioFrameworks/musepack/musepack.xcodeproj; sourceTree = "<group>"; };
 		6D0A51C423773F50001B86CC /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = ../Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
+		6D0D9DDE23F85FD5003BDA41 /* TagAppToolbarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TagAppToolbarImage.png; sourceTree = "<group>"; };
 		6D336C192370F8B6003602CE /* wavpack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wavpack.xcodeproj; path = ../AudioFrameworks/wavpack/wavpack.xcodeproj; sourceTree = "<group>"; };
 		6D336C2C2370F90F003602CE /* taglib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = taglib.xcodeproj; path = ../AudioFrameworks/taglib/taglib.xcodeproj; sourceTree = "<group>"; };
 		6D422F8423B60FCD0091A549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Ripper.xib; sourceTree = "<group>"; };
@@ -1558,6 +1560,7 @@
 		8C5301F10A05D5D800890518 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6D0D9DDE23F85FD5003BDA41 /* TagAppToolbarImage.png */,
 				8C1F78140B4218910066072B /* WavPack.png */,
 				8CD025740ADC0A4D00216B29 /* PostProcessingToolbarImage.png */,
 				8CD020080ADB662600216B29 /* iTunesToolbarImage.png */,
@@ -2515,6 +2518,7 @@
 				32C614F312E80CB800F714C9 /* MonkeysAudioSettingsSheet.xib in Resources */,
 				32C614F412E80CB800F714C9 /* MP3SettingsSheet.xib in Resources */,
 				32C614F512E80CB800F714C9 /* MusicBrainzMatchSheet.xib in Resources */,
+				6D0D9E0423F85FD5003BDA41 /* TagAppToolbarImage.png in Resources */,
 				32C614F612E80CB800F714C9 /* MusicBrainzPreferences.xib in Resources */,
 				32C614F712E80CB800F714C9 /* OggSpeexSettingsSheet.xib in Resources */,
 				32C614F812E80CB800F714C9 /* OggVorbisSettingsSheet.xib in Resources */,

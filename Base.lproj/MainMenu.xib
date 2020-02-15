@@ -217,7 +217,12 @@ CA
                 <menuItem title="Tools" id="903">
                     <menu key="submenu" title="Tools" id="904">
                         <items>
-                            <menuItem title="Encode Selected Tracks" tag="1" id="918">
+                            <menuItem title="Edit Metadata" tag="1" keyEquivalent="e" id="Lnn-ij-oJm">
+                                <connections>
+                                    <action selector="editWithTag:" target="-1" id="ig3-V0-o6i"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Convert" tag="1" id="918">
                                 <string key="keyEquivalent" base64-UTF8="YES">
 DQ
 </string>

@@ -24,7 +24,6 @@
 #import "EncoderController.h"
 #import "PreferencesController.h"
 #import "Genres.h"
-#import "AmazonAlbumArtSheet.h"
 #import "ImageAndTextCell.h"
 #import "UtilityFunctions.h"
 
@@ -39,8 +38,6 @@ static FileConversionController		*sharedController						= nil;
 
 + (void) initialize
 {
-    [self setKeys:[NSArray arrayWithObject:@"metadata.albumArt"] triggerChangeNotificationsForDependentKey:@"albumArtWidth"];
-    [self setKeys:[NSArray arrayWithObject:@"metadata.albumArt"] triggerChangeNotificationsForDependentKey:@"albumArtHeight"];
 }
 
 + (FileConversionController *) sharedController
@@ -72,7 +69,11 @@ static FileConversionController		*sharedController						= nil;
 
 - (BOOL) validateMenuItem:(NSMenuItem *)item
 {
-    if([item action] == @selector(encode:)) {
+    if([item action] == @selector(editWithTag:)) {
+        [item setTitle:NSLocalizedStringFromTable(@"Tag", @"Menus", @"")];
+        return [self tagAllowed];
+    }
+    else if([item action] == @selector(encode:)) {
         [item setTitle:NSLocalizedStringFromTable(@"Convert", @"Menus", @"")];
         return [self encodeAllowed];
     }
@@ -131,9 +132,25 @@ static FileConversionController		*sharedController						= nil;
 
 #pragma mark Action Methods
 
+- (BOOL) tagAllowed
+{
+    return (0 != [[_filesController arrangedObjects] count]);
+}
+
 - (BOOL) encodeAllowed
 {
     return (0 != [[_filesController arrangedObjects] count]);
+}
+
+- (IBAction) editWithTag:(id)sender
+{
+    NSEnumerator *enumerator = [[_filesController arrangedObjects] objectEnumerator];
+    NSDictionary *currentSelection;
+    
+    while((currentSelection = [enumerator nextObject])) {
+        NSString *path = [currentSelection valueForKey:@"filename"];
+        [[NSWorkspace sharedWorkspace] openFile:path withApplication:@"Tag"];
+    }
 }
 
 - (IBAction) encode:(id)sender
@@ -240,7 +257,6 @@ static FileConversionController		*sharedController						= nil;
         @try {
             [[EncoderController sharedController] encodeFiles:filenames metadata:metadata settings:settings];
         }
-        
         @catch(NSException *exception) {
             NSAlert *alert = [[[NSAlert alloc] init] autorelease];
             [alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
