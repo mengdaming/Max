@@ -247,12 +247,13 @@
     // Album art
     albumArt = [metadata albumArt];
     if(nil != albumArt) {
-        data			= getPNGDataForImage(albumArt);
+        data			= getJPGDataForImage(albumArt);
         pictureFrame	= new TagLib::ID3v2::AttachedPictureFrame();
         NSAssert(NULL != pictureFrame, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
         
         pictureFrame->setMimeType(TagLib::String("image/png", TagLib::String::Latin1));
         pictureFrame->setPicture(TagLib::ByteVector((const char *)[data bytes], [data length]));
+        pictureFrame->setType(TagLib::ID3v2::AttachedPictureFrame::FrontCover);
         file.ID3v2Tag()->addFrame(pictureFrame);
     }
     

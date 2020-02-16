@@ -353,6 +353,12 @@ getPNGDataForImage(NSImage *image)
 }
 
 NSData *
+getJPGDataForImage(NSImage *image)
+{
+    return getBitmapDataForImage(image, NSBitmapImageFileTypeJPEG);
+}
+
+NSData *
 getBitmapDataForImage(NSImage					*image,
 					  NSBitmapImageFileType		type)
 {

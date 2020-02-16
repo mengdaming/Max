@@ -78,6 +78,9 @@ OggStreamType oggStreamType(NSString *filename);
 // Convert an NSImage to PNG data
 NSData * getPNGDataForImage(NSImage *image);
 
+// Convert an NSImage to JPG data
+NSData * getJPGDataForImage(NSImage *image);
+
 // Convert an NSImage to bitmapped data
 NSData * getBitmapDataForImage(NSImage					*image,
 							   NSBitmapImageFileType	type);

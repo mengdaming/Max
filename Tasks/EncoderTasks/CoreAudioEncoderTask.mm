@@ -361,12 +361,12 @@
 	// Album art
 	albumArt = [metadata albumArt];
 	if(nil != albumArt) {
-		data = getPNGDataForImage(albumArt);
+		data = getJPGDataForImage(albumArt);
 
 		MP4TagArtwork artwork;
 		artwork.data = (void *)[data bytes];
 		artwork.size = [data length];
-		artwork.type = MP4_ART_PNG;
+		artwork.type = MP4_ART_JPEG;
 		
 		MP4TagsAddArtwork(tags, &artwork);
 	}
@@ -591,7 +591,7 @@
 	// Album art
 	albumArt = [metadata albumArt];
 	if(nil != albumArt) {
-		data			= getPNGDataForImage(albumArt); 
+		data			= getJPGDataForImage(albumArt); 
 		pictureFrame	= new TagLib::ID3v2::AttachedPictureFrame();
 		NSAssert(NULL != pictureFrame, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
 		
@@ -881,7 +881,7 @@
 	// Album art
 	albumArt = [metadata albumArt];
 	if(nil != albumArt) {
-		data			= getPNGDataForImage(albumArt); 
+		data			= getJPGDataForImage(albumArt); 
 		pictureFrame	= new TagLib::ID3v2::AttachedPictureFrame();
 		NSAssert(NULL != pictureFrame, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
 		

@@ -304,7 +304,7 @@ using namespace TagLib::ID3v2;
 	// Album art
 	albumArt = [metadata albumArt];
 	if(nil != albumArt) {
-		data			= getPNGDataForImage(albumArt); 
+		data			= getJPGDataForImage(albumArt); 
 		pictureFrame	= new TagLib::ID3v2::AttachedPictureFrame();
 		NSAssert(NULL != pictureFrame, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
 		
@@ -594,7 +594,7 @@ using namespace TagLib::ID3v2;
 	// Album art
 	albumArt = [metadata albumArt];
 	if(nil != albumArt) {
-		data			= getPNGDataForImage(albumArt); 
+		data			= getJPGDataForImage(albumArt); 
 		pictureFrame	= new TagLib::ID3v2::AttachedPictureFrame();
 		NSAssert(NULL != pictureFrame, NSLocalizedStringFromTable(@"Unable to allocate memory.", @"Exceptions", @""));
 		
