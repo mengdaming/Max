@@ -21,7 +21,7 @@
 #import "Task.h"
 
 @interface Task (Private)
-- (void)		deleteOutputFile;
+- (void) deleteOutputFile;
 @end
 
 @implementation Task
@@ -46,16 +46,23 @@
 
 - (void) dealloc
 {
-    if([self shouldDeleteOutputFile]) {
+    if([self shouldDeleteOutputFile])
+    {
         [self deleteOutputFile];
     }
     
-    [_taskInfo release];		_taskInfo = nil;
-    [_startTime release];		_startTime = nil;
-    [_endTime release];			_endTime = nil;
-    [_phase release];			_phase = nil;
-    [_exception release];		_exception = nil;
-    [_outputFilename release];	_outputFilename = nil;
+    [_taskInfo release];
+    _taskInfo = nil;
+    [_startTime release];
+    _startTime = nil;
+    [_endTime release];
+    _endTime = nil;
+    [_phase release];
+    _phase = nil;
+    [_exception release];
+    _exception = nil;
+    [_outputFilename release];
+    _outputFilename = nil;
     
     [super dealloc];
 }
@@ -100,14 +107,32 @@
 
 #pragma mark Task methods
 
-- (void) run											{}
-- (void)			stop										{}
+- (void) run
+{}
 
-- (NSString *)		outputFilename								{ return [[_outputFilename retain] autorelease];}
-- (void)			setOutputFilename:(NSString *)outputFilename { [_outputFilename release]; _outputFilename = [outputFilename retain]; }
+- (void) stop
+{}
 
-- (BOOL)			shouldDeleteOutputFile						{ return _shouldDeleteOutputFile; }
-- (void)			setShouldDeleteOutputFile:(BOOL)shouldDeleteOutputFile { _shouldDeleteOutputFile = shouldDeleteOutputFile; }
+- (NSString *) outputFilename
+{
+    return [[_outputFilename retain] autorelease];
+}
+
+- (void) setOutputFilename:(NSString *)outputFilename
+{
+    [_outputFilename release];
+    _outputFilename = [outputFilename retain];
+}
+
+- (BOOL) shouldDeleteOutputFile
+{
+    return _shouldDeleteOutputFile;
+}
+
+- (void) setShouldDeleteOutputFile:(BOOL)shouldDeleteOutputFile
+{
+    _shouldDeleteOutputFile = shouldDeleteOutputFile;
+}
 
 @end
 
@@ -116,7 +141,7 @@
 - (void) deleteOutputFile
 {
     if([[NSFileManager defaultManager] fileExistsAtPath:[self outputFilename]]) {
-        BOOL			result			= [[NSFileManager defaultManager] removeItemAtPath:[self outputFilename] error:nil];
+        BOOL result	= [[NSFileManager defaultManager] removeItemAtPath:[self outputFilename] error:nil];
         NSAssert(YES == result, NSLocalizedStringFromTable(@"Unable to delete the output file.", @"Exceptions", @"") );
     }
 }
