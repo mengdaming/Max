@@ -45,7 +45,7 @@
 		32C8F0EE10632AB0004AB74F /* GaplessUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C8F0ED10632AB0004AB74F /* GaplessUtilities.m */; };
 		6D0D9E0423F85FD5003BDA41 /* TagAppToolbarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0D9DDE23F85FD5003BDA41 /* TagAppToolbarImage.png */; };
 		6D422F8523B60FCD0091A549 /* Ripper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D422F8323B60FCD0091A549 /* Ripper.xib */; };
-		6D44E8822370F82B00E883B2 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D44E8812370F82B00E883B2 /* Images-2.xcassets */; };
+		6D44E8822370F82B00E883B2 /* Max.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D44E8812370F82B00E883B2 /* Max.xcassets */; };
 		6DB9AF9A23A4E5A300E4E698 /* cuetools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A516D23773BAF001B86CC /* cuetools.framework */; };
 		6DB9AFA323A55A1E00E4E698 /* cdparanoia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524FC2377324400DA0958 /* cdparanoia.framework */; };
 		6DB9AFA423A55A1E00E4E698 /* cdparanoia.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD524FC2377324400DA0958 /* cdparanoia.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -769,7 +769,7 @@
 		6D422F8423B60FCD0091A549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Ripper.xib; sourceTree = "<group>"; };
 		6D44E85D2370F27500E883B2 /* Max.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Max.entitlements; path = Max/Max.entitlements; sourceTree = "<group>"; };
 		6D44E8602370F7DB00E883B2 /* flac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = flac.xcodeproj; path = ../AudioFrameworks/flac/flac.xcodeproj; sourceTree = "<group>"; };
-		6D44E8812370F82B00E883B2 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "Max/Images-2.xcassets"; sourceTree = "<group>"; };
+		6D44E8812370F82B00E883B2 /* Max.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Max.xcassets; path = Max/Max.xcassets; sourceTree = "<group>"; };
 		6D74F67623B5202F0093EF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Acknowledgments.xib; sourceTree = "<group>"; };
 		6D74F67723B5202F0093EF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AlbumArtPreferences.xib; sourceTree = "<group>"; };
 		6D74F67823B5202F0093EF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AmazonAlbumArtSheet.xib; sourceTree = "<group>"; };
@@ -1235,7 +1235,7 @@
 			children = (
 				6D422F8323B60FCD0091A549 /* Ripper.xib */,
 				6DC3A20623A8CAF700B56CBE /* Encoder.xib */,
-				6D44E8812370F82B00E883B2 /* Images-2.xcassets */,
+				6D44E8812370F82B00E883B2 /* Max.xcassets */,
 				32C614A612E80CB800F714C9 /* Acknowledgments.xib */,
 				32C614A812E80CB800F714C9 /* AlbumArtPreferences.xib */,
 				32C614AA12E80CB800F714C9 /* AmazonAlbumArtSheet.xib */,
@@ -2527,7 +2527,7 @@
 				32C614FB12E80CB800F714C9 /* Preferences.xib in Resources */,
 				32C614FD12E80CB800F714C9 /* RipperPreferences.xib in Resources */,
 				32C614FE12E80CB800F714C9 /* TaggingPreferences.xib in Resources */,
-				6D44E8822370F82B00E883B2 /* Images-2.xcassets in Resources */,
+				6D44E8822370F82B00E883B2 /* Max.xcassets in Resources */,
 				32C614FF12E80CB800F714C9 /* WavPackSettingsSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3123,11 +3123,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = Max/Max.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = X2ASXEQAHM;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3150,7 +3151,7 @@
 				);
 				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 0.9.4;
+				MARKETING_VERSION = 1.0.0;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.frozenbanana.Max;
 				PRODUCT_NAME = Max;
@@ -3171,10 +3172,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = Max/MaxRelease.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X2ASXEQAHM;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3195,7 +3197,7 @@
 				);
 				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 0.9.4;
+				MARKETING_VERSION = 1.0.0;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.frozenbanana.Max;
 				PRODUCT_NAME = Max;
@@ -3210,6 +3212,7 @@
 		};
 		8C1919E308C50B7A00CB7453 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 326D22E512DE468000767B04 /* Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -3247,6 +3250,7 @@
 		};
 		8C1919E408C50B7A00CB7453 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 326D22E612DE468000767B04 /* Release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
