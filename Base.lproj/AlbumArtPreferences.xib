@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,86 +21,22 @@
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <value key="minSize" type="size" width="372" height="290"/>
             <view key="contentView" autoresizesSubviews="NO" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6">
-                <rect key="frame" x="0.0" y="0.0" width="530" height="250"/>
+                <rect key="frame" x="0.0" y="0.0" width="530" height="180"/>
                 <subviews>
-                    <stackView autoresizesSubviews="NO" distribution="fillProportionally" orientation="vertical" alignment="centerX" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="B0k-Bo-OnC">
-                        <rect key="frame" x="0.0" y="0.0" width="530" height="250"/>
+                    <stackView autoresizesSubviews="NO" distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="B0k-Bo-OnC">
+                        <rect key="frame" x="0.0" y="0.0" width="530" height="180"/>
                         <subviews>
-                            <box autoresizesSubviews="NO" title="Amazon Web Services" translatesAutoresizingMaskIntoConstraints="NO" id="103">
-                                <rect key="frame" x="17" y="156" width="496" height="64"/>
-                                <view key="contentView" autoresizesSubviews="NO" id="uCT-6W-n0b">
-                                    <rect key="frame" x="3" y="3" width="490" height="46"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ey-dL-e3O" userLabel="Default Amazon Locale Selection">
-                                            <rect key="frame" x="10" y="11" width="277" height="26"/>
-                                            <subviews>
-                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="48">
-                                                    <rect key="frame" x="8" y="6" width="148" height="16"/>
-                                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Default amazon locale:" id="155">
-                                                        <font key="font" metaFont="system"/>
-                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                    </textFieldCell>
-                                                </textField>
-                                                <popUpButton horizontalHuggingPriority="251" verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49">
-                                                    <rect key="frame" x="158" y="0.0" width="122" height="25"/>
-                                                    <popUpButtonCell key="cell" type="push" title="amazon.com" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="52" id="156">
-                                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                        <font key="font" metaFont="menu"/>
-                                                        <menu key="menu" title="OtherViews" id="50">
-                                                            <items>
-                                                                <menuItem title="amazon.com" state="on" tag="1" id="52"/>
-                                                                <menuItem title="amazon.fr" tag="2" id="53"/>
-                                                                <menuItem title="amazon.ca" tag="3" id="51"/>
-                                                                <menuItem title="amazon.de" tag="4" id="54"/>
-                                                                <menuItem title="amazon.co.uk" tag="5" id="55"/>
-                                                                <menuItem title="amazon.co.jp" tag="6" id="56"/>
-                                                            </items>
-                                                        </menu>
-                                                    </popUpButtonCell>
-                                                    <connections>
-                                                        <binding destination="35" name="selectedTag" keyPath="values.amazonDefaultLocale" id="94"/>
-                                                    </connections>
-                                                </popUpButton>
-                                            </subviews>
-                                            <edgeInsets key="edgeInsets" left="10" right="0.0" top="10" bottom="1"/>
-                                            <constraints>
-                                                <constraint firstItem="48" firstAttribute="baseline" secondItem="49" secondAttribute="baseline" id="ILP-75-r2f"/>
-                                                <constraint firstItem="49" firstAttribute="top" secondItem="9Ey-dL-e3O" secondAttribute="top" constant="2" id="J2g-F2-WCx"/>
-                                            </constraints>
-                                            <visibilityPriorities>
-                                                <integer value="1000"/>
-                                                <integer value="1000"/>
-                                            </visibilityPriorities>
-                                            <customSpacing>
-                                                <real value="3.4028234663852886e+38"/>
-                                                <real value="3.4028234663852886e+38"/>
-                                            </customSpacing>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="9Ey-dL-e3O" firstAttribute="leading" secondItem="uCT-6W-n0b" secondAttribute="leading" constant="10" id="DiV-df-1KH"/>
-                                        <constraint firstAttribute="trailing" secondItem="9Ey-dL-e3O" secondAttribute="trailing" constant="203" id="dQ5-66-2dZ"/>
-                                        <constraint firstItem="9Ey-dL-e3O" firstAttribute="top" secondItem="uCT-6W-n0b" secondAttribute="top" constant="9" id="eg8-1Q-jo4"/>
-                                        <constraint firstAttribute="bottom" secondItem="9Ey-dL-e3O" secondAttribute="bottom" constant="11" id="gUJ-HO-8Va"/>
-                                    </constraints>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="bTp-hH-4u4"/>
-                                </constraints>
-                            </box>
                             <box autoresizesSubviews="NO" title="Album Art Options" translatesAutoresizingMaskIntoConstraints="NO" id="140">
-                                <rect key="frame" x="17" y="6" width="496" height="144"/>
-                                <view key="contentView" autoresizesSubviews="NO" id="X8Y-un-u6z">
-                                    <rect key="frame" x="3" y="3" width="490" height="126"/>
+                                <rect key="frame" x="17" y="6" width="496" height="164"/>
+                                <view key="contentView" id="X8Y-un-u6z">
+                                    <rect key="frame" x="3" y="3" width="490" height="146"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <stackView autoresizesSubviews="NO" distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="hhn-ca-Qxp" userLabel="Album Art Options Parameters">
-                                            <rect key="frame" x="20" y="12" width="450" height="119"/>
+                                        <stackView autoresizesSubviews="NO" distribution="equalSpacing" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="hhn-ca-Qxp" userLabel="Album Art Options Parameters">
+                                            <rect key="frame" x="20" y="21" width="450" height="115"/>
                                             <subviews>
                                                 <button autoresizesSubviews="NO" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="105">
-                                                    <rect key="frame" x="8" y="93" width="214" height="18"/>
+                                                    <rect key="frame" x="3" y="94" width="214" height="18"/>
                                                     <buttonCell key="cell" type="check" title="Save album art with output files" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="157">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
@@ -111,7 +46,7 @@
                                                     </connections>
                                                 </button>
                                                 <comboBox autoresizesSubviews="NO" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="139">
-                                                    <rect key="frame" x="10" y="62" width="433" height="25"/>
+                                                    <rect key="frame" x="5" y="63" width="433" height="25"/>
                                                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="161">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -129,13 +64,13 @@
                                                     </connections>
                                                 </comboBox>
                                                 <stackView autoresizesSubviews="NO" distribution="fillEqually" orientation="horizontal" alignment="firstBaseline" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBN-HC-D2Y" userLabel="Album Art Format Specifier">
-                                                    <rect key="frame" x="260" y="36" width="180" height="20"/>
+                                                    <rect key="frame" x="5" y="36" width="161" height="21"/>
                                                     <subviews>
                                                         <popUpButton autoresizesSubviews="NO" verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="115">
-                                                            <rect key="frame" x="-3" y="-3" width="186" height="24"/>
+                                                            <rect key="frame" x="-3" y="-3" width="167" height="25"/>
                                                             <popUpButtonCell key="cell" type="push" title="Add Format Specifier" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="123" id="160">
                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                                <font key="font" metaFont="menu"/>
+                                                                <font key="font" metaFont="system"/>
                                                                 <menu key="menu" title="OtherViews" id="116">
                                                                     <items>
                                                                         <menuItem title="Add Format Specifier" hidden="YES" id="128"/>
@@ -179,10 +114,6 @@
                                                             </connections>
                                                         </popUpButton>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="C6i-xj-yBc"/>
-                                                        <constraint firstAttribute="width" constant="180" id="odU-l2-Bqr"/>
-                                                    </constraints>
                                                     <visibilityPriorities>
                                                         <integer value="1000"/>
                                                     </visibilityPriorities>
@@ -191,7 +122,7 @@
                                                     </customSpacing>
                                                 </stackView>
                                                 <stackView autoresizesSubviews="NO" distribution="equalSpacing" orientation="horizontal" alignment="firstBaseline" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNu-1x-xeB" userLabel="File Format Selection">
-                                                    <rect key="frame" x="10" y="5" width="175" height="21"/>
+                                                    <rect key="frame" x="5" y="5" width="440" height="21"/>
                                                     <subviews>
                                                         <textField autoresizesSubviews="NO" horizontalHuggingPriority="249" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="106">
                                                             <rect key="frame" x="-2" y="3" width="73" height="16"/>
@@ -205,10 +136,10 @@
                                                             </textFieldCell>
                                                         </textField>
                                                         <popUpButton autoresizesSubviews="NO" verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="107">
-                                                            <rect key="frame" x="75" y="-3" width="103" height="25"/>
+                                                            <rect key="frame" x="340" y="-3" width="103" height="25"/>
                                                             <popUpButtonCell key="cell" type="push" title="BMP" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="112" id="159">
                                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                                <font key="font" metaFont="menu"/>
+                                                                <font key="font" metaFont="system"/>
                                                                 <menu key="menu" title="OtherViews" id="108">
                                                                     <items>
                                                                         <menuItem title="TIFF" id="114"/>
@@ -226,9 +157,6 @@
                                                             </connections>
                                                         </popUpButton>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="107" firstAttribute="leading" secondItem="106" secondAttribute="trailing" constant="8" symbolic="YES" id="doF-RR-bb3"/>
-                                                    </constraints>
                                                     <visibilityPriorities>
                                                         <integer value="1000"/>
                                                         <integer value="1000"/>
@@ -241,17 +169,10 @@
                                             </subviews>
                                             <edgeInsets key="edgeInsets" left="5" right="5" top="5" bottom="5"/>
                                             <constraints>
-                                                <constraint firstItem="105" firstAttribute="top" secondItem="hhn-ca-Qxp" secondAttribute="top" constant="10" id="7es-H7-apc"/>
-                                                <constraint firstAttribute="trailing" secondItem="pBN-HC-D2Y" secondAttribute="trailing" constant="10" id="CiL-fd-Kj4"/>
-                                                <constraint firstItem="PNu-1x-xeB" firstAttribute="leading" secondItem="hhn-ca-Qxp" secondAttribute="leading" constant="10" id="OPz-8S-QjS"/>
-                                                <constraint firstItem="139" firstAttribute="leading" secondItem="hhn-ca-Qxp" secondAttribute="leading" constant="10" id="Oit-lM-KJF"/>
-                                                <constraint firstItem="PNu-1x-xeB" firstAttribute="leading" secondItem="105" secondAttribute="leading" id="j5Q-ix-D58"/>
-                                                <constraint firstAttribute="trailing" secondItem="139" secondAttribute="trailing" constant="10" id="lJc-mN-amW"/>
-                                                <constraint firstItem="105" firstAttribute="leading" secondItem="hhn-ca-Qxp" secondAttribute="leading" constant="10" id="n8h-ke-qaz"/>
-                                                <constraint firstAttribute="trailing" secondItem="pBN-HC-D2Y" secondAttribute="trailing" constant="10" id="vqg-pA-9ZR"/>
+                                                <constraint firstItem="PNu-1x-xeB" firstAttribute="centerX" secondItem="hhn-ca-Qxp" secondAttribute="centerX" id="Ml5-ip-saU"/>
                                             </constraints>
                                             <visibilityPriorities>
-                                                <real value="1000"/>
+                                                <integer value="1000"/>
                                                 <integer value="1000"/>
                                                 <integer value="1000"/>
                                                 <integer value="1000"/>
@@ -265,41 +186,29 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="hhn-ca-Qxp" firstAttribute="centerX" secondItem="X8Y-un-u6z" secondAttribute="centerX" id="Ncn-pB-1KJ"/>
-                                        <constraint firstItem="hhn-ca-Qxp" firstAttribute="centerY" secondItem="X8Y-un-u6z" secondAttribute="centerY" constant="-8.5" id="TTE-4z-LjJ"/>
-                                        <constraint firstItem="hhn-ca-Qxp" firstAttribute="leading" secondItem="X8Y-un-u6z" secondAttribute="leading" constant="20" symbolic="YES" id="cyk-Ls-nxS"/>
+                                        <constraint firstAttribute="trailing" secondItem="hhn-ca-Qxp" secondAttribute="trailing" constant="20" symbolic="YES" id="MdS-uA-Mdw"/>
+                                        <constraint firstItem="hhn-ca-Qxp" firstAttribute="leading" secondItem="X8Y-un-u6z" secondAttribute="leading" constant="20" symbolic="YES" id="gWl-aS-zn9"/>
+                                        <constraint firstItem="hhn-ca-Qxp" firstAttribute="top" secondItem="X8Y-un-u6z" secondAttribute="top" constant="10" id="x6v-aM-t2I"/>
                                     </constraints>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="geb-cN-PiA"/>
-                                </constraints>
                             </box>
                         </subviews>
                         <edgeInsets key="edgeInsets" left="10" right="10" top="10" bottom="10"/>
                         <constraints>
-                            <constraint firstItem="103" firstAttribute="centerX" secondItem="B0k-Bo-OnC" secondAttribute="centerX" id="AGn-4e-dCf"/>
-                            <constraint firstItem="103" firstAttribute="leading" secondItem="B0k-Bo-OnC" secondAttribute="leading" constant="20" symbolic="YES" id="GkK-Rs-BJr"/>
-                            <constraint firstItem="103" firstAttribute="top" secondItem="B0k-Bo-OnC" secondAttribute="top" priority="750" constant="20" symbolic="YES" id="V5Q-z9-QTF"/>
-                            <constraint firstAttribute="trailing" secondItem="103" secondAttribute="trailing" constant="20" symbolic="YES" id="ghn-ZE-Q6s"/>
-                            <constraint firstItem="140" firstAttribute="leading" secondItem="B0k-Bo-OnC" secondAttribute="leading" constant="20" symbolic="YES" id="hXF-kR-fsC"/>
-                            <constraint firstItem="140" firstAttribute="top" secondItem="103" secondAttribute="bottom" priority="750" constant="8" symbolic="YES" id="mWs-79-2rL"/>
-                            <constraint firstItem="140" firstAttribute="centerX" secondItem="B0k-Bo-OnC" secondAttribute="centerX" id="mxb-Vk-XV7"/>
-                            <constraint firstAttribute="trailing" secondItem="140" secondAttribute="trailing" constant="20" symbolic="YES" id="nMc-cM-2Tu"/>
-                            <constraint firstAttribute="bottom" secondItem="140" secondAttribute="bottom" constant="10" id="pgx-EC-jWz"/>
+                            <constraint firstItem="140" firstAttribute="leading" secondItem="B0k-Bo-OnC" secondAttribute="leading" constant="20" symbolic="YES" id="pIU-bH-G7A"/>
+                            <constraint firstAttribute="trailing" secondItem="140" secondAttribute="trailing" constant="20" symbolic="YES" id="qoh-D0-7Js"/>
                         </constraints>
                         <visibilityPriorities>
                             <integer value="1000"/>
-                            <integer value="1000"/>
                         </visibilityPriorities>
                         <customSpacing>
-                            <real value="3.4028234663852886e+38"/>
                             <real value="3.4028234663852886e+38"/>
                         </customSpacing>
                     </stackView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="B0k-Bo-OnC" firstAttribute="top" secondItem="6" secondAttribute="top" id="4I9-4s-Xsg"/>
-                    <constraint firstAttribute="height" constant="250" id="8Vr-VY-vnW"/>
+                    <constraint firstAttribute="height" constant="180" id="8Vr-VY-vnW"/>
                     <constraint firstItem="B0k-Bo-OnC" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="B1r-Nw-ZeB"/>
                     <constraint firstAttribute="trailing" secondItem="B0k-Bo-OnC" secondAttribute="trailing" id="XFf-Cp-6jh"/>
                     <constraint firstAttribute="width" constant="530" id="m9f-Q2-1Kr"/>
