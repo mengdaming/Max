@@ -493,7 +493,7 @@
 		[alert addButtonWithTitle: NSLocalizedStringFromTable(@"Show Preferences", @"General", @"")];
 		[alert setMessageText:NSLocalizedStringFromTable(@"No output formats are selected.", @"General", @"")];
 		[alert setInformativeText:NSLocalizedStringFromTable(@"Please select one or more output formats.", @"General", @"")];
-		[alert setAlertStyle: NSWarningAlertStyle];
+        [alert setAlertStyle: NSAlertStyleWarning];
 		
 		result = [alert runModal];
 		
@@ -589,7 +589,7 @@
 			[alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
 			[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while converting the file \"%@\".", @"Exceptions", @""), [[NSFileManager defaultManager] displayNameAtPath:filename]]];
 			[alert setInformativeText:[exception reason]];
-			[alert setAlertStyle:NSWarningAlertStyle];		
+            [alert setAlertStyle:NSAlertStyleWarning];
 			[alert runModal];
 		}			
 	}
@@ -943,7 +943,7 @@
 
 - (void) openPanelDidEnd:(NSOpenPanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
 {
-    if(NSOKButton == returnCode) {
+    if(NSModalResponseOK == returnCode) {
 		NSArray		*filesToOpen	= [sheet filenames];
 		NSUInteger	count			= [filesToOpen count];
 		NSUInteger	i;
@@ -963,7 +963,7 @@
 	
 	[sheet orderOut:self];
 	
-	if(NSOKButton == returnCode)
+    if(NSModalResponseOK == returnCode)
 		[self updateMetadataFromMusicBrainz:[musicBrainzMatchSheet selectedAlbumIndex]];
 	
 	[musicBrainzMatchSheet release];

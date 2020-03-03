@@ -59,7 +59,7 @@ queryStringComponentFromPair(NSString *field, NSString *value)
 		[alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
 		[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while initializing the %@ class.", @"Exceptions", @""), @"AmazonAlbumArtSheet"]];
 		[alert setInformativeText:[exception reason]];
-		[alert setAlertStyle:NSWarningAlertStyle];		
+        [alert setAlertStyle:NSAlertStyleWarning];
 		[alert runModal];
 	}
 }
@@ -173,7 +173,7 @@ queryStringComponentFromPair(NSString *field, NSString *value)
 			[alert setMessageText: NSLocalizedStringFromTable(@"An error occurred while attempting to download album artwork.", @"Exceptions", @"")];
 			[[LogController sharedController] logMessage:NSLocalizedStringFromTable(@"An error occurred while attempting to download album artwork.", @"Exceptions", @"")];
 			[alert setInformativeText: [error localizedDescription]];
-			[alert setAlertStyle: NSWarningAlertStyle];
+            [alert setAlertStyle: NSAlertStyleWarning];
 			
 			[alert runModal];
 		}
@@ -188,7 +188,7 @@ queryStringComponentFromPair(NSString *field, NSString *value)
 		[alert setMessageText: NSLocalizedStringFromTable(@"An error occurred while attempting to download album artwork.", @"Exceptions", @"")];
 		[[LogController sharedController] logMessage:NSLocalizedStringFromTable(@"An error occurred while attempting to download album artwork.", @"Exceptions", @"")];
 		[alert setInformativeText: [error localizedDescription]];
-		[alert setAlertStyle: NSWarningAlertStyle];
+        [alert setAlertStyle: NSAlertStyleWarning];
 		
 		[alert runModal];
 		

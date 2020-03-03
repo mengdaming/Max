@@ -87,7 +87,7 @@
 	[formats release];
 
 	// We're finished
-	[[NSApplication sharedApplication] endSheet:[self sheet] returnCode:NSOKButton];
+    [[NSApplication sharedApplication] endSheet:[self sheet] returnCode:NSModalResponseOK];
 }
 
 @end

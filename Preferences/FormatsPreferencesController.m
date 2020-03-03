@@ -57,7 +57,7 @@
 
 	if((self = [super initWithWindowNibName:@"FormatsPreferences"])) {
 		
-		coreAudioFormats			= getCoreAudioWritableTypes();NSLog(@"fmts: %@",coreAudioFormats);
+		coreAudioFormats			= getCoreAudioWritableTypes();//NSLog(@"fmts: %@",coreAudioFormats);
 		libsndfileFormats			= [NSMutableArray array];
 		_availableFormats			= [[NSMutableArray alloc] init];
 

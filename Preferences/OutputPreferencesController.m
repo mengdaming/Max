@@ -81,7 +81,7 @@ enum {
 	[_temporaryDirectoryPopUpButton selectItemWithTag:(nil != [[NSUserDefaults standardUserDefaults] stringForKey:@"temporaryDirectory"] ? kCurrentTempDirectoryMenuItemTag : kDefaultTempDirectoryMenuItemTag)];	
 	
 	// Deselect all items in the File Format Specifier NSPopUpButton
-	[[_formatSpecifierPopUpButton selectedItem] setState:NSOffState];
+    [[_formatSpecifierPopUpButton selectedItem] setState:NSControlStateValueOff];
 	[_formatSpecifierPopUpButton selectItemAtIndex:-1];
 	[_formatSpecifierPopUpButton synchronizeTitleAndSelectedItem];
 		

@@ -125,7 +125,7 @@
         else
             imageFrame.origin.y += ceil((cellFrame.size.height - imageFrame.size.height) / 2);
 
-        [image compositeToPoint:imageFrame.origin operation:NSCompositeSourceOver];
+        [image compositeToPoint:imageFrame.origin operation:NSCompositingOperationSourceOver];
     }
     [super drawWithFrame:cellFrame inView:controlView];
 }

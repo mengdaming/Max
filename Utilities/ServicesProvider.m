@@ -26,39 +26,39 @@
 
 - (void) encodeFile:(NSPasteboard *)pboard userData:(NSString *)userData error:(NSString **)error
 {
-	NSArray *types = [pboard types];
-	
-	@try {
-		if([types containsObject:NSFilenamesPboardType]) {
-			[[ApplicationController sharedController] encodeFiles:[pboard propertyListForType:NSFilenamesPboardType]];
-		}
-		else if([types containsObject:NSStringPboardType]) {
-			[[ApplicationController sharedController] encodeFiles:[NSArray arrayWithObject:[pboard stringForType:NSStringPboardType]]];
-		}
-	}
-	
-	@catch(FileFormatNotSupportedException *exception) {
-		NSAlert *alert = [[[NSAlert alloc] init] autorelease];
-		[alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
-		[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while opening the file \"%@\" for conversion.", @"Exceptions", @""), [[exception userInfo] objectForKey:@"filename"]]];
-		[alert setInformativeText:[exception reason]];
-		[alert setAlertStyle:NSWarningAlertStyle];		
-		[alert runModal];
-	}
-	
-	@catch(NSException *exception) {
-		NSAlert *alert = [[[NSAlert alloc] init] autorelease];
-		[alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
-		if(nil != [exception userInfo] && nil != [[exception userInfo] objectForKey:@"filename"]) {
-			[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while opening the file \"%@\" for conversion.", @"Exceptions", @""), [[exception userInfo] objectForKey:@"filename"]]];
-		}
-		else {
-			[alert setMessageText:NSLocalizedStringFromTable(@"An error occurred during file conversion.", @"Exceptions", @"")];
-		}
-		[alert setInformativeText:[exception reason]];
-		[alert setAlertStyle:NSWarningAlertStyle];		
-		[alert runModal];
-	}
+    NSArray *types = [pboard types];
+    
+    @try {
+        if([types containsObject:NSFilenamesPboardType]) {
+            [[ApplicationController sharedController] encodeFiles:[pboard propertyListForType:NSFilenamesPboardType]];
+        }
+        else if([types containsObject:NSPasteboardTypeString]) {
+            [[ApplicationController sharedController] encodeFiles:[NSArray arrayWithObject:[pboard stringForType:NSPasteboardTypeString]]];
+        }
+    }
+    
+    @catch(FileFormatNotSupportedException *exception) {
+        NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+        [alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
+        [alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while opening the file \"%@\" for conversion.", @"Exceptions", @""), [[exception userInfo] objectForKey:@"filename"]]];
+        [alert setInformativeText:[exception reason]];
+        [alert setAlertStyle:NSAlertStyleWarning];
+        [alert runModal];
+    }
+    
+    @catch(NSException *exception) {
+        NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+        [alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
+        if(nil != [exception userInfo] && nil != [[exception userInfo] objectForKey:@"filename"]) {
+            [alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while opening the file \"%@\" for conversion.", @"Exceptions", @""), [[exception userInfo] objectForKey:@"filename"]]];
+        }
+        else {
+            [alert setMessageText:NSLocalizedStringFromTable(@"An error occurred during file conversion.", @"Exceptions", @"")];
+        }
+        [alert setInformativeText:[exception reason]];
+        [alert setAlertStyle:NSAlertStyleWarning];
+        [alert runModal];
+    }
 }
 
 @end

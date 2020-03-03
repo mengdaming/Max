@@ -406,7 +406,7 @@
 			[alert addButtonWithTitle: NSLocalizedStringFromTable(@"Show Preferences", @"General", @"")];
 			[alert setMessageText:NSLocalizedStringFromTable(@"No output formats are selected.", @"General", @"")];
 			[alert setInformativeText:NSLocalizedStringFromTable(@"Please select one or more output formats.", @"General", @"")];
-			[alert setAlertStyle: NSWarningAlertStyle];
+            [alert setAlertStyle: NSAlertStyleWarning];
 			
 			result = [alert runModal];
 			
@@ -496,7 +496,7 @@
 		[alert addButtonWithTitle:NSLocalizedStringFromTable(@"OK", @"General", @"")];
 		[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"An error occurred while ripping tracks from the disc \"%@\".", @"Exceptions", @""), (nil == [self title] ? [self discID] : [self title])]];
 		[alert setInformativeText:[exception reason]];
-		[alert setAlertStyle:NSWarningAlertStyle];		
+        [alert setAlertStyle:NSAlertStyleWarning];
 		[self displayExceptionAlert:alert];
 	}
 }
@@ -513,7 +513,7 @@
 		[alert addButtonWithTitle:NSLocalizedStringFromTable(@"Cancel", @"General", @"")];
 		[alert setMessageText:[NSString stringWithFormat:NSLocalizedStringFromTable(@"Do you want to eject the disc \"%@\" while ripping is in progress?", @"CompactDisc", @""), (nil == [self title] ? [self discID] : [self title])]];
 		[alert setInformativeText:NSLocalizedStringFromTable(@"Your incomplete rips will be lost.", @"CompactDisc", @"")];
-		[alert setAlertStyle:NSWarningAlertStyle];
+        [alert setAlertStyle:NSAlertStyleWarning];
 		
 		if(NSAlertSecondButtonReturn == [alert runModal]) {
 			return;
@@ -605,7 +605,7 @@
 
 #pragma mark Miscellaneous
 
-- (NSString *)		length								{ return [NSString stringWithFormat:@"%u:%.02u", [[self disc] length] / 60, [[self disc] length] % 60]; }
+- (NSString *)		length								{ return [NSString stringWithFormat:@"%lu:%.2lu", [[self disc] length] / 60, [[self disc] length] % 60]; }
 - (NSArray *)		genres								{ return [Genres sharedGenres]; }
 
 - (NSArray *) selectedTracks
@@ -853,7 +853,7 @@
 
 	[sheet orderOut:self];
 	
-	if(NSOKButton == returnCode)
+    if(NSModalResponseOK == returnCode)
 		[self updateMetadataFromMusicBrainz:[musicBrainzMatchSheet selectedAlbumIndex]];
 
 	[musicBrainzMatchSheet release];
@@ -861,7 +861,7 @@
 
 - (void) openPanelDidEnd:(NSOpenPanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
 {
-    if(NSOKButton == returnCode) {
+    if(NSModalResponseOK == returnCode) {
 		NSArray		*filesToOpen	= [sheet filenames];
 		NSUInteger	count			= [filesToOpen count];
 		NSUInteger	i;
