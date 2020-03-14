@@ -28,7 +28,7 @@
 #include <AudioUnit/AudioCodec.h>
 
 // Prototypes
-static NSMutableArray *			getCoreAudioEncodeFormats();
+static NSMutableArray *			getCoreAudioEncodeFormats(void);
 static BOOL						formatIDValidForOutput(UInt32 formatID);
 static NSMutableArray *			getCoreAudioFileDataFormats(OSType filetype);
 static NSMutableDictionary *	getCoreAudioFileTypeInfo(OSType filetype);
@@ -334,7 +334,8 @@ getCoreAudioWritableTypes()
 		if(nil == sWritableTypes) {
 			@try {
 				UInt32		size;
-				OSStatus	err		= AudioFileGetGlobalInfoSize(kAudioFileGlobalInfo_WritableTypes, 0, NULL, &size);
+
+                OSStatus	err		= AudioFileGetGlobalInfoSize(kAudioFileGlobalInfo_WritableTypes, 0, NULL, &size);
 
 				NSCAssert2(noErr == err, NSLocalizedStringFromTable(@"The call to %@ failed.", @"Exceptions", @""), @"AudioFileGetGlobalInfo", UTCreateStringForOSType(err));
 

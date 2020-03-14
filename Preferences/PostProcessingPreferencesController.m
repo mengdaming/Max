@@ -81,7 +81,7 @@
 
 - (void) addPostProcessingApplicationDidEnd:(NSOpenPanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
 {
-	if(NSOKButton == returnCode) {
+    if(NSModalResponseOK == returnCode) {
 		NSArray				*applications		= [sheet filenames];
 		NSDictionary		*application		= nil;
 		NSString			*applicationPath	= nil;

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
-        <capability name="box content view" minToolsVersion="7.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,20 +11,19 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
-        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" deferred="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="12" userLabel="General Preferences">
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" deferred="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="12" userLabel="General Preferences">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="54" y="429" width="520" height="374"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <value key="minSize" type="size" width="72" height="5"/>
             <view key="contentView" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="520" height="374"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="100">
-                        <rect key="frame" x="188" y="12" width="144" height="32"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="100">
+                        <rect key="frame" x="190" y="12" width="141" height="32"/>
                         <buttonCell key="cell" type="push" title="Restore Defaults" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="221">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -35,17 +32,15 @@
                             <action selector="restoreDefaults:" target="-2" id="123"/>
                         </connections>
                     </button>
-                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" id="104">
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="104">
                         <rect key="frame" x="364" y="55" width="19" height="27"/>
-                        <autoresizingMask key="autoresizingMask"/>
                         <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="99" doubleValue="1" valueWraps="YES" id="224"/>
                         <connections>
                             <binding destination="112" name="value" keyPath="values.maximumEncoderThreads" id="117"/>
                         </connections>
                     </stepper>
-                    <textField toolTip="The maximum number of files that will be encoded simultaneously" verticalHuggingPriority="750" id="101">
+                    <textField toolTip="The maximum number of files that will be encoded simultaneously" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="101">
                         <rect key="frame" x="307" y="58" width="52" height="22"/>
-                        <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="222">
                             <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="102">
                                 <attributedString key="attributedStringForZero">
@@ -55,7 +50,7 @@
                                 <decimal key="maximum" value="99"/>
                             </numberFormatter>
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
@@ -66,25 +61,26 @@
                             </binding>
                         </connections>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="103">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="103">
                         <rect key="frame" x="99" y="60" width="203" height="17"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="199" id="Jry-uU-xWX"/>
+                            <constraint firstAttribute="height" constant="17" id="oYf-6z-BSN"/>
+                        </constraints>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Maximum number of encoders:" id="223">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <box title="When a new compact disc is inserted:" id="207">
+                    <box title="When a new compact disc is inserted:" translatesAutoresizingMaskIntoConstraints="NO" id="207">
                         <rect key="frame" x="17" y="201" width="486" height="73"/>
-                        <autoresizingMask key="autoresizingMask"/>
                         <view key="contentView" id="ZxQ-C0-SNf">
-                            <rect key="frame" x="2" y="2" width="482" height="56"/>
+                            <rect key="frame" x="3" y="3" width="480" height="55"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <button imageHugsTitle="YES" id="167">
-                                    <rect key="frame" x="44" y="9" width="248" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="167">
+                                    <rect key="frame" x="44" y="9" width="236" height="18"/>
                                     <buttonCell key="cell" type="check" title="Automatically save disc information" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="226">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -94,9 +90,8 @@
                                         <binding destination="112" name="value" keyPath="values.automaticallySaveMusicBrainzInfo" id="217"/>
                                     </connections>
                                 </button>
-                                <button imageHugsTitle="YES" id="126">
-                                    <rect key="frame" x="44" y="29" width="304" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="126">
+                                    <rect key="frame" x="44" y="29" width="292" height="18"/>
                                     <buttonCell key="cell" type="check" title="Automatically acquire artist and track names" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="225">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -106,18 +101,24 @@
                                     </connections>
                                 </button>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="126" firstAttribute="leading" secondItem="ZxQ-C0-SNf" secondAttribute="leading" constant="46" id="5p2-lQ-h4e"/>
+                                <constraint firstItem="126" firstAttribute="leading" secondItem="167" secondAttribute="leading" id="D0z-qR-tC4"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="126" secondAttribute="trailing" constant="20" symbolic="YES" id="eTb-6z-njT"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="167" secondAttribute="trailing" constant="20" symbolic="YES" id="o8F-DC-kGE"/>
+                                <constraint firstItem="126" firstAttribute="top" secondItem="ZxQ-C0-SNf" secondAttribute="top" constant="10" id="qCS-fn-w57"/>
+                                <constraint firstItem="167" firstAttribute="top" secondItem="126" secondAttribute="bottom" constant="6" symbolic="YES" id="vUA-xw-KeX"/>
+                            </constraints>
                         </view>
                     </box>
-                    <box title="When any compact disc is inserted:" id="209">
+                    <box title="When any compact disc is inserted:" translatesAutoresizingMaskIntoConstraints="NO" id="209">
                         <rect key="frame" x="17" y="84" width="486" height="113"/>
-                        <autoresizingMask key="autoresizingMask"/>
                         <view key="contentView" id="FlJ-Lh-Awg">
-                            <rect key="frame" x="2" y="2" width="482" height="96"/>
+                            <rect key="frame" x="3" y="3" width="480" height="95"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <button imageHugsTitle="YES" id="147">
-                                    <rect key="frame" x="44" y="9" width="278" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="147">
+                                    <rect key="frame" x="44" y="9" width="268" height="18"/>
                                     <buttonCell key="cell" type="check" title="Close window when encoding completes" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="229">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -126,9 +127,8 @@
                                         <binding destination="112" name="value" keyPath="values.closeWindowAfterEncoding" id="153"/>
                                     </connections>
                                 </button>
-                                <button imageHugsTitle="YES" id="128">
-                                    <rect key="frame" x="44" y="29" width="237" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="128">
+                                    <rect key="frame" x="44" y="29" width="230" height="18"/>
                                     <buttonCell key="cell" type="check" title="Eject disc when ripping completes" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="228">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -137,9 +137,8 @@
                                         <binding destination="112" name="value" keyPath="values.ejectAfterRipping" id="131"/>
                                     </connections>
                                 </button>
-                                <button imageHugsTitle="YES" id="162">
-                                    <rect key="frame" x="44" y="49" width="274" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="162">
+                                    <rect key="frame" x="44" y="49" width="262" height="18"/>
                                     <buttonCell key="cell" type="check" title="Only when disc is seen for the first time" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="230">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -149,31 +148,42 @@
                                         <binding destination="112" name="value" keyPath="values.onFirstInsertOnly" id="163"/>
                                     </connections>
                                 </button>
-                                <button imageHugsTitle="YES" id="127">
-                                    <rect key="frame" x="44" y="69" width="219" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="127">
+                                    <rect key="frame" x="44" y="69" width="211" height="18"/>
                                     <buttonCell key="cell" type="check" title="Automatically encode all tracks" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="227">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
                                     <connections>
-                                        <binding destination="112" name="enabled" keyPath="values.automaticallyQueryMusicBrainz" id="219"/>
                                         <binding destination="112" name="value" keyPath="values.automaticallyEncodeTracks" id="130"/>
+                                        <binding destination="112" name="enabled" keyPath="values.automaticallyQueryMusicBrainz" id="219"/>
                                     </connections>
                                 </button>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="147" firstAttribute="top" secondItem="128" secondAttribute="bottom" constant="6" symbolic="YES" id="0NK-mL-ahx"/>
+                                <constraint firstAttribute="bottom" secondItem="147" secondAttribute="bottom" constant="11" id="4SI-hz-gzU"/>
+                                <constraint firstItem="147" firstAttribute="leading" secondItem="128" secondAttribute="leading" id="4tJ-xP-cUu"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="127" secondAttribute="trailing" constant="20" symbolic="YES" id="802-8Q-YTw"/>
+                                <constraint firstItem="147" firstAttribute="leading" secondItem="127" secondAttribute="leading" id="BuE-O2-asC"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="147" secondAttribute="trailing" constant="20" symbolic="YES" id="CnE-yf-ztF"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="128" secondAttribute="trailing" constant="20" symbolic="YES" id="Kbk-KM-4n8"/>
+                                <constraint firstItem="147" firstAttribute="leading" secondItem="FlJ-Lh-Awg" secondAttribute="leading" constant="46" id="Qqp-q2-v4r"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="162" secondAttribute="trailing" constant="20" symbolic="YES" id="hXq-I9-9gG"/>
+                                <constraint firstItem="147" firstAttribute="leading" secondItem="162" secondAttribute="leading" id="lGt-hX-tAz"/>
+                                <constraint firstItem="162" firstAttribute="top" secondItem="127" secondAttribute="bottom" constant="6" symbolic="YES" id="n2M-lM-ofF"/>
+                                <constraint firstItem="127" firstAttribute="top" secondItem="FlJ-Lh-Awg" secondAttribute="top" constant="10" id="tU9-0w-mHm"/>
+                            </constraints>
                         </view>
                     </box>
-                    <box title="General Options" id="213">
+                    <box title="General Options" translatesAutoresizingMaskIntoConstraints="NO" id="213">
                         <rect key="frame" x="17" y="278" width="486" height="76"/>
-                        <autoresizingMask key="autoresizingMask"/>
                         <view key="contentView" id="s3j-yf-nVF">
-                            <rect key="frame" x="2" y="2" width="482" height="59"/>
+                            <rect key="frame" x="3" y="3" width="480" height="58"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <button imageHugsTitle="YES" id="145">
-                                    <rect key="frame" x="44" y="9" width="253" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="145">
+                                    <rect key="frame" x="44" y="9" width="243" height="18"/>
                                     <buttonCell key="cell" type="check" title="Dynamically show and hide windows" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="232">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -182,9 +192,8 @@
                                         <binding destination="112" name="value" keyPath="values.useDynamicWindows" id="146"/>
                                     </connections>
                                 </button>
-                                <button imageHugsTitle="YES" id="143">
-                                    <rect key="frame" x="44" y="29" width="257" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="143">
+                                    <rect key="frame" x="44" y="29" width="247" height="18"/>
                                     <buttonCell key="cell" type="check" title="Automatically check for new versions" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="231">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -194,10 +203,44 @@
                                     </connections>
                                 </button>
                             </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="145" secondAttribute="trailing" constant="20" symbolic="YES" id="J7T-MP-Uvt"/>
+                                <constraint firstAttribute="bottom" secondItem="145" secondAttribute="bottom" constant="11" id="Nil-jX-Vx2"/>
+                                <constraint firstItem="145" firstAttribute="leading" secondItem="s3j-yf-nVF" secondAttribute="leading" constant="46" id="QUD-j7-6NP"/>
+                                <constraint firstItem="145" firstAttribute="leading" secondItem="143" secondAttribute="leading" id="bub-fG-G4n"/>
+                                <constraint firstItem="145" firstAttribute="top" secondItem="143" secondAttribute="bottom" constant="6" symbolic="YES" id="eZy-bw-gD0"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="143" secondAttribute="trailing" constant="20" symbolic="YES" id="nwD-ym-bxb"/>
+                            </constraints>
                         </view>
                     </box>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="209" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" symbolic="YES" id="4Ro-C5-pCS"/>
+                    <constraint firstItem="103" firstAttribute="centerY" secondItem="104" secondAttribute="centerY" id="4yk-RN-rqZ"/>
+                    <constraint firstItem="101" firstAttribute="top" secondItem="209" secondAttribute="bottom" constant="8" symbolic="YES" id="D9d-PJ-0sW"/>
+                    <constraint firstItem="213" firstAttribute="top" secondItem="6" secondAttribute="top" constant="20" symbolic="YES" id="Euc-ha-Tr3"/>
+                    <constraint firstItem="104" firstAttribute="bottom" secondItem="101" secondAttribute="bottom" id="G0K-iD-Yac"/>
+                    <constraint firstAttribute="trailing" secondItem="104" secondAttribute="trailing" constant="140" id="IwF-KG-3KH"/>
+                    <constraint firstItem="101" firstAttribute="leading" secondItem="103" secondAttribute="trailing" constant="7" id="JX1-Zn-TJj"/>
+                    <constraint firstAttribute="bottom" secondItem="103" secondAttribute="bottom" constant="60" id="L5U-PS-Czb"/>
+                    <constraint firstItem="209" firstAttribute="top" secondItem="6" secondAttribute="top" constant="177" id="Q7N-EM-d0V"/>
+                    <constraint firstItem="103" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="101" id="S4O-on-GTl"/>
+                    <constraint firstItem="104" firstAttribute="leading" secondItem="101" secondAttribute="trailing" constant="8" symbolic="YES" id="Sgg-Bh-9rb"/>
+                    <constraint firstItem="207" firstAttribute="top" secondItem="213" secondAttribute="bottom" constant="8" symbolic="YES" id="Tba-Xh-ORJ"/>
+                    <constraint firstItem="103" firstAttribute="top" secondItem="209" secondAttribute="bottom" constant="11" id="VtQ-fP-dno"/>
+                    <constraint firstItem="209" firstAttribute="trailing" secondItem="207" secondAttribute="trailing" id="Xyz-HE-2fF"/>
+                    <constraint firstItem="103" firstAttribute="firstBaseline" secondItem="101" secondAttribute="baseline" id="YKg-U9-hCD"/>
+                    <constraint firstItem="209" firstAttribute="centerX" secondItem="100" secondAttribute="centerX" id="Ydp-Bz-UU4"/>
+                    <constraint firstItem="100" firstAttribute="top" secondItem="103" secondAttribute="bottom" constant="20" id="b2H-e8-g0M"/>
+                    <constraint firstItem="209" firstAttribute="top" secondItem="207" secondAttribute="bottom" constant="8" symbolic="YES" id="bCg-tR-7uA"/>
+                    <constraint firstItem="209" firstAttribute="leading" secondItem="207" secondAttribute="leading" id="dhs-FO-hpE"/>
+                    <constraint firstItem="209" firstAttribute="leading" secondItem="213" secondAttribute="leading" id="gVc-eI-z6b"/>
+                    <constraint firstAttribute="trailing" secondItem="209" secondAttribute="trailing" constant="20" symbolic="YES" id="nAc-z3-c17"/>
+                    <constraint firstItem="209" firstAttribute="trailing" secondItem="213" secondAttribute="trailing" id="nGF-Vf-ijU"/>
+                    <constraint firstAttribute="bottom" secondItem="213" secondAttribute="bottom" constant="282" id="zlV-lm-MNU"/>
+                </constraints>
             </view>
+            <point key="canvasLocation" x="139" y="147"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="112" userLabel="Shared Defaults"/>
     </objects>

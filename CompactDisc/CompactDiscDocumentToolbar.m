@@ -40,7 +40,7 @@ static NSString		*EjectDiscToolbarItemIdentifier				= @"org.sbooth.Max.CompactDi
 
 - (void) dealloc
 {
-	[_document release], _document = nil;
+    (void)([_document release]), _document = nil;
 	
 	[super dealloc];
 }

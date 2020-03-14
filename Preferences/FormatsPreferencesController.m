@@ -56,14 +56,13 @@
 	unsigned				j;
 
 	if((self = [super initWithWindowNibName:@"FormatsPreferences"])) {
-		
 		coreAudioFormats			= getCoreAudioWritableTypes();//NSLog(@"fmts: %@",coreAudioFormats);
 		libsndfileFormats			= [NSMutableArray array];
 		_availableFormats			= [[NSMutableArray alloc] init];
 
 		// Get the list of libsndfile major formats
 		sf_command(NULL, SFC_GET_FORMAT_MAJOR_COUNT, &majorCount, sizeof(int)) ;
-		
+
 		// Generic defaults
 		info.channels		= 1;
 		info.samplerate		= 0;
@@ -96,7 +95,7 @@
 		[_availableFormats addObject:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:NSLocalizedStringFromTable(@"Ogg Vorbis", @"General", @""), NSLocalizedStringFromTable(@"Built-In", @"General", @""), [NSNumber numberWithInt:kComponentOggVorbis], nil] forKeys:[NSArray arrayWithObjects:@"name", @"source", @"component", nil]]];
 		[_availableFormats addObject:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:NSLocalizedStringFromTable(@"MP3", @"General", @""), NSLocalizedStringFromTable(@"Built-In", @"General", @""), [NSNumber numberWithInt:kComponentMP3], nil] forKeys:[NSArray arrayWithObjects:@"name", @"source", @"component", nil]]];
 		[_availableFormats addObject:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:NSLocalizedStringFromTable(@"Speex", @"General", @""), NSLocalizedStringFromTable(@"Built-In", @"General", @""), [NSNumber numberWithInt:kComponentOggSpeex], nil] forKeys:[NSArray arrayWithObjects:@"name", @"source", @"component", nil]]];
-		
+ 
 		// Add CoreAudio formats
 		for(j = 0; j < [coreAudioFormats count]; ++j) {
 			formatDictionary = [coreAudioFormats objectAtIndex:j];
@@ -144,10 +143,10 @@
 			
 			[_availableFormats addObject:[NSDictionary dictionaryWithObjects:objects forKeys:keys]];
 		}
-		
+
 		NSSortDescriptor *sd = [[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)] autorelease];
 		[_availableFormats sortUsingDescriptors:[NSArray arrayWithObject:sd]];
-		
+
 		return self;		
 	}
 	

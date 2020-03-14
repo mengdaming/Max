@@ -54,7 +54,7 @@ enum {
 - (void) awakeFromNib
 {
 	// Deselect all items in the File Format Specifier NSPopUpButton
-	[[_iTunesPlaylistSpecifierPopUpButton selectedItem] setState:NSOffState];
+    [[_iTunesPlaylistSpecifierPopUpButton selectedItem] setState:NSControlStateValueOff];
 	[_iTunesPlaylistSpecifierPopUpButton selectItemAtIndex:-1];
 	[_iTunesPlaylistSpecifierPopUpButton synchronizeTitleAndSelectedItem];
 }

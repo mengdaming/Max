@@ -51,7 +51,7 @@ enum {
 
 - (void) awakeFromNib
 {
-	[[_albumArtFormatSpecifierPopUpButton selectedItem] setState:NSOffState];
+    [[_albumArtFormatSpecifierPopUpButton selectedItem] setState:NSControlStateValueOff];
 	[_albumArtFormatSpecifierPopUpButton selectItemAtIndex:-1];
 	[_albumArtFormatSpecifierPopUpButton synchronizeTitleAndSelectedItem];
 }

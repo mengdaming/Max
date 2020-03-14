@@ -122,7 +122,7 @@ queryStringComponentFromPair(NSString *field, NSString *value)
 	[queryComponents addObject:queryStringComponentFromPair(@"Keywords", [NSString stringWithFormat:@"%@ %@", [_artistTextField stringValue], [_titleTextField stringValue]])];
 	
 	// Create the timestamp in XML dateTime format (omit milliseconds)
-	NSCalendarDate *now = [NSCalendarDate calendarDate];
+	NSCalendar *now = [NSCalendar currentCalendar];
 	[now setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
 	[queryComponents addObject:queryStringComponentFromPair(@"Timestamp", [now descriptionWithCalendarFormat:@"%Y-%m-%dT%H:%M:%S.000Z"])];
 	
