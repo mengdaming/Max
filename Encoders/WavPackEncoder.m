@@ -174,7 +174,7 @@ static int writeWavPackBlock(void *wv_id, void *data, int32_t bcount)
 			config.bitrate				= _bitrate;
 		}
 		
-		result = WavpackSetConfiguration(wpc, &config, totalFrames);
+		result = WavpackSetConfiguration(wpc, &config, (uint32_t)totalFrames);
 		NSAssert(FALSE != result, NSLocalizedStringFromTable(@"Unable to initialize the WavPack encoder.", @"Exceptions", @""));
 
 		WavpackPackInit(wpc);
